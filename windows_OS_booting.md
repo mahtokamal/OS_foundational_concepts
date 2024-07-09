@@ -4,4 +4,15 @@
 ![Screenshot (372)](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/234fed7f-a701-42a5-9e26-a9fadd66de2e)
 
 ![Screenshot (373)](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/6e68b5ec-a0ef-4ed7-92ac-9d0d4ea5485b)
- # Understanding Windows OS Boot Process
+
+# Understanding Windows OS Boot Process
+When you press Power button ON to till you get the user login interface is known as boot process or booting of an Operating System.
+
+|Cold booting|warm booting|
+|------------|------------|
+|System Started with Power button |Restarting of running System|
+|Power button |CTRL+ALT+DEL(RESTART)|
+|BIOS/UEFI |Active Partition|
+|MBR |BCD (Boot Configuration Data)|
+|Active Partitions||
+|BCD (Boot Configuration Data)||
