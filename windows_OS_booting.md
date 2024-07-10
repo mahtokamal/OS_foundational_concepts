@@ -37,5 +37,6 @@ When you press Power button ON to till you get the user login interface is known
 |MBR(Master Boot Record) file partitioning |GUID(Globally Unique Identifiers) partitiong Table(GPT) + MBR(backward compatibility) partitioning formats|
 |||
 |||
+
 ![Screenshot (374)](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/1abe7cfd-0411-463e-a081-9ecbb4ddf9ad)
 
