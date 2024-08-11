@@ -17,13 +17,34 @@ Following are the some of the common Windows OS security recommendations:-
    - By default, Windows uses Windows Defender for malware protection.
    - Windows Defender provides a suite of protection tools built into the system.
    - If Windows Defender is turned off, the system becomes more vulnerable to attacks and malware.
-3. Unknown or unmanaged services
-4. Encryptions
-5. Security Policy
-6. Firewall
-7. File and Share Permission
+2. Unknown or unmanaged services
+   - There are many services that run behind the scenes.
+   - It is important to make sure that each service is identifiable and safe.
+   - With an unknown service running in the background, the computer can be vulnerable to attack.
+3. Encryptions
+   - When data is not encrypted, it can easily be gathered and exploited.
+   - This is not only important for desktop computers, but especially mobile devices.
+4. Security Policy
+   - A good security policy must be configured and followed.
+   - Many settings in the Windows Security Policy control can prevent attacks.
+5. Firewall
+    - By default, Windows uses Windows Firewall to limit communication with devices on the network.
+    - Over time, rules may no longer apply.
+    - For example, a port may be left open that should no longer be readily available.
+    - It is important to review firewall settings periodically to ensure that the rules are still applicable and remove any 
+      that no longer apply
+6. File and Share Permission
+    - These permissions must be set correctly.
+    - It is easy to just give the “Everyone” group Full Control, but this allows all people to do what they want to all 
+      files.
+    - It is best to provide each user or group with the minimum necessary permissions for all files and folders.
 8. Weak or no password
-9. Login as Administrator
+    - Many people choose weak passwords or do not use a password at all.
+    - It is especially important to make sure that all accounts, especially the Administrator account, have a very strong 
+      password.
+13. Login as Administrator
+    - When a user logs in as an administrator, any program that they run will have the privileges of that account.
+    - It is best to log in as a Standard User and only use the administrator password to accomplish certain tasks.
 
 ## 1.2. Windows Architecture and Operations
 
