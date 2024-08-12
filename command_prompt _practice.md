@@ -2,6 +2,7 @@
 
 ## 2. File and Directory
 ### 2.1 dir
+### 2.2 cd
 ## 3. Networking
 
 ## 4. Users & Groups
