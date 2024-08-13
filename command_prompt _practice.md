@@ -13,6 +13,14 @@
     Syntax - dir
     Example - 
     Output -
+### copy & xcopy
+### move
+### del or erase
+### 2.3 mkdir
+### rmdir
+### 2.4 ren or rename
+### 2.5 type
+### echo
   
 ## 3. Networking
 
