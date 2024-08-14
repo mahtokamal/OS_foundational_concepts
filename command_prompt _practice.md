@@ -20,7 +20,20 @@
 ### rmdir
 ### 2.4 ren or rename
 ### 2.5 type
-    
+    Description - Displays the contents of a text file or files.
+    Syntax - TYPE [drive:][path]filename
+    Example - type hello.txt
+    Output - 
+
+    Example - type nul > hello.txt (to create empty file )
+    Output -
+    Example - type Hi! > hello.txt (> is used to overwrite the value)
+    Output -
+    Example - type Hello!! >> hello.txt (>> is used to append it to the end of the file)
+    Output -
+
+    Example - type Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
+    Output -
 ### echo
   
 ## 3. Networking
