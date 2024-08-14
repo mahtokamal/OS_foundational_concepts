@@ -3,13 +3,13 @@
 ## 2. File and Directory
 
 ### 2.1 dir
-    Displays a list of files and subdirectories in a directory.
+    Description - Displays a list of files and subdirectories in a directory.
     Syntax - dir
     Example - 
     Output -
 
 ### 2.2 cd
-    Displays the name of or changes the current directory.
+    Description - Displays the name of or changes the current directory.
     Syntax - dir
     Example - 
     Output -
@@ -20,6 +20,7 @@
 ### rmdir
 ### 2.4 ren or rename
 ### 2.5 type
+    
 ### echo
   
 ## 3. Networking
