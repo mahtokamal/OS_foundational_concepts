@@ -5,9 +5,11 @@
 ### 2.1 dir
     Description - Displays a list of files and subdirectories in a directory.
     Syntax - 
-    Example - help dir (shows all the options or switches available for dir command).
+    Example - help dir  or dir /? (shows all the options or switches available for dir command).
     Output -
     Example - dir
+
+    Example - dir /a (shows all files, subdirectories including hidden one in a directory.)
 
 ![Screenshot (434)](https://github.com/user-attachments/assets/58e4b009-0268-4911-b8eb-c10d7ec37b46)
 
@@ -16,6 +18,8 @@
 ![Screenshot (432)](https://github.com/user-attachments/assets/812b0f47-2a65-4b46-b52d-c2ebc67c05bf)
 
 ![Screenshot (433)](https://github.com/user-attachments/assets/84cf9277-3a0e-4a6e-80f7-cfaa9dd58d00)
+
+![Screenshot (436)](https://github.com/user-attachments/assets/5535a451-4966-4ecf-8cd1-df0fbd7dcd73)
 
 ### 2.2 cd
     Description - Displays the name of or changes the current directory.
