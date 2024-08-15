@@ -4,22 +4,31 @@
 
 ### 2.1 dir
     Description - Displays a list of files and subdirectories in a directory.
-    Syntax - dir
-    Example - 
+    Syntax - 
+    Example - help dir (shows all the options or switches available for dir command).
     Output -
+    Example - dir
+
+![Screenshot (434)](https://github.com/user-attachments/assets/58e4b009-0268-4911-b8eb-c10d7ec37b46)
+
+![Screenshot (435)](https://github.com/user-attachments/assets/5fc85d5d-cdb5-483c-ba3d-039746f545fb)
+
+![Screenshot (432)](https://github.com/user-attachments/assets/812b0f47-2a65-4b46-b52d-c2ebc67c05bf)
+
+![Screenshot (433)](https://github.com/user-attachments/assets/84cf9277-3a0e-4a6e-80f7-cfaa9dd58d00)
 
 ### 2.2 cd
     Description - Displays the name of or changes the current directory.
     Syntax - dir
     Example - 
     Output -
-### copy & xcopy
-### move
-### del or erase
-### 2.3 mkdir
-### rmdir
-### 2.4 ren or rename
-### 2.5 type
+### 2.3 copy & xcopy
+### 2.4 move
+### 2.5 del or erase
+### 2.6 mkdir
+### 2.7 rmdir
+### 2.8 ren or rename
+### 2.9 type
     Description - Displays the contents of a text file or files.
     Syntax - TYPE [drive:][path]filename
     Example - type hello.txt
@@ -34,7 +43,7 @@
 
     Example - type Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
     Output -
-### echo
+### 2.9 echo
   
 ## 3. Networking
 
