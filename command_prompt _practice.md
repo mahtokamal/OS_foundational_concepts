@@ -32,8 +32,11 @@
     
     Example - 
     Output -
+![Screenshot (457)](https://github.com/user-attachments/assets/0e52909c-b089-47ff-828b-53490c2ac88e)
 
+![Screenshot (458)](https://github.com/user-attachments/assets/7ba6fe7a-4f74-4b0d-8052-7c3977eed35c)
 
+![Screenshot (459)](https://github.com/user-attachments/assets/aa931f33-5681-4dc3-ada8-a1b180cdaa87)
 
 ### 2.3 copy & xcopy
 ### 2.4 move
