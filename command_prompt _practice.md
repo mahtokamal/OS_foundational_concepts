@@ -75,8 +75,10 @@
 ### 8.1 cls
     Description - Clears the terminal screen.
     
-    Syntax - 
-    Example - 
+    Syntax -  
+    Example - cls
+    Example - help cls
+    Example - cls /?
     Output -
 ![Screenshot (460)](https://github.com/user-attachments/assets/0e2d7c4d-7593-46d6-b5ae-a096d7893074)
 
