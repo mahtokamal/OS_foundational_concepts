@@ -21,11 +21,20 @@
 
 ![Screenshot (436)](https://github.com/user-attachments/assets/5535a451-4966-4ecf-8cd1-df0fbd7dcd73)
 
-### 2.2 cd
+### 2.2 cd or chdir
     Description - Displays the name of or changes the current directory.
-    Syntax - dir
+    Syntax - CHDIR [/D] [drive:][path]
+             CHDIR [..]
+             CD [/D] [drive:][path]
+             CD [..]
+
+    [..   Specifies that you want to change to the parent directory.]
+    
     Example - 
     Output -
+
+
+
 ### 2.3 copy & xcopy
 ### 2.4 move
 ### 2.5 del or erase
