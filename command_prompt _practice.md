@@ -72,3 +72,16 @@
 ## 7. Disk Space Management
 
 ## 8. Other Important commands
+### 8.1 cls
+    Description - Clears the terminal screen.
+    
+    Syntax - 
+    Example - 
+    Output -
+![Screenshot (460)](https://github.com/user-attachments/assets/0e2d7c4d-7593-46d6-b5ae-a096d7893074)
+
+![Screenshot (461)](https://github.com/user-attachments/assets/2726442f-227d-4fab-98e9-4d834b94e46f)
+
+![Screenshot (462)](https://github.com/user-attachments/assets/b536fbd8-7c0c-41d5-a9bd-c6e141a2d463)
+
+### 8.2
