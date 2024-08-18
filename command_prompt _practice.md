@@ -39,6 +39,17 @@
 ![Screenshot (459)](https://github.com/user-attachments/assets/aa931f33-5681-4dc3-ada8-a1b180cdaa87)
 
 ### 2.3 copy & xcopy
+    Description - Copies one or more files to another location.
+    Xcopy - Copies files and directory trees.
+    
+    Syntax - TYPE [drive:][path]filename
+    Example - type hello.txt
+    Output - 
+
+![Screenshot (465)](https://github.com/user-attachments/assets/422bb63c-c23e-466a-8265-9d24455a54cf)
+
+![Screenshot (466)](https://github.com/user-attachments/assets/9831ba94-868d-4446-9ee2-d0b43341ab3f)
+
 ### 2.4 move
 ### 2.5 del or erase
 ### 2.6 mkdir
@@ -59,6 +70,8 @@
 
     Example - type Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
     Output -
+
+
 ### 2.9 echo
   
 ## 3. Networking
