@@ -38,13 +38,15 @@
 
 ![Screenshot (459)](https://github.com/user-attachments/assets/aa931f33-5681-4dc3-ada8-a1b180cdaa87)
 
-### 2.3 copy & xcopy
+### 2.3 copy, xcopy, robocopy
     Description - Copies one or more files to another location.
     
     Xcopy - Copies files and directory trees.
     /S: Copies directories and subdirectories, but not empty ones.
     /E: Copies all subdirectories, including empty ones.
 
+
+    Robocopy -  Robust File Copy for Windows.
     
     Syntax - TYPE [drive:][path]filename
     Example - type hello.txt
