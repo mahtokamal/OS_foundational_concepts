@@ -40,7 +40,11 @@
 
 ### 2.3 copy & xcopy
     Description - Copies one or more files to another location.
+    
     Xcopy - Copies files and directory trees.
+    /S: Copies directories and subdirectories, but not empty ones.
+    /E: Copies all subdirectories, including empty ones.
+
     
     Syntax - TYPE [drive:][path]filename
     Example - type hello.txt
