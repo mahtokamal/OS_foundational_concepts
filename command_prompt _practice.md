@@ -64,6 +64,11 @@
     Output - 
     
 ### 2.5 del or erase
+    Description - 
+
+    Syntax - 
+    Example -
+    Output - 
 ### 2.6 mkdir
 ### 2.7 rmdir
 ### 2.8 ren or rename
