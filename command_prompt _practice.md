@@ -57,6 +57,12 @@
 ![Screenshot (466)](https://github.com/user-attachments/assets/9831ba94-868d-4446-9ee2-d0b43341ab3f)
 
 ### 2.4 move
+    Description - 
+
+    Syntax - 
+    Example -
+    Output - 
+    
 ### 2.5 del or erase
 ### 2.6 mkdir
 ### 2.7 rmdir
