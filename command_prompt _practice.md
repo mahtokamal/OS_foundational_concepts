@@ -70,8 +70,18 @@
     Example -
     Output - 
 ### 2.6 mkdir
+    Description - 
+
+    Syntax - 
+    Example -
+    Output - 
+
 ### 2.7 rmdir
+
+
 ### 2.8 ren or rename
+
+
 ### 2.9 type
     Description - Displays the contents of a text file or files.
     Syntax - TYPE [drive:][path]filename
