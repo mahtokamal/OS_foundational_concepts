@@ -76,11 +76,19 @@
     Example -
     Output - 
 
-### 2.7 rmdir
+### 2.7 rmdir    
+    Description - 
 
+    Syntax - 
+    Example -
+    Output - 
 
 ### 2.8 ren or rename
+    Description - 
 
+    Syntax - 
+    Example -
+    Output - 
 
 ### 2.9 type
     Description - Displays the contents of a text file or files.
@@ -100,6 +108,11 @@
 
 
 ### 2.9 echo
+    Description - 
+
+    Syntax - 
+    Example -
+    Output - 
   
 ## 3. Networking
 
