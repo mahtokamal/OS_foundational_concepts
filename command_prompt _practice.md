@@ -42,8 +42,8 @@
     Description - Copies one or more files to another location.
     
     Xcopy - Copies files and directory trees.
-    /S: Copies directories and subdirectories, but not empty ones.
-    /E: Copies all subdirectories, including empty ones.
+    /S  - Copies directories and subdirectories, but not empty ones.
+    /E -  Copies all subdirectories, including empty ones.
 
 
     Robocopy -  Robust File Copy for Windows.
@@ -57,7 +57,7 @@
 ![Screenshot (466)](https://github.com/user-attachments/assets/9831ba94-868d-4446-9ee2-d0b43341ab3f)
 
 ### 2.4 move
-    Description - 
+    Description - Moves files and renames files and directories.
 
     Syntax - 
     Example -
