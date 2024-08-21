@@ -69,22 +69,29 @@
     Syntax - 
     Example -
     Output - 
-### 2.6 mkdir
-    Description - 
+### 2.6 mkdir or md
+    Description - Creates a directory.
 
     Syntax - 
     Example -
     Output - 
 
 ### 2.7 rmdir    
-    Description - 
+    Description - Removes (deletes) a directory.
 
+    
+    /S      Removes all directories and files in the specified directory
+            in addition to the directory itself.  Used to remove a directory
+            tree.
+
+    /Q      Quiet mode, do not ask if ok to remove a directory tree with /S
+    
     Syntax - 
     Example -
     Output - 
 
 ### 2.8 ren or rename
-    Description - 
+    Description - Renames a file or files.
 
     Syntax - 
     Example -
@@ -108,7 +115,7 @@
 
 
 ### 2.9 echo
-    Description - 
+    Description - Displays messages, or turns command-echoing on or off.
 
     Syntax - 
     Example -
