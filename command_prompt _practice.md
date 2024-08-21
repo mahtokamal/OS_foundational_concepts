@@ -64,7 +64,7 @@
     Output - 
     
 ### 2.5 del or erase
-    Description - 
+    Description - Deletes one or more files.
 
     Syntax - 
     Example -
