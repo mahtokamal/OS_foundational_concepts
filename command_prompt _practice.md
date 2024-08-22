@@ -56,6 +56,30 @@
 
 ![Screenshot (466)](https://github.com/user-attachments/assets/9831ba94-868d-4446-9ee2-d0b43341ab3f)
 
+![Screenshot (467)](https://github.com/user-attachments/assets/7a6be176-fe1b-4f76-96d3-986d7dd37096)
+
+![Screenshot (468)](https://github.com/user-attachments/assets/3f3f4335-343d-46ae-a1dd-96c80687964a)
+
+![Screenshot (469)](https://github.com/user-attachments/assets/a1604bd6-89c1-4708-9442-61ff7c04b130)
+
+![Screenshot (470)](https://github.com/user-attachments/assets/a04f8556-f08c-4342-919c-a609e78264ff)
+
+![Screenshot (471)](https://github.com/user-attachments/assets/ec8e2cb3-b8e4-46ad-846a-8cf2947ccd01)
+
+![Screenshot (472)](https://github.com/user-attachments/assets/05bf35ec-6171-40a7-9187-a772774e9278)
+
+![Screenshot (473)](https://github.com/user-attachments/assets/5af7c08e-5639-4d41-aa86-0b535fee26e7)
+
+![Screenshot (474)](https://github.com/user-attachments/assets/2892d2fb-5d21-4776-9b5e-05e65be2ab83)
+
+
+
+
+
+
+
+
+
 ### 2.4 move
     Description - Moves files and renames files and directories.
 
