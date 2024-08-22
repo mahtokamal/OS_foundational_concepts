@@ -90,6 +90,9 @@
     Syntax - 
     Example -
     Output - 
+
+![Screenshot (481)](https://github.com/user-attachments/assets/58017199-d1d5-4e73-b616-72c3c644619d)
+
     
 ### 2.5 del or erase
     Description - Deletes one or more files.
