@@ -92,7 +92,11 @@
 
     Syntax - 
     Example -
-    Output - 
+    Output -
+
+![Screenshot (475)](https://github.com/user-attachments/assets/c9db60a0-0f81-4717-b331-183bf7f47bcf)
+
+    
 ### 2.6 mkdir or md
     Description - Creates a directory.
 
