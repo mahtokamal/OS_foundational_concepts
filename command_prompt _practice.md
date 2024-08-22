@@ -88,12 +88,31 @@
     Description - Moves files and renames files and directories.
 
     Syntax - 
+    To move one or more files:
+    MOVE [/Y | /-Y] [drive:][path]filename1[,...] destination
+
+    To rename a directory:
+    MOVE [/Y | /-Y] [drive:][path]dirname1 dirname2
+    
     Example -
     Output - 
 
 ![Screenshot (481)](https://github.com/user-attachments/assets/58017199-d1d5-4e73-b616-72c3c644619d)
 
-    
+![Screenshot (483)](https://github.com/user-attachments/assets/d0d8c9a9-398d-4bee-8642-e72f8121ace7)
+![Screenshot (484)](https://github.com/user-attachments/assets/b0308d01-937b-4cf1-a9e8-52ad1ae46a0c)
+![Screenshot (485)](https://github.com/user-attachments/assets/2bafbe28-7b3f-4709-bf4d-dbda1e527a2a)
+
+![Screenshot (486)](https://github.com/user-attachments/assets/6f517a83-827b-4620-8a63-b144a01b8f88)
+![Screenshot (487)](https://github.com/user-attachments/assets/31bed46c-1592-4086-9399-060fdee3d693)
+
+![Screenshot (488)](https://github.com/user-attachments/assets/8d59fb85-6d47-4167-b516-cd7bebd5757d)
+![Screenshot (490)](https://github.com/user-attachments/assets/ae209d93-0b84-4e3d-892b-d2dcc52e3d92)
+
+
+![Screenshot (491)](https://github.com/user-attachments/assets/b3cf2de0-3b5b-4534-bfdc-4898ef1a3dd4)
+![Screenshot (492)](https://github.com/user-attachments/assets/64977979-00c5-464b-927a-71e645d57e4a)
+
 ### 2.5 del or erase
     Description - Deletes one or more files.
 
