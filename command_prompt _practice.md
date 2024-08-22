@@ -47,7 +47,7 @@
 
 
     Robocopy -  Robust File Copy for Windows.
-    
+    Syntax - robocopy <Source> <Destination> [<File>[ ...]] [<Options>] 
     Syntax - TYPE [drive:][path]filename
     Example - type hello.txt
     Output - 
@@ -70,12 +70,16 @@
 
 ![Screenshot (473)](https://github.com/user-attachments/assets/5af7c08e-5639-4d41-aa86-0b535fee26e7)
 
+
 ![Screenshot (474)](https://github.com/user-attachments/assets/2892d2fb-5d21-4776-9b5e-05e65be2ab83)
 
+![Screenshot (476)](https://github.com/user-attachments/assets/26e4a13d-8f12-4ff5-bb81-e886cd778e5b)
 
+![Screenshot (477)](https://github.com/user-attachments/assets/d9fa86fb-e2ee-422b-9163-311823b87695)
 
+![Screenshot (479)](https://github.com/user-attachments/assets/ff11a71b-4616-4f93-9709-cb87407f1254)
 
-
+![Screenshot (480)](https://github.com/user-attachments/assets/ed2755e9-2866-42cf-9c72-7300e6e7db90)
 
 
 
