@@ -168,6 +168,10 @@
     Example -
     Output - 
 
+![Screenshot (499)](https://github.com/user-attachments/assets/838dca30-233c-4c05-8676-c07425185a5e)
+![Screenshot (500)](https://github.com/user-attachments/assets/552625c0-4d22-47b7-b39c-991059424415)
+
+
 ### 2.9 type
     Description - Displays the contents of a text file or files.
     Syntax - TYPE [drive:][path]filename
@@ -184,14 +188,18 @@
     Example - type Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
     Output -
 
+![Screenshot (503)](https://github.com/user-attachments/assets/65bca345-5949-4b78-a879-6aa805dff337)
+![Screenshot (504)](https://github.com/user-attachments/assets/0043642f-6809-4ff4-9ac3-966c330f55e9)
 
 ### 2.9 echo
     Description - Displays messages, or turns command-echoing on or off.
 
-    Syntax - 
+    Syntax -  ECHO [ON | OFF]
+              ECHO [message]
     Example -
     Output - 
-  
+  ![Screenshot (501)](https://github.com/user-attachments/assets/209cf7d4-7b96-4b0c-836e-b114abce41a7)
+
 ## 3. Networking
 
 ## 4. Users & Groups
