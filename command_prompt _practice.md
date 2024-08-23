@@ -116,19 +116,29 @@
 ### 2.5 del or erase
     Description - Deletes one or more files.
 
-    Syntax - 
+    Syntax - DEL [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
+             ERASE [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
+    
     Example -
     Output -
 
 ![Screenshot (475)](https://github.com/user-attachments/assets/c9db60a0-0f81-4717-b331-183bf7f47bcf)
 
+![Screenshot (493)](https://github.com/user-attachments/assets/9cce3319-f73f-49b7-acfd-0190988ee316)
+![Screenshot (494)](https://github.com/user-attachments/assets/57e6008b-702c-41af-be77-b0e90d8ed454)
+
     
 ### 2.6 mkdir or md
     Description - Creates a directory.
 
-    Syntax - 
+    Syntax - MKDIR [drive:]path
+             MD [drive:]path
+    
     Example -
     Output - 
+
+![Screenshot (495)](https://github.com/user-attachments/assets/f0cd220b-4415-48a5-a709-0e03dcc3d521)
+![Screenshot (496)](https://github.com/user-attachments/assets/6aebc57a-9528-48b6-b0c6-fa0a6401dddd)
 
 ### 2.7 rmdir    
     Description - Removes (deletes) a directory.
@@ -140,14 +150,21 @@
 
     /Q      Quiet mode, do not ask if ok to remove a directory tree with /S
     
-    Syntax - 
+    Syntax - RMDIR [/S] [/Q] [drive:]path
+             RD [/S] [/Q] [drive:]path
+    
     Example -
     Output - 
+![Screenshot (497)](https://github.com/user-attachments/assets/8d963db1-b1fc-4842-b106-ba4b1bdb3070)
+
+![Screenshot (498)](https://github.com/user-attachments/assets/75cc8536-ffe0-48ba-af96-31f394d77514)
 
 ### 2.8 ren or rename
     Description - Renames a file or files.
 
-    Syntax - 
+    Syntax - RENAME [drive:][path]filename1 filename2.
+             REN [drive:][path]filename1 filename2.
+    
     Example -
     Output - 
 
