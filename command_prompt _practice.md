@@ -196,7 +196,7 @@
 
     Syntax -  ECHO [ON | OFF]
               ECHO [message]
-    Example -
+    Example - echo Hello! How are You??
     Example - echo Hi! > hello.txt (> is used to overwrite the value)
     Example - echo Hello!! >> hello.txt (>> is used to append it to the end of the file)
     Example - echo Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
