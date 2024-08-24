@@ -175,21 +175,15 @@
 ### 2.9 type
     Description - Displays the contents of a text file or files.
     Syntax - TYPE [drive:][path]filename
-    Example - type hello.txt
-    Output - 
-
+   
     Example - type nul > hello.txt (to create empty file )
-    Output -
-    Example - type Hi! > hello.txt (> is used to overwrite the value)
-    Output -
-    Example - type Hello!! >> hello.txt (>> is used to append it to the end of the file)
-    Output -
-
-    Example - type Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
-    Output -
+    Example - type hello.txt (to view contents of hello.txt file)
+   
 
 ![Screenshot (503)](https://github.com/user-attachments/assets/65bca345-5949-4b78-a879-6aa805dff337)
 ![Screenshot (504)](https://github.com/user-attachments/assets/0043642f-6809-4ff4-9ac3-966c330f55e9)
+![Screenshot (505)](https://github.com/user-attachments/assets/3fdfddea-0bfc-4a39-b3ed-65bd447c7adb)
+![Screenshot (506)](https://github.com/user-attachments/assets/59ac3fc7-4e7c-4394-81a6-195a9f455252)
 
 ### 2.9 echo
     Description - Displays messages, or turns command-echoing on or off.
@@ -202,6 +196,7 @@
     Example - echo Bye! Bye! > hello.txt (> overwrite all existing values with Bye! Bye!)
 
 ![Screenshot (501)](https://github.com/user-attachments/assets/209cf7d4-7b96-4b0c-836e-b114abce41a7)
+![Screenshot (507)](https://github.com/user-attachments/assets/e34ba4b1-2957-4209-aa9d-33be8a94cd42)
 
 ## 3. Networking
 
