@@ -4,9 +4,14 @@
 
 ### 2.1 dir
     Description - Displays a list of files and subdirectories in a directory.
-    Syntax - 
+    
+    Syntax - DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
+             [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]
+
+             [drive:][path][filename]
+              Specifies drive, directory, and/or files to list.
+    
     Example - help dir  or dir /? (shows all the options or switches available for dir command).
-    Output -
     Example - dir
 
     Example - dir /a (shows all files, subdirectories including hidden one in a directory.)
@@ -40,17 +45,27 @@
 
 ### 2.3 copy, xcopy, robocopy
     Description - Copies one or more files to another location.
+
+    Copy Synatx - COPY [/D] [/V] [/N] [/Y | /-Y] [/Z] [/L] [/A | /B ] source [/A | /B]
+                  [+ source [/A | /B] [+ ...]] [destination [/A | /B]] 
     
     Xcopy - Copies files and directory trees.
+    Syntax - XCOPY source [destination] [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/-I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T]
+                           [/U] [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:file1[+file2][+file3]...] [/COMPRESS]
+    
     /S  - Copies directories and subdirectories, but not empty ones.
     /E -  Copies all subdirectories, including empty ones.
 
 
     Robocopy -  Robust File Copy for Windows.
+    
     Syntax - robocopy <Source> <Destination> [<File>[ ...]] [<Options>] 
-    Syntax - TYPE [drive:][path]filename
-    Example - type hello.txt
-    Output - 
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               file :: File(s) to copy  (names/wildcards: default is "*.*").
 
 ![Screenshot (465)](https://github.com/user-attachments/assets/422bb63c-c23e-466a-8265-9d24455a54cf)
 
