@@ -214,7 +214,24 @@
 ![Screenshot (507)](https://github.com/user-attachments/assets/e34ba4b1-2957-4209-aa9d-33be8a94cd42)
 
 ## 3. Networking
-
+### 3.1 ping
+### 3.2 ipconfig
+### 3.3 nslookup
+### 3.4 tracert
+### 3.5 netstat
+### 3.6 hostname
+### 3.7
+### 3.8
+### 3.9
+### 3.10
+### 3.11
+### 3.12
+### 3.15
+### 3.16
+### 3.17
+### 3.18
+### 3.19
+### 3.20
 ## 4. Users & Groups
 
 ## 5. Permission & ownerships
