@@ -220,9 +220,9 @@
 ### 3.4 tracert
 ### 3.5 netstat
 ### 3.6 hostname
-### 3.7
-### 3.8
-### 3.9
+### 3.7 arp
+### 3.8 systeminfo
+### 3.9 pathping
 ### 3.10
 ### 3.11
 ### 3.12
