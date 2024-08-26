@@ -234,8 +234,26 @@
 ### 3.20
 
 ## 4. Users & Groups
-## 4.1 net user
-## 4.2 creating user account
+### 4.1 net user
+    Description -
+
+    Syntax -  
+    Example -
+### 4.2 creating user account
+    Description - 
+    
+    Syntax -  
+    Example -   
+### 4.3 deleting user account
+    Description - 
+
+    Syntax -
+    Example - 
+### 4.4 enabling user account
+
+### 4.5 disabling user account
+
+### 4.6 changing password for standard user
 
 ## 5. Permission & ownerships
 
