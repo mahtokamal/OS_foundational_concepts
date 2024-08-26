@@ -232,7 +232,10 @@
 ### 3.18
 ### 3.19
 ### 3.20
+
 ## 4. Users & Groups
+## 4.1 net user
+## 4.2
 
 ## 5. Permission & ownerships
 
