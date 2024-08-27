@@ -237,11 +237,30 @@
 ### 3.20
 
 ## 4. Users & Groups
-### 4.1 net user
-    Description -
+### 4.1 To view list of available users
+    Description - net user is used to view available users in System.
 
-    Syntax -  
-    Example -
+    Syntax -  NET
+              [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+              HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+              STATISTICS | STOP | TIME | USE | USER | VIEW ]
+    
+    Example - net /?
+
+    Syntax - NET USER
+             [username [password | *] [options]] [/DOMAIN]
+             username {password | *} /ADD [options] [/DOMAIN]
+             username [/DELETE] [/DOMAIN]
+             username [/TIMES:{times | ALL}]
+             username [/ACTIVE: {YES | NO}]
+    
+    Example - net user /?
+    Example - net user
+
+![Screenshot (526)](https://github.com/user-attachments/assets/5ea13a23-f886-4172-aac2-71bddc5e6e0f)
+![Screenshot (527)](https://github.com/user-attachments/assets/ebd5b797-74b4-4b04-8217-be84c7dac251)
+
+    
 ### 4.2 creating user account
     Description - 
     
