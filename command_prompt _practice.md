@@ -46,7 +46,7 @@
 ### 2.3 copy, xcopy, robocopy
     Description - Copies one or more files to another location.
 
-    Copy Synatx - COPY [/D] [/V] [/N] [/Y | /-Y] [/Z] [/L] [/A | /B ] source [/A | /B]
+    Copy Syntax - COPY [/D] [/V] [/N] [/Y | /-Y] [/Z] [/L] [/A | /B ] source [/A | /B]
                   [+ source [/A | /B] [+ ...]] [destination [/A | /B]] 
     
     Xcopy - Copies files and directory trees.
@@ -59,7 +59,7 @@
     /E -  Copies all subdirectories, including empty ones.
 
 
-    Robocopy -  Robust File Copy for Windows.
+    Robocopy -  Robust File Copy for Windows. XCOPY is deprecated in favor of ROBOCOPY, which offers even more advanced options for copying files and directories.
     
     Syntax - robocopy <Source> <Destination> [<File>[ ...]] [<Options>] 
 
@@ -71,7 +71,7 @@
 
 ![Screenshot (466)](https://github.com/user-attachments/assets/9831ba94-868d-4446-9ee2-d0b43341ab3f)
 
-    Xcopy Example
+    Xcopy(Extended copy) Example
 ![Screenshot (467)](https://github.com/user-attachments/assets/7a6be176-fe1b-4f76-96d3-986d7dd37096)
 
 ![Screenshot (468)](https://github.com/user-attachments/assets/3f3f4335-343d-46ae-a1dd-96c80687964a)
@@ -89,7 +89,7 @@
 
 ![Screenshot (474)](https://github.com/user-attachments/assets/2892d2fb-5d21-4776-9b5e-05e65be2ab83)
 
-    Robocopy Example
+    Robocopy(Robust File copy) Example
 
 ![Screenshot (476)](https://github.com/user-attachments/assets/26e4a13d-8f12-4ff5-bb81-e886cd778e5b)
 
