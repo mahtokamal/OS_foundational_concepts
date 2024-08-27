@@ -264,8 +264,12 @@
 ### 4.2 creating user account
     Description - 
     
-    Syntax -  
-    Example -   
+    Syntax - net user [username] [password] /add
+    Example -
+![Screenshot (528)](https://github.com/user-attachments/assets/9c74f248-877c-4ced-8740-191c8ce50495)
+
+
+
 ### 4.3 deleting user account
     Description - 
 
