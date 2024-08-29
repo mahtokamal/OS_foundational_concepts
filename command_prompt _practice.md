@@ -279,12 +279,23 @@
 
 ### 4.5 disabling user account
 
-### 4.6 changing password or updating for standard user
+### 4.6 changing or updating password for standard user
     Description - 
     
-    Syntax -
-    Example -
+    Syntax - net user [username] [newpassword]
+    Example - net user ramesh 12345678
+![Screenshot (531)](https://github.com/user-attachments/assets/60a5d104-cb15-44e0-bb59-dcc8b942a645)
+
+### 4.7 getting detailed information about a specific user
+    Description - 
     
+    Syntax - net user [username]
+    Example - net user ramesh
+![Screenshot (529)](https://github.com/user-attachments/assets/60cff8d4-82ea-4c77-8e30-c160af16c9ee)
+
+    
+
+
 ## 5. Permission & ownerships
 
 ## 6. Process Management
