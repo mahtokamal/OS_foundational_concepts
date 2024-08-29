@@ -273,17 +273,34 @@
 ### 4.3 deleting user account
     Description - 
 
-    Syntax -
+    Syntax - net user [username] /delete or del
     Example - 
+![Screenshot (537)](https://github.com/user-attachments/assets/6f57030b-99f9-4da6-92a1-0ca1b475c09f)
+
 ### 4.4 enabling user account
+    Description - 
+
+    Syntax - net user [username] [/active:yes]
+    Example - net user administrator /active:yes
+    
+![Screenshot (532)](https://github.com/user-attachments/assets/03ec5d8b-df33-4a56-bf63-7bfab8f12882)
+![Screenshot (533)](https://github.com/user-attachments/assets/acd9ec04-499c-4f39-9499-c9b1fc028396)
 
 ### 4.5 disabling user account
+    Description - 
+
+    Syntax - net user [username] [/active:no]
+    Example - net user administrator /active:no
+
+![Screenshot (534)](https://github.com/user-attachments/assets/4a83b63f-6fcd-407b-bc08-9c340044ab6e)
 
 ### 4.6 changing or updating password for standard user
     Description - 
     
-    Syntax - net user [username] [newpassword]
+    Syntax - net user [username] [newpassword] or net user [username] [*]
     Example - net user ramesh 12345678
+    Example - net user ramesh * [it gives us a prompt to enter new password and then confirm it.]
+
 ![Screenshot (531)](https://github.com/user-attachments/assets/60a5d104-cb15-44e0-bb59-dcc8b942a645)
 
 ### 4.7 getting detailed information about a specific user
@@ -292,8 +309,15 @@
     Syntax - net user [username]
     Example - net user ramesh
 ![Screenshot (529)](https://github.com/user-attachments/assets/60cff8d4-82ea-4c77-8e30-c160af16c9ee)
+### 4.8 adding comment to the user
+    Description -
 
-    
+    Syntax - net user [username] [/comment:"write comment here"]
+    Example - net user ramesh /comment:"This is another user account for learning purposes"
+![Screenshot (535)](https://github.com/user-attachments/assets/092a1129-eac9-4a17-85ff-4eb87ef51c29)
+![Screenshot (536)](https://github.com/user-attachments/assets/606a9b63-3455-4e3a-af4f-38d1d98a947f)
+
+
 
 
 ## 5. Permission & ownerships
