@@ -261,7 +261,7 @@
 ![Screenshot (527)](https://github.com/user-attachments/assets/ebd5b797-74b4-4b04-8217-be84c7dac251)
 
     
-### 4.2 creating user account
+### 4.2 creating an user account
     Description - 
     
     Syntax - net user [username] [password] /add
@@ -279,8 +279,12 @@
 
 ### 4.5 disabling user account
 
-### 4.6 changing password for standard user
-
+### 4.6 changing password or updating for standard user
+    Description - 
+    
+    Syntax -
+    Example -
+    
 ## 5. Permission & ownerships
 
 ## 6. Process Management
