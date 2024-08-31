@@ -317,8 +317,16 @@
 ![Screenshot (535)](https://github.com/user-attachments/assets/092a1129-eac9-4a17-85ff-4eb87ef51c29)
 ![Screenshot (536)](https://github.com/user-attachments/assets/606a9b63-3455-4e3a-af4f-38d1d98a947f)
 
+### 4.9 To view list of available groups
+    Description -
 
+    Syntax - net user [username] [/comment:"write comment here"]
+    Example - net user ramesh /comment:"This is another user account for learning purposes"
+![Screenshot (542)](https://github.com/user-attachments/assets/5f0d5562-4db8-4b93-9828-5e314de27da5)
+![Screenshot (543)](https://github.com/user-attachments/assets/4996c89e-78a1-4360-8ebc-b2b0252bf9ec)
 
+### 4.10 adding our own group
+### 4.11 adding user to the group
 
 ## 5. Permission & ownerships
 
