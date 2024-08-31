@@ -320,8 +320,8 @@
 ### 4.9 To view list of available groups
     Description -
 
-    Syntax - 
-    Example - 
+    Syntax - net localgroup
+    Example - net localgroup
 ![Screenshot (545)](https://github.com/user-attachments/assets/f62ac64e-f5ff-4b73-b90c-316aaf021343)
 ![Screenshot (542)](https://github.com/user-attachments/assets/5f0d5562-4db8-4b93-9828-5e314de27da5)
 ![Screenshot (543)](https://github.com/user-attachments/assets/4996c89e-78a1-4360-8ebc-b2b0252bf9ec)
@@ -329,8 +329,8 @@
 ### 4.10 Creating our own group
     Description -
 
-    Syntax - 
-    Example -
+    Syntax - net localgroup [groupname] /add
+    Example - net localgroup cybersecurityteam /add
 ![Screenshot (546)](https://github.com/user-attachments/assets/ddfce424-b5e8-4eb9-bb68-93b6d5a9d303)
 
 
@@ -339,22 +339,26 @@
 
     Syntax - net localgroup [groupname]
     Example - net localgroup Administrators
+    Example - net localgroup cybersecurityteam
 ![Screenshot (544)](https://github.com/user-attachments/assets/b97e650d-127f-478b-9138-38b4894e0987)
 ![Screenshot (547)](https://github.com/user-attachments/assets/bd96ddf6-2816-40ac-82f4-b969b65e9a2f)
 
 ### 4.12 Updating a group
     Description -
 
-    Syntax - 
-    Example - 
+    Syntax - net localgroup [groupname] [user] /add [it adds a new user to groups]
+    Example - net localgroup cybersecurity ramesh /add 
 
 ![Screenshot (549)](https://github.com/user-attachments/assets/74c33a2f-4d2c-4c53-87d0-717253061826)
 
 ### 4.13 Deleting a group
     Description -
 
-    Syntax - 
-    Example - 
+    Syntax - net localgroup [groupname] [user] /delete [it deletes or removes an user from group]
+    Example - net localgroup cybersecurity ramesh /delete
+    
+    Syntax - net localgroup [groupname] /delete [it deletes a group from list of groups]
+    Example - net localgroup cybersecurity /delete
 
 ![Screenshot (550)](https://github.com/user-attachments/assets/256feb40-0a17-4ede-b35d-dcbb540b31a5)
 ![Screenshot (551)](https://github.com/user-attachments/assets/f5626627-89ac-4fff-98e1-34a844c957cd)
