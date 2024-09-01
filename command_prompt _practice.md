@@ -275,20 +275,39 @@
 - Lease Obtained: Date-time when your computer received the IP Address    
 
 ### 3.3 nslookup
-    Description - 
+    Description - Queries the DNS to obtain the domain name or IP address mapping. This command is use to transform the 
+    given searched words into their corresponding IP addresses. Such as if i search for geeks for geeks  website then our 
+    browser don’t search for geeks for geeks. It search’s the corresponding IP address associated to the geeksforgeeks 
+    site. 
 
-    Syntax - 
-    Example -
+    Syntax - nslookup [-opt ...]             # interactive mode using default server
+             nslookup [-opt ...] - server    # interactive mode using 'server'
+             nslookup [-opt ...] host        # just look up 'host' using default server
+             nslookup [-opt ...] host server # just look up 'host' using 'server'
+    Example - nslookup www.geeksforgeeks.com
+![Screenshot (558)](https://github.com/user-attachments/assets/7cd9dc9c-7d94-4d75-8a0b-cb0dbc6edaaa)
+
 ### 3.4 tracert
-    Description - 
+    Description - Traces the route that packets take to reach a destination, showing each hop(router) along the way.
 
-    Syntax - 
+    Syntax -  tracert [-d] [-h maximum_hops] [-j host-list] [-w timeout]
+               [-R] [-S srcaddr] [-4] [-6] target_name
     Example -
+![Screenshot (559)](https://github.com/user-attachments/assets/0845fac2-3725-4f9a-ab7a-7f2b8fb5ae70)
+
 ### 3.5 netstat
-    Description - 
+    Description - Displays protocol statistics and current TCP/IP network connections. Such as network connections, Ports, 
+    routing tables, interface statistics, masquerade connections, and multicast memberships. 
 
-    Syntax - 
+    It tells us active connections with our computer and it tells us local address ,foreign address and the state of the 
+    device. In local address first 8 digits specify the local address of our computer and and last 5 digits tells the port 
+    number to which our computer is connected .
+    
+    Syntax - NETSTAT [-a] [-b] [-e] [-f] [-i] [-n] [-o] [-p proto] [-r] [-s] [-t] [-x] [-y] [interval]
     Example -
+![Screenshot (560)](https://github.com/user-attachments/assets/bce78a61-468b-4c6c-84d4-0da7d71a76ce)
+![Screenshot (561)](https://github.com/user-attachments/assets/2dc0ae15-d696-4e81-9f1e-a1075d540735)
+
 ### 3.6 hostname
     Description - 
 
