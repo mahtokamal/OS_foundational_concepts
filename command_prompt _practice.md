@@ -218,8 +218,15 @@
 
 ## 3. Networking
 ### 3.1 ping
-    Description - 
+    Description - Verifies IP-level connectivity to another TCP/IP computer by sending Internet Control Message Protocol 
+    (ICMP) echo Request messages. The receipt of the corresponding echo Reply messages is displayed, along with round-trip 
+    times. ping is the primary TCP/IP command used to troubleshoot connectivity, reachability, and name resolution.
 
+    You can also use this command to test both the computer name and the IP address of the computer. If pinging the IP 
+    address is successful, but pinging the computer name isn't, you might have a name resolution problem. In this case, 
+    make sure the computer name you're specifying can be resolved through the local Hosts file, by using Domain Name System 
+    (DNS) queries, or through NetBIOS name resolution techniques.
+    
     Common starting TTL values for different operating systems:
     Windows: 128
     Linux/Unix: 64
@@ -236,10 +243,37 @@
     The hop count between the computers in this case is 2.
 
 ### 3.2 ipconfig
-    Description - 
+    Description - Displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration 
+    Protocol (DHCP) and Domain Name System (DNS) settings. Used without parameters, ipconfig displays Internet Protocol 
+    version 4 (IPv4) and IPv6 addresses, subnet mask, and default gateway for all adapters.
 
-    Syntax - 
+    Syntax -  ipconfig [/allcompartments] [/? | /all |
+                                 /renew [adapter] | /release [adapter] |
+                                 /renew6 [adapter] | /release6 [adapter] |
+                                 /flushdns | /displaydns | /registerdns |
+                                 /showclassid adapter |
+                                 /setclassid adapter [classid] |
+                                 /showclassid6 adapter |
+                                 /setclassid6 adapter [classid] ]
     Example -
+
+![Screenshot (553)](https://github.com/user-attachments/assets/f7121f18-e381-453d-b45f-e9090c421c98)
+![Screenshot (554)](https://github.com/user-attachments/assets/6e946d13-8362-4393-9f56-d512bd00dc16)
+
+    Ipconfig/all - Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces,         such as installed network adapters, or logical interfaces, such as dial-up connections.
+
+![Screenshot (555)](https://github.com/user-attachments/assets/62916a7e-68bc-4360-a121-dd6b4321b4b9)
+![Screenshot (557)](https://github.com/user-attachments/assets/77c6314e-393e-4a5c-a844-a2aab8332208)
+
+- Physical Address: This is the MAC address of your network adapter.
+- DHCP Enabled: Indicates if the network connection is using DHCP or Static IP Address
+- IPv4 Address: The IP Address of your computer
+- Default Gateway: The router to which your computer is connected
+- DHCP Server: Router/server that hands out IP Addresses in your network
+- DNS Servers: Servers used to translate domain names to IP Addresses
+- Link-Local IPv6 Address: IPv6 address of your computer (often not used)
+- Lease Obtained: Date-time when your computer received the IP Address    
+
 ### 3.3 nslookup
     Description - 
 
