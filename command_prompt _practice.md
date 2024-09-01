@@ -218,16 +218,73 @@
 
 ## 3. Networking
 ### 3.1 ping
+    Description - 
+
+    Common starting TTL values for different operating systems:
+    Windows: 128
+    Linux/Unix: 64
+    Cisco: 255
+    Solaris/AIX: 254
+    
+    Syntax - 
+    Example -
+![Screenshot (552)](https://github.com/user-attachments/assets/11e5d722-fc8f-4f56-85a0-a04e7201e572)
+
+    Hops - when a data packet travels from source to destination through a series of devices(network devices [Router])
+    and each router is considered as a hops.Typically, a hop count starts with 0 or 1.
+![Hop-count-trans](https://github.com/user-attachments/assets/5ea17a67-7d9c-4166-8864-9c1887273eec)
+    The hop count between the computers in this case is 2.
+
 ### 3.2 ipconfig
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.3 nslookup
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.4 tracert
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.5 netstat
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.6 hostname
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.7 arp
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.8 systeminfo
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.9 pathping
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.10 getmac
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.11 netsh
+    Description - 
+
+    Syntax - 
+    Example -
 ### 3.12
 ### 3.15
 ### 3.16
