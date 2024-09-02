@@ -371,8 +371,8 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     Example - netsh wlan show profiles
  ![Screenshot (565)](https://github.com/user-attachments/assets/f0c63189-0cb0-48a7-8940-9b97479c6642)
   
-### 3.12
-### 3.15
+### 3.12 telnet
+### 3.15 net use
 ### 3.16
 ### 3.17
 ### 3.18
