@@ -304,40 +304,73 @@
     number to which our computer is connected .
     
     Syntax - NETSTAT [-a] [-b] [-e] [-f] [-i] [-n] [-o] [-p proto] [-r] [-s] [-t] [-x] [-y] [interval]
-    Example -
+    Example - netstat
+    Example - netstat -an [Shows all active network connections and listening ports, with their status.]
 ![Screenshot (560)](https://github.com/user-attachments/assets/bce78a61-468b-4c6c-84d4-0da7d71a76ce)
 ![Screenshot (561)](https://github.com/user-attachments/assets/2dc0ae15-d696-4e81-9f1e-a1075d540735)
 
 ### 3.6 hostname
-    Description - 
+    Description - Displays the host name portion of the full computer name of the computer.
 
-    Syntax - 
-    Example -
+    Syntax - hostname
+    Example - hostname
+![Screenshot (562)](https://github.com/user-attachments/assets/a73e14f9-675c-43e0-b49a-6e01d1e8d135)
+
 ### 3.7 arp
-    Description - 
+    Description - Displays and modifies the IP-to-Physical(MAC) address translation tables used by
+    address resolution protocol (ARP).
 
-    Syntax - 
-    Example -
+    Syntax - ARP -s inet_addr eth_addr [if_addr]
+             ARP -d inet_addr [if_addr]
+             ARP -a [inet_addr] [-N if_addr] [-v]
+    Example - arp -a [Displays the ARP table, showing IP addresses mapped to MAC addresses.]
+![Screenshot (563)](https://github.com/user-attachments/assets/cca5c51c-e22c-442f-9b4c-d4c296c347aa)
+
+
 ### 3.8 systeminfo
-    Description - 
+    Description - Displays detailed configuration information about a computer and its operating system, including 
+    operating system configuration, security information, product ID, and hardware properties (such as RAM, disk space, and 
+    network cards).
 
-    Syntax - 
-    Example -
+    Syntax - SYSTEMINFO [/S system [/U username [/P [password]]]] [/FO format] [/NH]
+    Example - systeminfo
+![Screenshot (568)](https://github.com/user-attachments/assets/4e83f93c-d562-4619-8779-fbc9abee6765)
+
 ### 3.9 pathping
-    Description - 
+    Description - Provides information about network latency and network loss at intermediate hops between a source and 
+    destination. This command sends multiple echo Request messages to each router between a source and destination, over a 
+    period of time, and then computes results based on the packets returned from each router. Because this command displays 
+    the degree of packet loss at any given router or link, you can determine which routers or subnets might be having 
+    network problems.
 
-    Syntax - 
-    Example -
+    It Combines the features of `ping` and `tracert` to identify network latency and packet loss over a route.
+
+    Syntax -  pathping [-g host-list] [-h maximum_hops] [-i address] [-n]
+                [-p period] [-q num_queries] [-w timeout]
+                [-4] [-6] target_name
+    Example - pathping google.com
+![Screenshot (566)](https://github.com/user-attachments/assets/6e2f1e2c-1959-442b-a40f-898b1aa6a866)
+It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms with no packet loss and Hop 2 shows a timeout with * * * indicating that there was no response from this Hop (Router).
 ### 3.10 getmac
-    Description - 
+    Description -  This tool enables an administrator to display the MAC address
+    for network adapters on a system.
 
-    Syntax - 
-    Example -
+    Syntax - GETMAC [/S system [/U username [/P [password]]]] [/FO format] [/NH] [/V]
+    Example - getmac
+![Screenshot (564)](https://github.com/user-attachments/assets/8feec047-3c93-4135-9a56-671441986f0c)
+
+
 ### 3.11 netsh
-    Description - 
+    Description - The Network Shell command-line scripting utility that allows you to, either locally or remotely, display 
+    or modify the network configuration of a currently running computer. You can start this utility at the command prompt 
+    or in Windows PowerShell.
 
-    Syntax - 
-    Example -
+    Syntax -  netsh [-a AliasFile] [-c Context] [-r RemoteMachine] [-u [DomainName\]UserName] [-p Password | *]
+             [Command | -f ScriptFile]
+
+    Example - netsh wlan show profiles
+ ![Screenshot (565)](https://github.com/user-attachments/assets/f0c63189-0cb0-48a7-8940-9b97479c6642)
+  
 ### 3.12
 ### 3.15
 ### 3.16
