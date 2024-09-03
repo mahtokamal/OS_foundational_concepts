@@ -228,6 +228,6 @@ Spawn explorer.exe as the customized graphical environment.
 
 
 # List of References
-https://os.cybbh.io/public/os/latest/006_windows_boot_process/winboot_fg.html
-https://en.wikipedia.org/wiki/Booting_process_of_Windows
-https://en.m.wikipedia.org/w/index.php?title=Windows_Boot_Manager&diffonly=true#Boot_Configuration_Data
+https://os.cybbh.io/public/os/latest/006_windows_boot_process/winboot_fg.html <br>
+https://en.wikipedia.org/wiki/Booting_process_of_Windows <br>
+https://en.m.wikipedia.org/w/index.php?title=Windows_Boot_Manager&diffonly=true#Boot_Configuration_Data <br>
