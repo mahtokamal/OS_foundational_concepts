@@ -52,10 +52,17 @@ When the system is powered on, it runs the BIOS program stored in the read-only 
 **Storage structure of a Hard Disk** <br>
 ![Screenshot (374)](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/1abe7cfd-0411-463e-a081-9ecbb4ddf9ad)
 
+
+# Windows Boot Process in generalized way
+![2020-11-11_153958](https://github.com/user-attachments/assets/f517caac-dd6e-4579-b478-79a4cb87ba7e)
+
+Firmware :
+- BIOS : BIOS firmware was created in the early 1980s and works in the same way it did when it was created. As computers evolved, it became difficult
+         for BIOS firmware to support all the new features requested by users.
+- UEFI : UEFI was designed to replace BIOS and support the new features.
+
 # Demystifying each steps of Window OS booting
-
 ![Windows_OS_booting](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/6bc92ea3-0fb5-4a5c-b259-054d227e0de7)
-
 
 1. System Starup<br>
 BIOS :<br>
@@ -217,6 +224,8 @@ Spawn explorer.exe as the customized graphical environment.
 
 5. Log
 6. 
+
+
 
 # List of References
 https://os.cybbh.io/public/os/latest/006_windows_boot_process/winboot_fg.html
