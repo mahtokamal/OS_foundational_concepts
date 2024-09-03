@@ -87,7 +87,7 @@ The windows bootloader(winload.exe/BIOS or winload.efi/UEFI) takes over everythi
 > [!NOTE]   
 > Windows 2003 and older used NTLDR(bootloader) or New Technology Loader
 > Windows 7 Service Pack 1 and newer OS editions or versions uses bootmgr bootloader.
- 
+
 3. Windows System Initializtions (NToskrnl.exe)
 Here is the simplified version of the Windows Boot Process from the kernel (ntoskrnl.exe) to the execution of LogonUi.exe or winlogon.exe (depending upon the OS version 
 architecture) (the process that prompts for user interaction).<br>
@@ -189,6 +189,12 @@ services.exe the Services Control Manager (SCM) loads AutoStart services, using 
 
 wininit.exe then waits for system shutdown to undo everything it started.
 
+> [!IMPORTANT]
+> Processes in User Subsystem Session 0 are created using the highest permissions available to a User in Windows - SYSTEM
+> System has more permissions than an administrative account
+> represents the Windows Operating System
+> *Can be tricked into executing malicious commands via services
+
 4.2.2 User Subsystem Session 1
 Session 1 is for the first interactive user (note: each session gets its own copy of csrss.exe.) Session 1 and up are standard user sessions. This includes everyone from the default Administrator to custom accounts created. It is the entire desktop experience on Windows.
 
@@ -201,6 +207,14 @@ Spawn Winlogon.exe which by default prompts for credentials with logonui.exe
 Spawn userinit.exe which creates an account token and creates a custom environment
 
 Spawn explorer.exe as the customized graphical environment.
+
+> [!IMPORTANT]
+> Hundreds of Processes in User Subsystem Session 1 and up are started automatically as a standard user to include administrative accounts. This potentially opens up the system to vulnerabilities such as:
+> Mitre ATT&CK: Boot or Logon AutoStart Execution via Registry Keys
+> Mitre ATT&CK: Boot or Logon Initialization Scripts
+> Mitre ATT&CK: PowerShell Profile Script Execution
+> The potential damage of these vulnerabilities is limited to the permissions of the account it executed on.
+
 5. Log
 6. 
 
