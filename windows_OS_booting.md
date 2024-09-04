@@ -95,7 +95,7 @@ When the system is powered on, it runs the BIOS program stored in the read-only 
 
 - **Avenues of Attack** an exposed operating system can be easily used to further Offensive goals such as pivots or compromised to steal data
 
-1. System Starup<br>
+**1. System Starup<br>**
 BIOS :<br>
    Power ON -> BIOS/UEFI
    BIOS - Intialtize hardware and perfroms (POST program) to check hardware components (CPU, RAM, keyboard, and storage devices).
@@ -104,9 +104,9 @@ UEFI:<br>
    UEFI initializes hardware and performs POST<br>
    UEFI looks for an EFI boot partition to locate the bootloader.<br>
 > [!NOTE]   
-> if POST runs successfully then control goes to firmware to find boot device, if not then it generates beep code(a series of audible beeps) or message depending upon error and it halts the futher booting process.
+> if POST runs successfully then control goes to firmware to find boot device, if not then it generates beep code(a series of audible beeps) or message depending upon error and it halts the further booting process.
 
-2. Bootloader
+**2. Bootloader**
 BIOS(MBR) finds the boot device using MBR(Master Boot Record) by reading the boot sector of OS and reads BCD(Boot configuration data) then loads windows OS bootlodaer(winload.exe/BIOS or winload.efi/UEFI).
 Windows boot manager (bootmgr.exe/BIOS) present a menu to select if multiple OS or dual boot is available.
 From this point the Boot Loader takes over and starts the Operating System. 
@@ -126,134 +126,110 @@ The windows bootloader(winload.exe/BIOS or winload.efi/UEFI) takes over everythi
 > Windows 2003 and older used NTLDR(bootloader) or New Technology Loader
 > Windows 7 Service Pack 1 and newer OS editions or versions uses bootmgr bootloader.
 
-3. Windows System Initializtions (NToskrnl.exe)
+**3. Windows System Initializtions (NToskrnl.exe)**
 Here is the simplified version of the Windows Boot Process from the kernel (ntoskrnl.exe) to the execution of LogonUi.exe or winlogon.exe (depending upon the OS version 
 architecture) (the process that prompts for user interaction).<br>
 It is broken into five steps. <br>
-- Loading the Operating System Kernel
-- Initializing the Kernel
-- Starting Subsystems
-- Starting Session 0 (SYSTEM account)
-- Starting Session 1 (ADMINISTRATIR account)
+1. Loading the Operating System Kernel
+2. Initializing the Kernel
+3. Starting Subsystems
+4. Starting Session 0 (SYSTEM account)
+5. Starting Session 1 (ADMINISTRATIR account)
 
-3.1 Loading the Operating System Kernel
+**3.1 Loading the Operating System Kernel**
 
-On UEFI Systems
-bootmgfw.efi reads a BCD (Boot Configuration Data) located in the EFI system partition to load the file winload.efi
+**On UEFI Systems**
+bootmgfw.efi reads a **BCD** (Boot Configuration Data) located in the EFI system partition to load the file winload.efi
 
-On BIOS Systems
-bootmgr or NTLDR reads the file \Boot\BCD to locate winload.exe
+**On BIOS Systems**
+bootmgr or NTLDR reads the file **\Boot\BCD** to locate **winload.exe**
+- The purpose of both winload programs is to load basic drivers and start the next part of the Windows Boot Process - loading the Kernel.
 
-The purpose of both winload programs is to load basic drivers and start the next part of the Windows Boot Process - loading the Kernel.
+**Winload.exe** loads the Windows kernel:
+- Loads essential drivers required to read data from disk
+- Loads the windows kernel (ntoskernel.exe) and dependencies
 
+**Winresume.exe** reads previously saved data from hiberfil.sys (**hibernation mode**) to restore a previous Windows instance.
+- On UEFI systems, winresume.exe is named **winresume.efi**, and is located at \windows\system32\boot.
 
-
-Winload.exe loads the Windows kernel:
-
-Loads essential drivers required to read data from disk
-
-Loads the windows kernel (ntoskernel.exe) and dependencies
-
-Winresume.exe reads previously saved data from hiberfil.sys (hibernation mode) to restore a previous Windows instance.
-
-On UEFI systems, winresume.exe is named winresume.efi, and is located at \windows\system32\boot.
-
-
-
-3.2 Initializing the Kernel
+**3.2 Initializing the Kernel**
 The kernel, as previously discussed, is the heart of the Operating System. Without it, the system cannot function.
+In Windows, the kernel is named **Ntoskrnl.exe** and is a critical system file. It does the following tasks during the boot process:
 
-In Windows, the kernel is named Ntoskrnl.exe and is a critical system file. It does the following tasks during the boot process:
+- Loads the Windows Registry
+- Loads device drivers
+- Starts the system pagefile located at **C:\pagefile.sys**
+- Loads **hal.dll**
+   - hal.dll provides abstraction between hardware interfaces and Ntoskrnl.exe
 
-Loads the Windows Registry
 
-Loads device drivers
+Once the kernel is done loading it spawns **System** which hosts threads that only run in kernel mode responsible things like drivers. **System** then spawns the session management processes **smss.exe** and **csrss.exe**
 
-Starts the system pagefile located at C:\pagefile.sys
+**4. Starting Subsystems**
+**smss.exe (Session Manager Subsystem)** does the following tasks:
 
-Loads hal.dll
+- Loads environmental variables like %APPDATA% and %COMPUTERNAME%
+- Populates the pagefile located in C:\pagefile.sys
+- Starts the kernel and user mode sub systems.
+- Starts a **csrss.exe **to manage processes and threads for each User Subsystem.
 
-hal.dll provides abstraction between hardware interfaces and Ntoskrnl.exe
-
-Once the kernel is done loading it spawns System which hosts threads that only run in kernel mode responsible things like drivers. System then spawns the session management processes smss.exe and csrss.exe
-
-​
-
-4. Starting Subsystems
-smss.exe (Session Manager Subsystem) does the following tasks:
-
-Loads environmental variables like %APPDATA% and %COMPUTERNAME%
-
-Populates the pagefile located in C:\pagefile.sys
-
-Starts the kernel and user mode sub systems.
-
-Starts a csrss.exe to manage processes and threads for each User Subsystem.
-
-​4.1 Kernel Subsystems
+**​4.1 Kernel Subsystems**
 The kernel subsystem creates and manages every resource available to Windows by interacting with drivers on the system. It controls things like:
+- System power state
+- Process creation and threads
+- Graphical rendering
+- Access Control Lists via the Security Reference Monitor
 
-System power state
+**NOTE :** It is important to understand - users cannot interact directly with any kernel-mode process or even see them
 
-Process creation and threads
+**4.2 User Subsystems**
+**Important:** This is the first part of Windows that a user is able to manipulate.
+The user subsystem manages all user applications like process creation, internet connectivity, and object access through API calls to **hal.dll**
 
-Graphical rendering
-
-Access Control Lists via the Security Reference Monitor
-
-It is important to understand - users cannot interact directly with any kernel-mode process or even see them
-
-4.2 User Subsystems
-The user subsystem manages all user applications like process creation, internet connectivity, and object access through API calls to hal.dll
-
-User Subsystems run in Session 0 and Session 1
+User Subsystems run in **Session 0** and **Session 1**
 
 ![winboot1](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/c99ac486-7707-4cf9-9802-23a93e2dc734)
 
-4.2.1 User Subsystem Session 0
+**4.2.1 User Subsystem Session 0**
 Session 0 is for security and high privilege processes such as services. They are run in a separate session to isolate them from individual user’s processes.
 
-smss.exe installs the Win32 subsystem kernel and user mode components (win32k.sys - kernel; winsrv.dll - user; and csrss.exe - user.)
+- smss.exe installs the Win32 subsystem kernel and user mode components (win32k.sys - kernel; winsrv.dll - user; and csrss.exe - user.)
+  - **csrss.exe**- The Client/Server Runtime Subsystem supports process / thread creation and management.
+  - **wininit.exe** marks itself as critical, initializes the Windows temp directory, loads the rest of the registry, and starts user mode scheduling. It also installs 
+   programs that require a reboot to finish the install process. **It also starts:**
 
-csrss.exe - The Client/Server Runtime Subsystem supports process / thread creation and management.
+   - **lsm.exe** - the Local Session Manager (LSM) handles all sessions of a system (both remote desktop sessions and local system sessions.)
+   - **lsass.exe** - the Local Security Authority Subsystem (LSASS) provides user authentication services, manages the local security policy, and generates access tokens.
+   - **services.exe** the Services Control Manager (SCM) loads AutoStart services, using LSASS to authenticate if they run as something other than System.
 
-wininit.exe marks itself as critical, initializes the Windows temp directory, loads the rest of the registry, and starts user mode scheduling. It also installs programs that require a reboot to finish the install process. It also starts:
-
-lsm.exe - the Local Session Manager (LSM) handles all sessions of a system (both remote desktop sessions and local system sessions.)
-
-lsass.exe - the Local Security Authority Subsystem (LSASS) provides user authentication services, manages the local security policy, and generates access tokens.
-
-services.exe the Services Control Manager (SCM) loads AutoStart services, using LSASS to authenticate if they run as something other than System.
-
-wininit.exe then waits for system shutdown to undo everything it started.
+ - **wininit.exe** then waits for system shutdown to undo everything it started.
 
 > [!IMPORTANT]
-> Processes in User Subsystem Session 0 are created using the highest permissions available to a User in Windows - SYSTEM
-> System has more permissions than an administrative account
-> represents the Windows Operating System
-> *Can be tricked into executing malicious commands via services
+> Processes in User Subsystem Session 0 are created using the highest permissions available to a User in Windows - **SYSTEM**<br>
+>**System** has more permissions than an administrative account <br>
+> represents the Windows Operating System <br>
+> *Can be tricked into executing malicious commands via services <br>
 
-4.2.2 User Subsystem Session 1
-Session 1 is for the first interactive user (note: each session gets its own copy of csrss.exe.) Session 1 and up are standard user sessions. This includes everyone from the default Administrator to custom accounts created. It is the entire desktop experience on Windows.
+<a href="https://attack.mitre.org/techniques/T1569/">Mitre ATT&CK: System Services</a><br>
+<a href="https://attack.mitre.org/techniques/T1574/011/">Mitre ATT&CK: Hijack Execution Flow: Services Registry</a>
+
+**4.2.2 User Subsystem Session 1**
+Session 1 is for the first interactive user (note: each session gets its own copy of csrss.exe.) Session 1 and up are standard user sessions. This includes everyone from the default **Administrator** to custom accounts created. It is the entire desktop experience on Windows.
 
 It does the following, in order, for Session 1 and up:
-
-Spawn a Session 1 ( or higher) csrss.exe
-
-Spawn Winlogon.exe which by default prompts for credentials with logonui.exe
-
-Spawn userinit.exe which creates an account token and creates a custom environment
-
-Spawn explorer.exe as the customized graphical environment.
+1. Spawn a Session 1 ( or higher) **csrss.exe**
+2. Spawn **Winlogon.exe** which by default prompts for credentials with **logonui.exe**
+3. Spawn **userinit.exe** which creates an account token and creates a custom environment
+4. Spawn **explorer.exe** as the customized graphical environment.
 
 > [!IMPORTANT]
-> Hundreds of Processes in User Subsystem Session 1 and up are started automatically as a standard user to include administrative accounts. This potentially opens up the system to vulnerabilities such as:
-> Mitre ATT&CK: Boot or Logon AutoStart Execution via Registry Keys
-> Mitre ATT&CK: Boot or Logon Initialization Scripts
-> Mitre ATT&CK: PowerShell Profile Script Execution
+> Hundreds of Processes in **User Subsystem Session 1 and up** are started automatically as a standard user to include administrative accounts. This potentially opens up the system to vulnerabilities such as: <br>
+> <a href="https://attack.mitre.org/techniques/T1547/001/">Mitre ATT&CK: Boot or Logon AutoStart Execution via Registry Keys</a><br>
+> <a href="https://attack.mitre.org/techniques/T1037/001/">Mitre ATT&CK: Boot or Logon Initialization Scripts</a><br>
+> <a href="https://attack.mitre.org/techniques/T1546/013/">Mitre ATT&CK: PowerShell Profile Script Execution</a><br>
 > The potential damage of these vulnerabilities is limited to the permissions of the account it executed on.
 
-5. Log
+5. 
 6. 
 
 
