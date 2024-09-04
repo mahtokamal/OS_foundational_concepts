@@ -56,13 +56,44 @@ When the system is powered on, it runs the BIOS program stored in the read-only 
 # Windows Boot Process in generalized way
 ![2020-11-11_153958](https://github.com/user-attachments/assets/f517caac-dd6e-4579-b478-79a4cb87ba7e)
 
-Firmware :
+**Firmware :** Firmware is software coded non-volatile memory devices such as:
+
+1. ROM (Read only memory)
+2. EPROM (Electronically Programmable Read only memory)
+3. EEPROM (Electronically Erasable Programmable read only memory)
+4. Flash memory
+
 - BIOS : BIOS firmware was created in the early 1980s and works in the same way it did when it was created. As computers evolved, it became difficult
          for BIOS firmware to support all the new features requested by users.
 - UEFI : UEFI was designed to replace BIOS and support the new features.
 
+- UEFI Boots much faster than BIOS systems, especially for Windows machines.
+- UEFI Firmware is usually loaded into flash memory or EEPROM, making it easier to update and patch.
+- UEFI offers SECURED BOOT mode which only allows verified drivers to load.
+- UEFI offers drive support of up to 9 zettabytes, while BIOS only works with 2 terabytes.
+
+<a href="https://en.wikipedia.org/wiki/UEFI#Features">UEFI in details</a> <br>
+<a href="https://www.quora.com/Are-EFI-and-UEFI-the-same-thing-What-is-the-easiest-way-to-explain-to-me-what-UEFI-BIOS-GPT-DOS-MBR-and-EFI-partitioning-is-All-the-websites-and-videos-I-watch-are-too-advanced-for-me">UEFI vs EFI vs BIOS </a><br>
+<a href="https://www.geeksforgeeks.org/uefiunified-extensible-firmware-interface-and-how-is-it-different-from-bios/">BIOSvsUEFI</a><br>
+
+<a href="https://www.freecodecamp.org/news/uefi-vs-bios/#:~:text=UEFI%20stands%20for%20Unified%20Extensible,storing%20it%20on%20the%20firmware.">BIOS-UEFI</a><br>
+
 # Demystifying each steps of Window OS booting
 ![Windows_OS_booting](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/6bc92ea3-0fb5-4a5c-b259-054d227e0de7)
+
+
+# Why do we required to know about Booting proess as a Cyber Security enthusiast?
+- **Rootkits** are a type of malware that hide themselves and other applications. They typically run in kernel mode, so they have the same privileges as the operating system and can sometimes start before it. Because traditionally, anti-malware software doesn’t load until after the kernel and boot drivers do, rootkits often exploit weaknesses in the startup process:
+
+- **Firmware Rootkits** overwrite the PC’s BIOS or other hardware firmware so the rootkit can start before the OS even loads
+
+- **Bootkits** replace the OS bootloader to load the bootkit before the OS
+
+- **Kernel rootkits** replace a portion of the OS kernel so the rootkit can start when the OS loads
+
+- **Driver rootkits** pretend to be a boot driver that the OS uses to communicate with PC
+
+- **Avenues of Attack** an exposed operating system can be easily used to further Offensive goals such as pivots or compromised to steal data
 
 1. System Starup<br>
 BIOS :<br>
