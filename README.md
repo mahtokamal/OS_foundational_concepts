@@ -1,2 +1,2 @@
 # OS_foundational_concepts
-Basic concept of Operation system. Thid tutorial projects is still under work in progress.
+Basic concept of Operation system. This tutorial projects is still under work in progress.
