@@ -134,7 +134,7 @@ It is broken into five steps. <br>
 2. Initializing the Kernel
 3. Starting Subsystems
 4. Starting Session 0 (SYSTEM account)
-5. Starting Session 1 (ADMINISTRATIR account)
+5. Starting Session 1 (ADMINISTRATOR account)
 
 **3.1 Loading the Operating System Kernel**
 
