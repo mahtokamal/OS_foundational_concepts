@@ -75,8 +75,27 @@ When the system is powered on, it runs the BIOS program stored in the read-only 
 <a href="https://en.wikipedia.org/wiki/UEFI#Features">UEFI in details</a> <br>
 <a href="https://www.quora.com/Are-EFI-and-UEFI-the-same-thing-What-is-the-easiest-way-to-explain-to-me-what-UEFI-BIOS-GPT-DOS-MBR-and-EFI-partitioning-is-All-the-websites-and-videos-I-watch-are-too-advanced-for-me">UEFI vs EFI vs BIOS </a><br>
 <a href="https://www.geeksforgeeks.org/uefiunified-extensible-firmware-interface-and-how-is-it-different-from-bios/">BIOSvsUEFI</a><br>
-
 <a href="https://www.freecodecamp.org/news/uefi-vs-bios/#:~:text=UEFI%20stands%20for%20Unified%20Extensible,storing%20it%20on%20the%20firmware.">BIOS-UEFI</a><br>
+
+The time when you Powered ON your system to till it presents to login interface to enter user credentials is known as Windows OS Boot process or booting.
+
+**Bootloader A boot loader is a program that loads the operating system into the computer's memory during the startup process.**
+
+Firmware(BIOS), the BIOS initialization phase starts with POST(Power ON Self Test ) to check H/W integrity test whether the H/W are working well or not, if POST runs successfully then BIOS will look for MBR(Master Boot Record) partitioned file into boot device. However, if any issues found related to H/W then POST program generated error code or messages in the form of audible beeps depending upon the problems.
+
+MBR has a small program that try to locate and load the OS. The BIOS then runs this program as a result OS begins to load.
+
+In contrast to BIOS, UEFI firmware has a lot of visibility into the boot process. UEFI booting starts to load EFI program files stored as .efi files in a special disk partition, known as the EFI System Partition (ESP).
+
+**Note**: A computer that uses UEFI stores boot code in the firmware. This helps to increase the security of the computer at boot time because the computer goes directly into protected mode
+
+Depending upon the firmware BIOS or UEFI, after a valid Windows installation is located, the **Bootmgr.exe(Windows bootmanager**) file is run.**Bootmgr.exe**switches the system from real mode to protected mode so that all of the system memory can be used.
+
+Bootmgr.exe reads the **Boot Configuration Database (BCD)**. The BCD contains any additional code needed to start the computer, along with an indication of whether the computer is coming out of hibernation, or if this is a cold start. If the computer is coming out of hibernation, the boot process continues with **Winresume.exe.** This allows the computer to read the **Hiberfil.sys** file which contains the state of the computer when it was put into hibernation.
+
+If the computer is being booted from a cold start, then the **Winload.exe**(Windows Boot loader) file is loaded. The **Winload.exe** file creates a record of the hardware configuration in the registry. **The registry is a record of all of the settings, options, hardware, and software the computer has.** Winload.exe also uses **Kernel Mode Code Signing (KMCS)** to make sure that all drivers are digitally signed. This ensures that the drivers are safe to load as the computer starts.
+
+After the drivers have been examined, **Winload.exe**runs **Ntoskrnl.exe**(Windows Kernel) which starts the Windows kernel and sets up the **HAL**(Hardware Abstraction Layers). Finally, the **Session Manager Subsystem (SMSS)** reads the registry to create the user environment, start the Winlogon service, and prepare each user’s desktop as they log on.
 
 # Demystifying each steps of Window OS booting
 ![Windows_OS_booting](https://github.com/mahtokamal/OS_foundational_concepts/assets/62587491/6bc92ea3-0fb5-4a5c-b259-054d227e0de7)
