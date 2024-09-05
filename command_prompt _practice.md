@@ -464,7 +464,53 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
 ![Screenshot (536)](https://github.com/user-attachments/assets/606a9b63-3455-4e3a-af4f-38d1d98a947f)
 
 ### More user related commands
-    net user 
+    Syntax - net user username /passwordchg:No or net user username /passwordchg:Yes 
+    Example - net user Bolt /passwordchg:No or net user Bolt /passwordchg:Yes
+![Screenshot (5711)](https://github.com/user-attachments/assets/326d5695-35bc-4691-a962-ccb6a8333efe)
+![Screenshot (572)](https://github.com/user-attachments/assets/e1affdd4-471d-457a-8497-e4e9f0c62c96)
+
+    Syntax - net user username /expires:Never or net user username /expires:MM/DD/YYYY
+    Example - net user Bolt /expires:Never or net user Bolt /expires:10/10/2024
+![Screenshot (573)](https://github.com/user-attachments/assets/9eb306d4-96e0-4e16-aa97-9a8301383f7b)
+![Screenshot (574)](https://github.com/user-attachments/assets/5b13dec5-5f2a-4e8f-9785-b0451f2d720b)
+![Screenshot (575)](https://github.com/user-attachments/assets/850c788b-4f98-48f6-b316-0b7ae95058b7)
+    
+    Syntax - net user [username] [/comment:"write comment here"]
+    Example - net user Bolt /comment:"This is Pseudo account for practising purposes"
+![Screenshot (576)](https://github.com/user-attachments/assets/431a3a2b-6845-4d24-97f5-30bf326e9038)
+
+    Syntax - net user username /fullname:"Write Full Name"
+    Example - net user Bolt /fullname:"David Bolt"
+![Screenshot (577)](https://github.com/user-attachments/assets/038e6b7e-5df4-4c63-be68-1607781111bc)
+
+    Syntax - net user username /passwordreq:No or net user username /passwordreq:Yes
+    Example - net user Bolt /passwordreq:No or net user username /passwordreq:yes
+![Screenshot (578)](https://github.com/user-attachments/assets/70c28fc8-ff44-4a11-a312-2b607a3abdbb)
+![Screenshot (579)](https://github.com/user-attachments/assets/7b0f2d36-3a05-46d6-b23b-8ed9c5518b95)
+
+    Syntax - net user username /times:daysofweek, time
+    Example - net user Bolt /times:M-F, 09:00-18:00
+![Screenshot (580)](https://github.com/user-attachments/assets/406fb05e-3427-46f7-b49c-91a5e6cd4c47)
+![Screenshot (581)](https://github.com/user-attachments/assets/e08c78e5-0012-4c2d-85ec-4a46657ca712)
+![Screenshot (582)](https://github.com/user-attachments/assets/5af77dee-9dec-4d56-ad50-869373413359)
+
+    Syntax - net user username /homedir:path
+    Example - net user Bolt /times:M-F, 09:00-18:00
+
+    Syntax - net user username /profilepath:path
+    Example - net user Bolt /times:M-F, 09:00-18:00
+
+    Synatx - net user username /scriptpath:path
+    Example - net user Bolt /times:M-F, 09:00-18:00
+
+    Syntax - net user username /addlocalgroup groupname
+    Example - net user Bolt /times:M-F, 09:00-18:00
+
+    Syntax - net user username /removelocalgroup groupname
+    Example - net user Bolt /times:M-F, 09:00-18:00
+
+    Syntax - net user username /domain
+    Example - net user Bolt /times:M-F, 09:00-18:00
 
 ### 4.9 To view list of available groups
     Description -
