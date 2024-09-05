@@ -452,6 +452,9 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     Syntax - net user [username]
     Example - net user ramesh
 ![Screenshot (529)](https://github.com/user-attachments/assets/60cff8d4-82ea-4c77-8e30-c160af16c9ee)
+
+
+
 ### 4.8 adding comment to the user
     Description -
 
@@ -459,6 +462,9 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     Example - net user ramesh /comment:"This is another user account for learning purposes"
 ![Screenshot (535)](https://github.com/user-attachments/assets/092a1129-eac9-4a17-85ff-4eb87ef51c29)
 ![Screenshot (536)](https://github.com/user-attachments/assets/606a9b63-3455-4e3a-af4f-38d1d98a947f)
+
+### More user related commands
+    net user 
 
 ### 4.9 To view list of available groups
     Description -
