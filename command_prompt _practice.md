@@ -494,6 +494,10 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
 ![Screenshot (581)](https://github.com/user-attachments/assets/e08c78e5-0012-4c2d-85ec-4a46657ca712)
 ![Screenshot (582)](https://github.com/user-attachments/assets/5af77dee-9dec-4d56-ad50-869373413359)
 
+    Syntax - net user username /usercomment:"write here"
+    Example - net user Bolt /usercomment:"Bolt is a Team Leader"
+![Screenshot (584)](https://github.com/user-attachments/assets/dbdab7b9-6979-4f44-80ee-d9dbd802dba4)
+
     Syntax - net user username /homedir:path
     Example - net user Bolt /times:M-F, 09:00-18:00
 
