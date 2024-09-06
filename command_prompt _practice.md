@@ -260,7 +260,8 @@
 ![Screenshot (553)](https://github.com/user-attachments/assets/f7121f18-e381-453d-b45f-e9090c421c98)
 ![Screenshot (554)](https://github.com/user-attachments/assets/6e946d13-8362-4393-9f56-d512bd00dc16)
 
-    Ipconfig/all - Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces,         such as installed network adapters, or logical interfaces, such as dial-up connections.
+    Ipconfig/all - Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or 
+    logical interfaces, such as dial-up connections.
 
 ![Screenshot (555)](https://github.com/user-attachments/assets/62916a7e-68bc-4360-a121-dd6b4321b4b9)
 ![Screenshot (557)](https://github.com/user-attachments/assets/77c6314e-393e-4a5c-a844-a2aab8332208)
@@ -372,8 +373,42 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
  ![Screenshot (565)](https://github.com/user-attachments/assets/f0c63189-0cb0-48a7-8940-9b97479c6642)
   
 ### 3.12 telnet
+    Description - 
+
+    Syntax - 
+    Example -
+
 ### 3.15 net use
-### 3.16
+    Description - 
+
+    Syntax - NET USE
+        [devicename | *] [\\computername\sharename[\volume] [password | *]]
+        [/USER:[domainname\]username]
+        [/USER:[dotted domain name\]username]
+        [/USER:[username@dotted domain name]
+        [/SMARTCARD]
+        [/SAVECRED]
+        [/REQUIREINTEGRITY]
+        [/REQUIREPRIVACY]
+        [/WRITETHROUGH]
+        [/TRANSPORT:{TCP | QUIC} [/SKIPCERTCHECK]]
+        [/REQUESTCOMPRESSION:{YES | NO}]
+        [/GLOBAL]
+        [[/DELETE] [/GLOBAL]]]
+
+        NET USE {devicename | *} [password | *] /HOME
+
+        NET USE [/PERSISTENT:{YES | NO}]
+
+    Example -
+    
+### 3.16 route
+    Description - Manipulates network routing tables.Displays and modifies the network routing table.
+
+    Syntax - ROUTE [-f] [-p] [-4|-6] command [destination]
+                  [MASK netmask]  [gateway] [METRIC metric]  [IF interface]
+    Example - route print (prints the list of All Interfaces and the IPv4/v6 Routing Table.)
+
 ### 3.17
 ### 3.18
 ### 3.19
