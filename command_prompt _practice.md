@@ -373,10 +373,12 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
  ![Screenshot (565)](https://github.com/user-attachments/assets/f0c63189-0cb0-48a7-8940-9b97479c6642)
   
 ### 3.12 telnet
-    Description - 
+    Description - Allows you to connect to remote computers via the Telnet protocol. (Note: Telnet client needs to be enabled in Windows features)
 
-    Syntax - 
-    Example -
+    Syntax - telnet [-a][-e escape char][-f log file][-l user][-t term][host [port]]
+    Example - telnet towel.blinkenlights.nl (connecting to the remote host(PC) that shows star war)
+
+
 
 ### 3.15 net use
     Description - 
