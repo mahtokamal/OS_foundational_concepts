@@ -409,10 +409,12 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
 
     Syntax - ROUTE [-f] [-p] [-4|-6] command [destination]
                   [MASK netmask]  [gateway] [METRIC metric]  [IF interface]
-    Example - route print (prints the list of All Interfaces and the IPv4/v6 Routing Table.)
+    Example - route print [prints the list of All Interfaces and the IPv4/v6 Routing Table.]
+
 ![Screenshot (598)](https://github.com/user-attachments/assets/8f6f85d5-6cd4-489a-a16e-ce86a8535609)
 ![Screenshot (599)](https://github.com/user-attachments/assets/3438e4f8-c7a5-4e67-addd-efd58498cb78)
 ![Screenshot (600)](https://github.com/user-attachments/assets/4ab93464-9ea5-443b-93d9-c973cbe0a76c)
+    
     Example - route print 127.* (To display the routes in the IP routing table that begin with 127, type)
 ![Screenshot (601)](https://github.com/user-attachments/assets/ca380c72-e474-4c93-9bec-2a4e8ccec3e8)
 
