@@ -378,6 +378,33 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     Syntax - telnet [-a][-e escape char][-f log file][-l user][-t term][host [port]]
     Example - telnet towel.blinkenlights.nl (connecting to the remote host(PC) that shows star war)
 
+![Screenshot (611)](https://github.com/user-attachments/assets/d885c2b4-937a-41ab-b8b7-b2820c1fcf1d)
+
+    Example - to use telnet in command prompt, we have to first turn ON the features. Goto Control Panel > Programs >  Programs and Features >
+    click on Turn Windows Features ON or OFF > check ON the Telnet Client > OK > Close.
+
+![Screenshot (605)](https://github.com/user-attachments/assets/a8371a2a-14d5-458f-b87d-a8efb87eb2a8)
+![Screenshot (606)](https://github.com/user-attachments/assets/e8189098-c370-43b7-86a6-8fc4b4d000a4)
+![Screenshot (607)](https://github.com/user-attachments/assets/fb0fa9a5-bfc8-4ed0-b4dc-e54c71333185)
+![Screenshot (608)](https://github.com/user-attachments/assets/32875c75-964b-48e8-9a6d-9359158f872f)
+![Screenshot (609)](https://github.com/user-attachments/assets/3fa173d5-aa15-4a44-b112-9c9edbe4a709)
+![Screenshot (610)](https://github.com/user-attachments/assets/5bd32922-d8fb-4425-bf76-d6fa0be8f474)
+
+    NOTE -  Syntax - telnet [target_host_name or IP] [port] 
+            Example - telnet 192.168.1.10 80
+        This will attempt to connect to IP address 192.168.1.10 on port 80 (HTTP). If the connection is successful, the port is open.
+        If the connection is successful, the screen will go blank or display specific service information (like HTTP or SSH welcome messages).
+
+        If the port is closed or blocked, you will get a connection error such as:
+        [Connecting To 192.168.1.10...Could not open connection to the host, on port 80: Connect failed]
+
+![Screenshot (613)](https://github.com/user-attachments/assets/18ba6c46-7a3a-43b5-90f5-f442461e5c87)
+![Screenshot (614)](https://github.com/user-attachments/assets/dc771435-7564-4c1d-940b-2db04c5442e4)
+![Screenshot (615)](https://github.com/user-attachments/assets/75b5d29f-5d61-48f8-ae75-4d82845374d7)
+![Screenshot (616)](https://github.com/user-attachments/assets/63b6301f-4be3-4973-993b-11a7908d3c97)
+![Screenshot (617)](https://github.com/user-attachments/assets/2196ee77-3461-49ca-9632-0c7f9f452d91)
+![Screenshot (618)](https://github.com/user-attachments/assets/df9000a7-e982-4082-a839-c8546775d892)
+
 
 
 ### 3.15 net use
