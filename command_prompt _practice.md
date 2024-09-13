@@ -649,6 +649,23 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
 ### 6.2 Taskkill
 ### 6.3 Tlist
 ### 6.4 wmic process list brief
+    wmic process where "name='notepad.exe'" delete
+### 6.5  SC (Service Control)
+    sc query "wuauserv"
+    sc stop "wuauserv"
+
+### 6.6 Net Start / Stop
+    net start "wuauserv"
+    net stop "wuauserv"
+
+### 6.7 Shutdown / Reboot
+    shutdown /r
+    shutdown /s
+
+### 6.8 PsTools (Sysinternals Suite)
+    PsList: Lists detailed information about processes.
+    PsKill: Terminates a process by name or PID.
+    PsExec: Executes processes remotely.
 
 ## 7. Disk Space Management
 
