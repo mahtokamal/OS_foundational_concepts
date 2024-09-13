@@ -647,7 +647,8 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
 ## 6. Process Management
 ### 6.1 Tasklist
 ### 6.2 Taskkill
-### 6.3 more
+### 6.3 Tlist
+### 6.4 wmic process list brief
 
 ## 7. Disk Space Management
 
