@@ -667,7 +667,10 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     PsKill: Terminates a process by name or PID.
     PsExec: Executes processes remotely.
 
+### 6.7 Perfmon
+
 ## 7. Disk Space Management
+
 
 ## 8. Other Important commands
 ### 8.1 cls
