@@ -668,6 +668,7 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     PsExec: Executes processes remotely.
 
 ### 6.7 Perfmon
+    Start Windows Reliability and Performance Monitor in a specific standalone mode.
 
 ## 7. Disk Space Management
 
