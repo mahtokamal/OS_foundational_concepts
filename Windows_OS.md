@@ -2,12 +2,12 @@
     Windows Operating System first launched around 35 years ago in 1985. Since then, many versions and editions are released as per
     requirements or business need. For example - from Windows 1.0 to today's Windows desktop versions 11 and Windows Server version
     2019.
-## 1.1. Windows History
+# 1.1. Windows History
 
-### 1.1.1 Disk Operating System
-### 1.1.2 Disk Operating System
-### 1.1.3 Disk Operating System
-### 1.1.4 Operating System Vulnerabilities
+# 1.1.1 Disk Operating System
+# 1.1.2 Disk Operating System
+# 1.1.3 Disk Operating System
+# 1.1.4 Operating System Vulnerabilities
 Since OS is a System Software that consists of millions line of codes and some code might have vulnerabilities.
 Vulnerabilities are design flaw or weakness that an attacker can take adavantage of these flaws using some tools and techniques to exploit the System. The main goal is to gain unauthorized access for malicious or illegal purposes such
 as manipulation or stealing of data, changing permission or ownerships.
@@ -46,15 +46,64 @@ Following are the some of the common Windows OS security recommendations:-
     - When a user logs in as an administrator, any program that they run will have the privileges of that account.
     - It is best to log in as a Standard User and only use the administrator password to accomplish certain tasks.
 
-## 1.2. Windows Architecture and Operations
+# 1.2. Windows Architecture and Operations
 
-## 1.3. Windows Configurations and Monitoring
+# 1.2.1 HAL (Hardware Abstraction Layers)
+![Screenshot (703)](https://github.com/user-attachments/assets/2d72a147-5eb3-4181-9543-2e267d703600)
 
-## 1.4. Windows Security
+# 1.2.2 User Mode and Kernel Mode
+![Screenshot (704)](https://github.com/user-attachments/assets/9fb627f4-ab35-4b15-91e6-ce599d08f754)
 
-# 2.0. Linux Overview
+# 1.2.3 Windows File System
+1. eXFAT
+- This is a simple file system supported by many different operating systems.
+- FAT has limitations to the number of partitions, partition sizes, and file sizes that it can address, so it is not usually used for hard drives (HDs) or solid-state drives (SSDs) anymore.
+- Both FAT16 and FAT32 are available to use, with FAT32 being the most common because it has many fewer restrictions than FAT16.
 
-# 3.0. Mobile Device Connectivity
+2. Hierarchicsl File System (HFS+)
+- This file system is used on MAC OS X computers and allows much longer filenames, file sizes, and partition sizes than previous file systems.
+- Although it is not supported by Windows without special software, Windows is able to read data from HFS+ partitions.
 
-# 4.0. Mobile Operating Systems and Security
+3. Extended Files System (EXT)
+- This file system is used with Linux-based computers.
+- Although it is not supported by Windows, Windows is able to read data from EXT partitions with special software.
+
+4. New Technology File System (NTFS)
+This is the most commonly used file system when installing Windo NTFS also tracks many time stamps to track file activity. Sometimes referred to as MACE, the timestamps Modify, Access, Create, and Entry Modified are often used in forensic investigations to determine the history of a file or folder. NTFS also supports file system encryption to secure the entire storage media.ws. All versions of Windows and Linux support NTFS.
+Mac-OS X computers can only read an NTFS partition. They are able to write to an NTFS partition after installing special drivers.
+
+
+**NTFS Features:**
+1. NTFS supports very large files and partitions and it is very compatible with other operating systems.
+2. NTFS is also very reliable and supports recovery features.
+3. it supports many security features. Data access control is achieved through security descriptors. These security descriptors contain file ownership and permissions all the way down to the file level.
+4. These security descriptors contain file ownership and permissions all the way down to the file level. NTFS also tracks many time stamps to track file activity. Sometimes referred to as MACE, the timestamps Modify, Access, Create, and Entry Modified are often used in forensic investigations to determine the history of a file or folder.
+5. NTFS also supports file system encryption to secure the entire storage media.
+
+
+NTFS formatting creates important structures on the disk for file storage, and tables for recording the locations of files:
+
+**Partition Boot Sector** - This is the first 16 sectors of the drive. It contains the location of the Master File Table (MFT). The last 16 sectors contain a copy of the boot sector.
+**Master File Table (MFT)** - This table contains the locations of all the files and directories on the partition, including file attributes such as security information and timestamps.
+**System Files** - These are hidden files that store information about other volumes and file attributes.
+**File Area** - The main area of the partition where files and directories are stored.
+**Note:** When formatting a partition, the previous data may still be recoverable because not all the data is completely removed. The free space can be examined, and files can be retrieved which can compromise security. It is recommended to perform a secure wipe on a drive that is being reused. The secure wipe will write data to the entire drive multiple times to ensure there is no remaining data.
+
+# 1.2.4 Aternat Data Streams (ADS)
+NTFS stores files as a series of attributes, such as the name of the file, or a timestamp. The data which the file contains is stored in the attribute $DATA, and is known as a data stream. By using NTFS, you can connect Alternate Data Streams (ADSs) to the file. This is sometimes used by applications that are storing additional information about the file. The ADS is an important factor when discussing malware. This is because it is easy to hide data in an ADS. An attacker could store malicious code within an ADS that can then be called from a different file.
+
+In the NTFS file system, a file with an ADS is identified after the filename and a colon, for example, Testfile.txt:ADS. This filename indicates an ADS called ADS is associated with the file called Testfile.txt. An example of ADS is shown in the command output.
+
+![Screenshot (705)](https://github.com/user-attachments/assets/78242cad-4039-49a5-834a-992c19bd6d8f)
+
+In the output:
+- The first command places the text “Alternate Data Here” into an ADS of the file Testfile.txt called “ADS”.
+- After that, dir, shows that the file was created, but the ADS is not visible.
+- The next command shows that there is data in the Testfile.txt:ADS data stream.
+- The last command shows the ADS of the Testfile.txt file because the r switch was used with the dir command.
+
+# 1.3. Windows Configurations and Monitoring
+
+# 1.4. Windows Security
+
 
