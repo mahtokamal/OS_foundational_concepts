@@ -1,7 +1,5 @@
 # 1.0. Windows Background & Versions History
-    Windows Operating System first launched around 35 years ago in 1985. Since then, many versions and editions are released as per
-    requirements or business need. For example - from Windows 1.0 to today's Windows desktop versions 11 and Windows Server version
-    2019.
+Windows Operating System first launched around 35 years ago in 1985. Since then, many versions and editions are released as per requirements or business need. For example - from Windows 1.0 to today's Windows desktop versions 11 and Windows Server version 2019.
 # 1.1. Windows History
 
 # 1.1.1 Disk Operating System
@@ -83,10 +81,11 @@ Mac-OS X computers can only read an NTFS partition. They are able to write to an
 
 NTFS formatting creates important structures on the disk for file storage, and tables for recording the locations of files:
 
-**Partition Boot Sector** - This is the first 16 sectors of the drive. It contains the location of the Master File Table (MFT). The last 16 sectors contain a copy of the boot sector.
-**Master File Table (MFT)** - This table contains the locations of all the files and directories on the partition, including file attributes such as security information and timestamps.
-**System Files** - These are hidden files that store information about other volumes and file attributes.
-**File Area** - The main area of the partition where files and directories are stored.
+- **Partition Boot Sector** - This is the first 16 sectors of the drive. It contains the location of the Master File Table (MFT). The last 16 sectors contain a copy of the boot sector.
+- **Master File Table (MFT)** - This table contains the locations of all the files and directories on the partition, including file attributes such as security information and timestamps.
+- **System Files** - These are hidden files that store information about other volumes and file attributes.
+- **File Area** - The main area of the partition where files and directories are stored.
+
 **Note:** When formatting a partition, the previous data may still be recoverable because not all the data is completely removed. The free space can be examined, and files can be retrieved which can compromise security. It is recommended to perform a secure wipe on a drive that is being reused. The secure wipe will write data to the entire drive multiple times to ensure there is no remaining data.
 
 # 1.2.4 Aternate Data Streams (ADS)
@@ -116,18 +115,23 @@ The Msconfig tool opens the System Configuration window. There are five tabs whi
 
 1. General
 Three different startup types can be chosen here. Normal loads all drivers and services. Diagnostic loads only basic drivers and services. Selective allows the user to choose what to load on startup.
+![Screenshot (706)](https://github.com/user-attachments/assets/1a891afc-b4b9-452c-89fa-a770ea514f18)
 
 2. Boot
 Any installed operating system can be chosen here to start. There are also options for Safe boot, which is used to troubleshoot startup.
+![Screenshot (707)](https://github.com/user-attachments/assets/223ed78b-1c67-46a3-b371-b36d0c48f7a9)
 
 3. Services
 All the installed services are listed here so that they can be chosen to start at startup.
+![Screenshot (708)](https://github.com/user-attachments/assets/ea91d991-f604-4252-bf4b-625150a0d1e0)
 
 4. Startup
 All the applications and services that are configured to automatically begin at startup can be enabled or disabled by opening the task manager from this tab.
+![Screenshot (709)](https://github.com/user-attachments/assets/15f3d2e0-dbe4-4b98-99aa-d4c92b148e47)
 
 5. Tools
    Many common operating system tools can be launched directly from this tab.
+![Screenshot (710)](https://github.com/user-attachments/assets/452cb479-e1c1-422b-aadc-fa99e12ca59b)
 
 # 1.2.7 Windows Shutdown
 
