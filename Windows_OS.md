@@ -89,7 +89,7 @@ NTFS formatting creates important structures on the disk for file storage, and t
 **File Area** - The main area of the partition where files and directories are stored.
 **Note:** When formatting a partition, the previous data may still be recoverable because not all the data is completely removed. The free space can be examined, and files can be retrieved which can compromise security. It is recommended to perform a secure wipe on a drive that is being reused. The secure wipe will write data to the entire drive multiple times to ensure there is no remaining data.
 
-# 1.2.4 Aternat Data Streams (ADS)
+# 1.2.4 Aternate Data Streams (ADS)
 NTFS stores files as a series of attributes, such as the name of the file, or a timestamp. The data which the file contains is stored in the attribute $DATA, and is known as a data stream. By using NTFS, you can connect Alternate Data Streams (ADSs) to the file. This is sometimes used by applications that are storing additional information about the file. The ADS is an important factor when discussing malware. This is because it is easy to hide data in an ADS. An attacker could store malicious code within an ADS that can then be called from a different file.
 
 In the NTFS file system, a file with an ADS is identified after the filename and a colon, for example, Testfile.txt:ADS. This filename indicates an ADS called ADS is associated with the file called Testfile.txt. An example of ADS is shown in the command output.
@@ -101,6 +101,38 @@ In the output:
 - After that, dir, shows that the file was created, but the ADS is not visible.
 - The next command shows that there is data in the Testfile.txt:ADS data stream.
 - The last command shows the ADS of the Testfile.txt file because the r switch was used with the dir command.
+
+# 1.2.5 Windows Boot Process
+
+# 1.2.6 Windows Startup
+There are two important registry items that are used to automatically start applications and services:
+
+- **HKEY_LOCAL_MACHINE** - Several aspects of Windows configuration are stored in this key, including information about services that start with each boot.
+- **HKEY_CURRENT_USER** - Several aspects related to the logged in user are stored in this key, including information about services that start only when the user logs on to the computer.
+
+Different entries in these registry locations define which services and applications will start, as indicated by their entry type. These types include Run, RunOnce, RunServices, RunServicesOnce, and Userinit. These entries can be manually entered into the registry, but it is much safer to use the **Msconfig.exe tool**. This tool is used to view and change all of the start-up options for the computer. Use the search box to find and open the Msconfig tool.
+
+The Msconfig tool opens the System Configuration window. There are five tabs which contain the configuration options.
+
+1. General
+Three different startup types can be chosen here. Normal loads all drivers and services. Diagnostic loads only basic drivers and services. Selective allows the user to choose what to load on startup.
+
+2. Boot
+Any installed operating system can be chosen here to start. There are also options for Safe boot, which is used to troubleshoot startup.
+
+3. Services
+All the installed services are listed here so that they can be chosen to start at startup.
+
+4. Startup
+All the applications and services that are configured to automatically begin at startup can be enabled or disabled by opening the task manager from this tab.
+
+5. Tools
+   Many common operating system tools can be launched directly from this tab.
+
+# 1.2.7 Windows Shutdown
+# 1.2.8 Processes, Threads, and Services
+# 1.2.9 Memory Allocation and Handles
+# 1.2.10 The Windows Registry
 
 # 1.3. Windows Configurations and Monitoring
 
