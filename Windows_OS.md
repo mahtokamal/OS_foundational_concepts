@@ -130,6 +130,8 @@ All the applications and services that are configured to automatically begin at 
    Many common operating system tools can be launched directly from this tab.
 
 # 1.2.7 Windows Shutdown
+
+
 # 1.2.8 Processes, Threads, and Services
 # 1.2.9 Memory Allocation and Handles
 # 1.2.10 The Windows Registry
@@ -137,5 +139,7 @@ All the applications and services that are configured to automatically begin at 
 # 1.3. Windows Configurations and Monitoring
 
 # 1.4. Windows Security
+
+
 
 
