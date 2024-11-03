@@ -134,10 +134,41 @@ All the applications and services that are configured to automatically begin at 
 ![Screenshot (710)](https://github.com/user-attachments/assets/452cb479-e1c1-422b-aadc-fa99e12ca59b)
 
 # 1.2.7 Windows Shutdown
+It is always best to perform a proper shutdown to turn off the computer. Files that are left open, services that are closed out of order, and applications that hang can all be damaged if the power is turned off without first informing the operating system. The computer needs time to close each application, shut down each service, and record any configuration changes before power is lost.
+
+During shutdown, the computer will close user mode applications first, followed by kernel mode processes. If a user mode process does not respond within a certain amount of time, the OS will display notification and allow the user to wait for the application to respond, or forcibly end the process. If a kernel mode process does not respond, the shutdown will appear to hang, and it may be necessary to shut down the computer with the power button.
+
+There are several ways to shut down a Windows computer: Start menu power options, the command line command shutdown, and using Ctrl+Alt+Delete and clicking the power icon. There are three different options from which to choose when shutting down the computer:
+
+- **Shutdown** - Turns the computer off (power off).
+- **Restart**- Re-boots the computer (power off and power on).
+- **Hibernate** - Records the current state of the computer and user environment and stores it in a file. Hibernation allows users to pick up right where they left off very quickly with all their files and programs still open.
 
 
 # 1.2.8 Processes, Threads, and Services
+A Windows application is made up of processes. The application can have one or many processes dedicated to it. A process is any program that is currently executing. Each process that runs is made up of at least one thread. A thread is a part of the process that can be executed. The processor performs calculations on the thread. To configure Windows processes, search for Task Manager. The Processes tab of the Task Manager is shown in the figure.
+
+![Screenshot (712)](https://github.com/user-attachments/assets/9fca9e85-e275-4150-8d72-4a3be79d094f)
+
+All of the threads dedicated to a process are contained within the same address space. This means that these threads may not access the address space of any other process. This prevents corruption of other processes. Because Windows multitasks, multiple threads can be executed at the same time. The amount of threads that can be executed at the same time is dependent on the number of the computer’s processors.
+
+Some of the processes that Windows runs are services. These are programs that run in the background to support the operating system and applications. They can be set to start automatically when Windows boots or they can be started manually. They can also be stopped, restarted, or disabled.
+
+Services provide long-running functionality, such as wireless or access to an FTP server. To configure Windows Services, search for services. The Windows Services control panel applet is shown in the figure.
+
+![Screenshot (713)](https://github.com/user-attachments/assets/125272a4-e918-435f-9dd2-47a3dc58b3d7)
+
+Be very careful when manipulating the settings of these services. Some programs rely on one or more services to operate properly. Shutting down a service may adversely affect applications or other services.
 # 1.2.9 Memory Allocation and Handles
+A computer works by storing instructions in RAM until the CPU processes them. The virtual address space for a process is the set of virtual addresses that the process can use. The virtual address is not the actual physical location in memory, but an entry in a page table that is used to translate the virtual address into the physical address.
+
+Each process in a 32-bit Windows computer supports a virtual address space that enables addressing up to 4 gigabytes. Each process in a 64-bit Windows computer supports a virtual address space of 8 terabytes.
+
+Each user space process runs in a private address space, separate from other user space processes. When the user space process needs to access kernel resources, it must use a process handle. This is because the user space process is not allowed to directly access these kernel resources. The process handle provides the access needed by the user space process without a direct connection to it.
+
+A powerful tool for viewing memory allocation is RAMMap, which is shown in the figure. RAMMap is part of the Windows Sysinternals Suite of tools. It can be downloaded from Microsoft. RAMMap provides a wealth of information regarding how Windows has allocated system memory to the kernel, processes, drivers, and applications.
+![Screenshot (714)](https://github.com/user-attachments/assets/9b14f4e7-0efb-4b37-836c-4d275f7530c2)
+
 # 1.2.10 The Windows Registry
 
 # 1.3. Windows Configurations and Monitoring
