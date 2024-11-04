@@ -159,6 +159,10 @@ Services provide long-running functionality, such as wireless or access to an FT
 ![Screenshot (713)](https://github.com/user-attachments/assets/125272a4-e918-435f-9dd2-47a3dc58b3d7)
 
 Be very careful when manipulating the settings of these services. Some programs rely on one or more services to operate properly. Shutting down a service may adversely affect applications or other services.
+
+Program -
+Process -
+Thread -
 # 1.2.9 Memory Allocation and Handles
 A computer works by storing instructions in RAM until the CPU processes them. The virtual address space for a process is the set of virtual addresses that the process can use. The virtual address is not the actual physical location in memory, but an entry in a page table that is used to translate the virtual address into the physical address.
 
@@ -166,18 +170,26 @@ Each process in a 32-bit Windows computer supports a virtual address space that 
 
 Each user space process runs in a private address space, separate from other user space processes. When the user space process needs to access kernel resources, it must use a process handle. This is because the user space process is not allowed to directly access these kernel resources. The process handle provides the access needed by the user space process without a direct connection to it.
 
-A powerful tool for viewing memory allocation is RAMMap, which is shown in the figure. RAMMap is part of the Windows Sysinternals Suite of tools. It can be downloaded from Microsoft. RAMMap provides a wealth of information regarding how Windows has allocated system memory to the kernel, processes, drivers, and applications.
+A powerful tool for viewing memory allocation is **RAMMap**, which is shown in the figure. RAMMap is part of the Windows Sysinternals Suite of tools. It can be downloaded from Microsoft. RAMMap provides a wealth of information regarding how Windows has allocated system memory to the kernel, processes, drivers, and applications.
 ![Screenshot (714)](https://github.com/user-attachments/assets/9b14f4e7-0efb-4b37-836c-4d275f7530c2)
 
 # 1.2.10 The Windows Registry
 Windows stores all of the information about hardware, applications, users, and system settings in a **large database** known as the **registry**. The ways that these objects interact are also recorded, such as what files an application opens and all of the property details of folders and applications. The registry is a hierarchical database where the highest level is known as a **hive**, below that there are **keys**, followed by **subkeys**. Values store data and are stored in the keys and subkeys. A registry key can be up to 512 levels deep.
 
 - HEKY_CURRENT_USER (HKCU)
+  Holds information concerning the currently logged in user.
 - HKEY_USERS (HKU)
+  Holds information concerning all the user accounts on the host.
 - HKEY_CLASSES_ROOT_ (HKCR)
+  Holds information about object linking and embedding (OLE) registrations. OLE allows users to embed objects from other applications (like a spreadsheet) into a single document (like a Word document).
+- HKEY_LOCAL_MACHINE (HKLM)
+  Holds system-related information.
 - HKEY_CURRENT_CONFIG (HKCC)
+  Holds information about the current hardware profile.
 
 New hives cannot be created. The registry keys and values in the hives can be created, modified, or deleted by an account with administrative privileges. As shown in the figure, the tool **regedit.exe** is used to modify the registry. Be very careful when using this tool. Minor changes to the registry can have massive or even catastrophic effects.
+![Screenshot (715)](https://github.com/user-attachments/assets/9091da61-cdf2-4438-96cf-2a80005703f9)
+![Screenshot (716)](https://github.com/user-attachments/assets/adaebae6-0177-4ae3-97cb-b6422f56191b)
 
 Navigation in the registry is very similar to Windows file explorer. Use the left panel to navigate the hives and the structure below it and use the right panel to see the contents of the highlighted item in the left panel. With so many keys and subkeys, the key path can become very long. The path is displayed at the bottom of the window for reference. Because each key and subkey is essentially a container, the path is represented much like a folder in a file system. The backslash (∖) is used to differentiate the hierarchy of the database.
 
