@@ -170,6 +170,26 @@ A powerful tool for viewing memory allocation is RAMMap, which is shown in the f
 ![Screenshot (714)](https://github.com/user-attachments/assets/9b14f4e7-0efb-4b37-836c-4d275f7530c2)
 
 # 1.2.10 The Windows Registry
+Windows stores all of the information about hardware, applications, users, and system settings in a **large database** known as the **registry**. The ways that these objects interact are also recorded, such as what files an application opens and all of the property details of folders and applications. The registry is a hierarchical database where the highest level is known as a **hive**, below that there are **keys**, followed by **subkeys**. Values store data and are stored in the keys and subkeys. A registry key can be up to 512 levels deep.
+
+- HEKY_CURRENT_USER (HKCU)
+- HKEY_USERS (HKU)
+- HKEY_CLASSES_ROOT_ (HKCR)
+- HKEY_CURRENT_CONFIG (HKCC)
+
+New hives cannot be created. The registry keys and values in the hives can be created, modified, or deleted by an account with administrative privileges. As shown in the figure, the tool **regedit.exe** is used to modify the registry. Be very careful when using this tool. Minor changes to the registry can have massive or even catastrophic effects.
+
+Navigation in the registry is very similar to Windows file explorer. Use the left panel to navigate the hives and the structure below it and use the right panel to see the contents of the highlighted item in the left panel. With so many keys and subkeys, the key path can become very long. The path is displayed at the bottom of the window for reference. Because each key and subkey is essentially a container, the path is represented much like a folder in a file system. The backslash (∖) is used to differentiate the hierarchy of the database.
+
+Registry keys can contain either a subkey or a value. The different values that keys can contain are as follows:
+
+- REG_BINARY - Numbers or Boolean values
+- REG_DWORD - Numbers greater than 32 bits or raw data
+- REG_SZ - String values
+
+Because the registry holds almost all the operating system and user information, it is critical to make sure that it does not become compromised. Potentially malicious applications can add registry keys so that they start when the computer is started. During a normal boot, the user will not see the program start because the entry is in the registry and the application displays no windows or indication of starting when the computer boots. A keylogger, for example, would be devastating to the security of a computer if it were to start at boot without the user’s knowledge or consent. When performing normal security audits, or remediating an infected system, review the application startup locations within the registry to ensure that each item is known and safe to run.
+
+The registry also contains the activity that a user performs during normal day-to-day computer use. This includes the history of hardware devices, including all devices that have been connected to the computer including the name, manufacturer and serial number. Other information, such as what documents a user and program have opened, where they are located, and when they were accessed is stored in the registry. This is all very useful information when a forensics investigation needs to be performed.
 
 # 1.3. Windows Configurations and Monitoring
 
