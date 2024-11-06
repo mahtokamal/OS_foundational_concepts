@@ -204,6 +204,20 @@ Because the registry holds almost all the operating system and user information,
 The registry also contains the activity that a user performs during normal day-to-day computer use. This includes the history of hardware devices, including all devices that have been connected to the computer including the name, manufacturer and serial number. Other information, such as what documents a user and program have opened, where they are located, and when they were accessed is stored in the registry. This is all very useful information when a forensics investigation needs to be performed.
 
 # 1.3. Windows Configurations and Monitoring
+# 1.3.1 Run as Administrsator
+As a security best practice, it is not advisable to log on to Windows using the Administrator account or an account with administrative privileges. This is because any program that is executed while logged on with those privileges will inherit administrative privileges. Malware that has administrative privileges has full access to all the files and folders on the computer.
+
+Sometimes, it is necessary to run or install software that requires the privileges of the Administrator. To accomplish this, there are two different ways to install it.
+
+- **Administrator** -
+  Right-click the command in the Windows File Explorer and choose Run as Administrator from the Context Menu.
+
+![Screenshot (717)](https://github.com/user-attachments/assets/e552ec0f-64c3-4536-a4fc-76a72bd0cd13)
+
+- **Administrator Command Prompt** -
+  Search for command, right-click the executable file, and choose Run as Administrator from the Context Menu. Every command that is executed from this command line will be carried out with the Administrator privileges, including installation of software.
+  
+![Screenshot (718)](https://github.com/user-attachments/assets/e9a5ea64-e003-4011-b887-72b589454a93)
 
 # 1.4. Windows Security
 
