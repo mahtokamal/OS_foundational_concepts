@@ -219,6 +219,16 @@ Sometimes, it is necessary to run or install software that requires the privileg
   
 ![Screenshot (718)](https://github.com/user-attachments/assets/e9a5ea64-e003-4011-b887-72b589454a93)
 
+# 1.3.2 Local Users and Domains
+# 1.3.3 CLI and PowerShell
+# 1.3.4 Windows Management Intruementations
+# 1.3.5 The net Command
+# 1.3.6 Task Manager and Resource Monitor
+# 1.3.7 Networking
+# 1.3.8 Accessing Network Resources
+# 1.3.9 Windows Server
+
+
 # 1.4. Windows Security
 
 
