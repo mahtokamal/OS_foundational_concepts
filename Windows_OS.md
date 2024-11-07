@@ -220,6 +220,17 @@ Sometimes, it is necessary to run or install software that requires the privileg
 ![Screenshot (718)](https://github.com/user-attachments/assets/e9a5ea64-e003-4011-b887-72b589454a93)
 
 # 1.3.2 Local Users and Domains
+When you start a new computer for the first time, or you install Windows, you will be prompted to create a user account. This is known as a local user. This account will contain all of your customization settings, access permissions, file locations, and many other user-specific data. There are also two other accounts that are present, the guest, and the administrator. Both of these accounts are disabled by default.
+
+As a security best practice, do not enable the Administrator account and do not give standard users administrative privileges. If a user needs to perform any function that requires administrative privileges, the system will ask for the Administrator password and allow only that task to be performed as an administrator. Requiring the administrator password protects the computer by preventing any software that is not authorized from installing, executing, or accessing files.
+
+The Guests account should not be enabled. The guest account does not have a password associated with it because it is created when a computer is going to be used by many different people who do not have accounts on the computer. Each time the guest account logs on, a default environment is provided to them with limited privileges.
+
+To make administration of users easier, Windows uses groups. A group will have a name and a specific set of permissions associated with it. When a user is placed into a group, the permissions of that group are given to that user. A user can be placed into multiple groups to be provided with many different permissions. When the permissions overlap, certain permissions, like “explicitly deny” will override the permission provided by a different group. There are many different user groups built into Windows that are used for specific tasks. For example, the Performance Log Users group allows members to schedule logging of performance counters and collect logs either locally or remotely. Local users and groups are managed with the lusrmgr.msc control panel applet, as shown in the figure.
+
+
+
+In addition to groups, Windows can also use domains to set permissions. A domain is a type of network service where all of the users, groups, computers, peripherals, and security settings are stored on and controlled by a database. This database is stored on special computers or groups of computers called domain controllers (DCs). Each user and computer on the domain must authenticate against the DC to logon and access network resources. The security settings for each user and each computer are set by the DC for each session. Any setting supplied by the DC defaults to the local computer or user account setting.
 # 1.3.3 CLI and PowerShell
 # 1.3.4 Windows Management Intruementations
 # 1.3.5 The net Command
