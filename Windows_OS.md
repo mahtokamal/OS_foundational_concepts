@@ -232,6 +232,38 @@ To make administration of users easier, Windows uses groups. A group will have a
 
 In addition to groups, Windows can also use domains to set permissions. A domain is a type of network service where all of the users, groups, computers, peripherals, and security settings are stored on and controlled by a database. This database is stored on special computers or groups of computers called domain controllers (DCs). Each user and computer on the domain must authenticate against the DC to logon and access network resources. The security settings for each user and each computer are set by the DC for each session. Any setting supplied by the DC defaults to the local computer or user account setting.
 # 1.3.3 CLI and PowerShell
+
+The Windows command line interface (CLI) can be used to run programs, navigate the file system, and manage files and folders. In addition, files called batch files can be created to execute multiple commands in succession, much like a basic script.
+
+To open the Windows CLI, search for cmd.exe and click the program. Remember that right-clicking the program provides the option to Run as administrator, giving much more power to the commands that will be used.
+
+The prompt displays the current location within the file system. These are a few things to remember when using the CLI:
+
+The file names and paths are not case-sensitive, by default.
+Storage devices are assigned a letter for reference. The drive letter is followed by a colon and backslash (∖). This indicates the root, or highest level, of the device. Folder and file hierarchy on the device is indicated by separating them with the backslash. For example, the path C:∖Users∖Jim∖Desktop∖file.txt refers to a file called file.txt that is in the Desktop folder within the Jim folder within the Users folder at the root of drive C:.
+Commands that have optional switches use the forward slash (/) to delineate between the command and the switch option.
+You can use the Tab key to auto-complete commands when directories or files are referenced.
+Windows keeps a history of the commands that were entered during a CLI session. Access previously entered commands by using the up and down arrow keys.
+To switch between storage devices, type the letter of the device, followed by a colon, and then press Enter.
+Even though the CLI has many commands and features, it cannot work together with the core of Windows or the GUI. Another environment, called the Windows PowerShell, can be used to create scripts to automate tasks that the regular CLI is unable to create. PowerShell also provides a CLI for initiating commands. PowerShell is an integrated program within Windows and can be opened by searching for “powershell” and clicking the program. Like the CLI, PowerShell can also be run with administrative privileges.
+
+These are the types of commands that PowerShell can execute:
+
+- cmdlets - These commands perform an action and return an output or object to the next command that will be executed.
+- PowerShell scripts - These are files with a .ps1 extension that contain PowerShell commands that are executed.
+- PowerShell functions - These are pieces of code that can be referenced in a script.
+
+To see more information about Windows PowerShell and get started using it, type help in PowerShell, as shown in the command output.
+
+![Screenshot (719)](https://github.com/user-attachments/assets/a634939a-a409-4862-9dd8-a6a617e3f517)
+
+There are four levels of help in Windows PowerShell:
+
+get-help PS command - Displays basic help for a command
+get-help PS command [-examples] - Displays basic help for a command with examples
+get-help PS command [-detailed] - Displays detailed help for a command with examples
+get-help PS command [-full] - Displays all help information for a command with examples in greater depth
+
 # 1.3.4 Windows Management Intruementations
 # 1.3.5 The net Command
 # 1.3.6 Task Manager and Resource Monitor
