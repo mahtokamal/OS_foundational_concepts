@@ -318,7 +318,127 @@ To see a list of the many net commands, type net help at the command prompt. The
 
 # 1.3.6 Task Manager and Resource Monitor
 
+There are two very important and useful tools to help an administrator to understand the many different applications, services, and processes that are running on a Windows computer. These tools also provide insight into the performance of the computer, such as CPU, memory, and network usage. These tools are especially useful when investigating a problem where malware is suspected. When a component is not performing the way that it should be, these tools can be used to determine what the problem might be.
+
+**Task Manager**
+
+The Task Manager, which is shown in the figure, provides a lot of information about the software that is running and the general performance of the computer.
+
+![f0926290-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/74b2a010-a2e1-41e9-99eb-53e8db977ea9)
+
+Processes
+
+- Lists all of the programs and processes that are currently running.
+- Displays the CPU, memory, disk, and network utilization of each process.
+- The properties of a process can be examined or ended if it is not behaving properly or has stalled.
+
+Performance
+
+- A view of all the performance statistics provides a useful overview of the CPU, memory, disk, and network performance.
+- Clicking each item in the left pane will show detailed statistics of that item in the right pane.
+
+App history
+
+- The use of resources by application over time provides insight into applications that are consuming more resources than they should.
+- Click Options and Show history for all processes to see the history of every process that has run since the computer was started.
+
+Startup
+
+- All of the applications and services that start when the computer is booted are shown in this tab.
+- To disable a program from starting at startup, right-click the item and choose Disable
+
+Users
+
+- All of the users that are logged on to the computer are shown in this tab.
+- Also shown are all the resources that each user’s applications and processes are using.
+- From this tab, an administrator can disconnect a user from the computer.
+
+Details
+
+- Similar to the Processes tab, this tab provides additional management options for processes such as setting a priority to make the processor devote more or less time to a process.
+- CPU affinity can also be set which determines which core or CPU a program will use.
+- Also, a useful feature called Analyze wait chain shows any process for which another process is waiting.
+- This feature helps to determine if a process is simply waiting or is stalled.
+
+Services
+
+- All the services that are loaded are shown in this tab.
+- The process ID (PID) and a short description are also shown along with the status of either Running or Stopped.
+- At the bottom, there is a button to open the Services console which provides additional management of services.
+
+**Resource Monitor**
+
+When more detailed information about resource usage is needed, you can use the Resource Monitor, as shown in the figure.
+
+![f0948570-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/f842e807-9acc-4a7b-8c0c-75012cfef815)
+
+When searching for the reason a computer may be acting erratically, the Resource Monitor can help to find the source of the problem.
+
+**The table describes the five tabs of the Resource Monitor.**
+
+Overview
+
+- The tab displays the general usage for each resource.
+- If you select a single process, it will be filtered across all of the tabs to show only that process’s statistics.
+
+CPU
+
+- The PID, number of threads, which CPU the process is using, and the average CPU usage of each process is shown.
+- Additional information about any services that the process relies on, and the associated handles and modules can be seen by expanding the lower rows.
+
+Memory
+
+- All of the statistical information about how each process uses memory is shown in this tab.
+- Also, an overview of usage of all the RAM is shown below the Processes row.
+
+Disk
+
+- All of the processes that are using a disk are shown in this tab, with read/write statistics and an overview of each storage device.
+
+Network
+
+- All of the processes that are using the network are shown in this tab, with read/write statistics.
+- Most importantly, the current TCP connections are shown, along with all of the ports that are listening.
+- This tab is very useful when trying to determine which applications and processes are communicating over the network.
+- It makes it possible to tell if an unauthorized process is accessing the network, listening for a communication, and the address with which it is communicating.
+
+
 # 1.3.7 Networking
+
+One of the most important features of any operating system is the ability for the computer to connect to a network. Without this feature, there is no access to network resources or the internet. To configure Windows networking properties and test networking settings, the Network and Sharing Center is used. The easiest way to run this tool is to search for it and click it. Use the Network and Sharing Center to verify or create network connections, configure network sharing, and change network adapter settings.
+
+**Network and Sharing Center**
+
+![f0968140-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/79916749-fbd8-4fc7-a1ab-7a8119a817dc)
+
+
+**Change Adapter Settings**
+
+To configure a network adapter, choose Change adapter settings in the Networking and Sharing Center to show all of the network connections that are available. Select the adapter that you want to configure. In this case, we change an Ethernet adapter to acquire its IPv4 address automatically from the network.
+
+Access Adapter Properties
+
+Right-click the adapter you wish to configure and choose Properties, as shown in the figure.
+
+![f099dca0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/9e5c7ccd-3a40-44e6-b8ee-d1a071f26c65)
+
+Access TCP/IPV4 Properties
+
+This connection uses the following items: Internet Protocol Version 4 (TCP/IPv4) or Internet Protocol Version 6 (TCP/IPv6) depending on which version you wish to use. In the figure, IPv4 is being selected.
+
+![f09b8a50-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/81a5313f-9077-4211-80bc-1c35d6769a36)
+
+Change Settings
+
+Click Properties to configure the adapter. In the Properties dialogue box, shown in the figure, you can choose to Obtain an address automatically if there is a DHCP server available on the network. If you wish to configure addressing manually, you can fill in the address, subnet, default gateway, and DNS servers to configure the adapter. Click OK to accept the changes. You can also use the netsh.exe tool to configure networking parameters from a command prompt. This program can display and modify the network configuration. Type netsh /? at the command prompt to see a list of all the switches that can be used with this command.
+
+![f09b8a50-a1fb-11ea-bb42-49e522ad4be8 (1)](https://github.com/user-attachments/assets/22ed856e-3ca8-44b0-8fc2-9a6e9b9a7be6)
+
+**nslookup and netstat**
+
+Domain Name System (DNS) should also be tested because it is essential to finding the address of hosts by translating it from a name, such as a URL. Use the nslookup command to test DNS. Type nslookup cisco.com at the command prompt to find the address of the Cisco webserver. When the address is returned, you know that DNS is functioning correctly. You can also check to see what ports are open, where they are connected, and what their current status is. Type netstat at the command line to see details of active network connections, as shown in the command output. The netstat command will be examined further later in this module
+
+![Screenshot (722)](https://github.com/user-attachments/assets/75fb46b1-6fb4-4826-97c2-8050fd1cda61)
 
 # 1.3.8 Accessing Network Resources
 
