@@ -265,7 +265,22 @@ get-help PS command [-detailed] - Displays detailed help for a command with exam
 get-help PS command [-full] - Displays all help information for a command with examples in greater depth
 
 # 1.3.4 Windows Management Intruementations
+Windows Management Instrumentation (WMI) is used to manage remote computers. It can retrieve information about computer components, hardware and software statistics, and monitor the health of remote computers. To open the WMI control from the Control Panel, double-click Administrative Tools > Computer Management to open the Computer Management window, expand the Services and Applications tree and right-click the WMI Control icon > Properties.
+
+The WMI Control Properties window is shown in the figure.
+![f08e9200-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/eb930a16-1d5d-440d-ae78-44e3d795ccd3)
+
+These are the four tabs in the WMI Control Properties window:
+
+- **General** - Summary information about the local computer and WMI
+- **Backup/Restore** - Allows manual backup of statistics gathered by WMI
+- **Security** - Settings to configure who has access to different WMI statistics
+- **Advanced** - Settings to configure the default namespace for WMI
+
+Some attacks today use WMI to connect to remote systems, modify the registry, and run commands. WMI helps them to avoid detection because it is common traffic, most often trusted by the network security devices and the remote WMI commands do not usually leave evidence on the remote host. Because of this, WMI access should be strictly limited.
+
 # 1.3.5 The net Command
+
 # 1.3.6 Task Manager and Resource Monitor
 # 1.3.7 Networking
 # 1.3.8 Accessing Network Resources
