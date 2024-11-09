@@ -268,6 +268,7 @@ get-help PS command [-full] - Displays all help information for a command with e
 Windows Management Instrumentation (WMI) is used to manage remote computers. It can retrieve information about computer components, hardware and software statistics, and monitor the health of remote computers. To open the WMI control from the Control Panel, double-click Administrative Tools > Computer Management to open the Computer Management window, expand the Services and Applications tree and right-click the WMI Control icon > Properties.
 
 The WMI Control Properties window is shown in the figure.
+
 ![f08e9200-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/eb930a16-1d5d-440d-ae78-44e3d795ccd3)
 
 These are the four tabs in the WMI Control Properties window:
@@ -281,9 +282,46 @@ Some attacks today use WMI to connect to remote systems, modify the registry, an
 
 # 1.3.5 The net Command
 
+Windows has many commands that can be entered at the command line. One important command is the net command, which is used in the administration and maintenance of the OS. The net command supports many subcommands that follow the net command and can be combined with switches to focus on specific output.
+
+To see a list of the many net commands, type net help at the command prompt. The command output shows the commands that the net command can use. To see verbose help about any of the net commands, type C:∖> net help ,as shown below.
+
+![Screenshot (721)](https://github.com/user-attachments/assets/4f5e5fd8-013f-4f59-a382-dac143134e60)
+
+- net accounts
+
+  Sets password and logon requirements for users
+
+- net session
+  
+  Lists or disconnects sessions between a computer and other computers on the network
+
+- net share
+  
+  Creates, removes, or manages shared resources
+
+- net start
+  
+  Starts a network service or lists running network services
+
+- net stop
+
+  Stops a network service
+
+- net use
+
+  Connects, disconnects, and displays information about shared network resources
+
+- net view
+
+  Shows a list of computers and network devices on the network
+
 # 1.3.6 Task Manager and Resource Monitor
+
 # 1.3.7 Networking
+
 # 1.3.8 Accessing Network Resources
+
 # 1.3.9 Windows Server
 
 
