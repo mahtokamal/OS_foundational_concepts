@@ -442,8 +442,37 @@ Domain Name System (DNS) should also be tested because it is essential to findin
 
 # 1.3.8 Accessing Network Resources
 
+Like other operating systems, Windows uses networking for many different applications such as web, email, and file services. Originally developed by IBM, Microsoft aided in the development of the Server Message Block (SMB) protocol to share network resources. SMB is mostly used for accessing files on remote hosts. The Universal Naming Convention (UNC) format is used to connect to resources, for example:
+
+**∖∖servername∖sharename∖file**
+
+In the UNC, servername is the server that is hosting the resource. This can be a DNS name, a NetBIOS name, or simply an IP address. The sharename is the root of the folder in the file system on the remote host, while the file is the resource that the local host is trying to find. The file may be deeper within the file system and this hierarchy will need to be indicated.
+
+When sharing resources on the network, the area of the file system that will be shared will need to be identified. Access control can be applied to the folders and files to restrict users and groups to specific functions such as read, write, or deny. There are also special shares that are automatically created by Windows. These shares are called administrative shares. An administrative share is identified by the dollar sign ($) that comes after the share name. Each disk volume has an administrative share, represented by the volume letter and the $ such as C$, D$, or E$. The Windows installation folder is shared as admin$, the printers’ folder is shared as print$, and there are other administrative shares that can be connected. Only users with administrative privileges can access these shares.
+
+The easiest way to connect to a share is to type the UNC of the share into the Windows File Explorer, in the box at the top of the screen which shows the breadcrumb listing of the current file system location. When Windows tries to connect to the share, you will be asked to provide credentials for accessing the resource. Remember that because the resource is on a remote computer, the credentials need to be for the remote computer, not the local computer.
+
+Besides accessing shares on remote hosts, you can also log in to a remote host and manipulate that computer, as if it were local, to make configuration changes, install software, or troubleshoot an issue. In Windows, this feature uses the Remote Desktop Protocol (RDP). When investigating security incidents, a security analyst uses RDP often to access remote computers. To start RDP and connect to a remote computer, search for remote desktop and click the application. The Remote Desktop Connection window is shown in the figure.
+
+Because RDP is designed to permit remote users to control individual hosts, it is a natural target for threat actors. Care should be taken when activating RDP, especially on unpatched legacy versions of Windows such as those that are still found in industrial control systems. Care should be taken to limit the exposure of RDP to the internet, and security approaches and access control policies, such as Zero Trust, should be used to limit access to internal hosts.
+
+![f09f33d0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/7982375a-f053-4e2e-9114-899c9dadc171)
+
 # 1.3.9 Windows Server
 
+Most Windows installations are performed as desktop installations on desktops and laptops. There is another edition of Windows that is mainly used in data centers called Windows Server. This is a family of Microsoft products that began with Windows Server 2003. Windows Server hosts many different services and can fulfill different roles within a company.
+
+**Note:** Although there is a Windows Server 2000, it is considered a client version of Windows NT 5.0. Windows Server 2003 is a server based on NT 5.2 and begins a new family of Windows Server versions.
+
+These are some of the services that Windows Server provides:
+
+- **Network Services** - DNS, DHCP, Terminal services, Network Controller, and Hyper-V Network virtualization
+
+- **File Services** - SMB, NFS, and DFS
+
+- **Web Services** - FTP, HTTP, and HTTPS
+
+- **Management** - Group policy and Active Directory domain services control
 
 # 1.4. Windows Security
 
