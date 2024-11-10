@@ -476,6 +476,13 @@ These are some of the services that Windows Server provides:
 
 # 1.4. Windows Security
 
+# 1.4.1 The netstat Command
+# 1.4.2 Event Viewer
+# 1.4.3 Windows Update Management
+# 1.4.4 Local Security Policy
+# 1.4.5 Windows Defender
+# 1.4.6 Windows Defender Firewall
+
 
 
 
