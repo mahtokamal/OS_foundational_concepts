@@ -475,14 +475,97 @@ These are some of the services that Windows Server provides:
 - **Management** - Group policy and Active Directory domain services control
 
 # 1.4. Windows Security
-
 # 1.4.1 The netstat Command
+
+When malware is present in a computer, it will often open communication ports on the host to send and receive data. The netstat command can be used to look for inbound or outbound connections that are not authorized. When used on its own, the netstat command will display all of the active TCP connections.
+
+By examining these connections, it is possible to determine which of the programs are listening for connections that are not authorized. When a program is suspected of being malware, a little research can be performed to determine its legitimacy. From there, the process can be shut down with Task Manager, and malware removal software can be used to clean the computer.
+
+To make this process easier, you can link the connections to the running processes that created them in Task Manager. To do this, open a command prompt with administrative privileges and enter the netstat -abno command, as shown in the command output.
+
+![Screenshot (723)](https://github.com/user-attachments/assets/7b6c2696-84a7-47e1-a324-3b90a9448ca7)
+
+Note: If you are not in administrator mode, a “The requested operation requires elevation” message will appear. Search for Command Prompt. Right-click on Command Prompt and chose Run as administrator.
+
+By examining the active TCP connections, an analyst should be able to determine if there are any suspicious programs that are listening for incoming connections on the host. You can also trace that process to the Windows Task Manager and cancel the process. There may be more than one process listed with the same name. If this is the case, use the PID to find the correct process. Each process running on the computer has a unique PID. To display the PIDs for the processes in the Task Manager, open the Task Manager, right-click the table heading and select PID.
+
 # 1.4.2 Event Viewer
+
+Windows Event Viewer logs the history of application, security, and system events. These log files are a valuable troubleshooting tool because they provide information necessary to identify a problem. To open the Event Viewer, search for it and click the program icon, as shown in the figure.
+
+![f0a59c70-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/bff8cf20-b397-4ebb-a281-64f41371c1e2)
+
+Windows includes two categories of event logs: Windows Logs, and Application and Services Logs. Each of these categories has multiple log types. Events that are displayed in these logs have a level: information, warning, error, or critical. They also have the date and time that the event occurred, along with the source of the event and an ID which relates to that type of event.
+
+It is also possible to create a custom view. This is useful when looking for certain types of events, finding events that happened during a certain time period, displaying events of a certain level, and many other criteria. There is a built-in custom view called Administrative Events that shows all critical, error, and warning events from all of the administrative logs. This is a good view to start with when trying to troubleshoot a problem.
+
+Security event logs are found under Windows Logs. They use event IDs to identify the type of event.
+
 # 1.4.3 Windows Update Management
+
+No software is perfect, and the Windows operating system is no exception. Attackers are constantly coming up with new ways to compromise computers and exploit bad code. Some of these attacks come so quickly that defenses against them have not yet been devised and distributed. These are called zero-day exploits. Microsoft and security software developers are always trying to stay ahead of the attackers, but they are not always successful. To ensure the highest level of protection against these attacks, always make sure Windows is up to date with the latest service packs and security patches.
+
+Patches are code updates that manufacturers provide to prevent a newly discovered virus or worm from making a successful attack. From time to time, manufacturers combine patches and upgrades into a comprehensive update application called a service pack. Many devastating virus attacks could have been much less severe if more users had downloaded and installed the latest service pack. It is highly desirable that enterprises utilize systems that automatically distribute, install, and track security updates.
+
+Windows routinely checks the Windows Update website for high-priority updates that can help protect a computer from the latest security threats. These updates include security updates, critical updates, and service packs. Depending on the setting you choose, Windows automatically downloads and installs any high-priority updates that your computer needs or notifies you as these updates become available. To configure the settings for Windows update, search for Windows Update and click the application.
+
+Update status, shown in the figure, allows you to check for updates manually and see the update history of the computer.
+
+![f0a7e660-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/5e64a0aa-4038-4411-9b45-b98e9a4bd883)
+
+There are also settings for the hours where the computer will not automatically restart, for example during regular business hours. You can also choose when to restart the computer after an update, if necessary, with the Restart options. Advanced options are also available to choose how updates are installed how other Microsoft products are updated.
+
 # 1.4.4 Local Security Policy
+
+A security policy is a set of objectives that ensures the security of a network, the data, and the computer systems in an organization. The security policy is a constantly evolving document based on changes in technology, business, and employee requirements.
+
+In most networks that use Windows computers, Active Directory is configured with Domains on a Windows Server. Windows computers join the domain. The administrator configures a Domain Security Policy that applies to all computers that join the domain. Account policies are automatically set when a user logs in to a computer that is a member of a domain. Windows Local Security Policy, shown in the figure, can be used for stand-alone computers that are not part of an Active Directory domain. To open the Local Security Policy applet, search for Local Security Policy and click the program.
+
+![f0aaa580-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/291817eb-9a62-441a-8334-77b011daaf16)
+
+Password guidelines are an important component of a security policy. Any user that must log on to a computer or connect to a network resource should be required to have a password. Passwords help prevent theft of data and malicious acts. Passwords also help to confirm that the logging of events is valid by ensuring that the user is the person that they say they are. In the Local Security Policy, Password Policy is found under Account Policies and defines the criteria for the passwords for all of the users on the local computer.
+
+Use the Account Lockout Policy in Account Policies to prevent brute-force login attempts. For example, you can set the policy to allow the user to enter a wrong username and/or password five times. After five attempts, the account is locked for 30 minutes. After 30 minutes, the number of attempts is reset to zero and the user can attempt to login again.
+
+It is important to make sure that computers are secure when users are away. A security policy should contain a rule about requiring a computer to lock when the screensaver starts. This will ensure that after a short time away from the computer, the screen saver will start and then the computer cannot be used until the user logs in.
+
+If the Local Security Policy on every stand-alone computer is the same, then use the Export Policy feature. Save the policy with a name, such as workstation.inf. Copy the policy file to an external media or network drive to use on other stand-alone computers. This is particularly helpful if the administrator needs to configure extensive local policies for user rights and security options.
+
+The Local Security Policy applet contains many other security settings that apply specifically to the local computer. You can configure User Rights, Firewall Rules, and even the ability to restrict the files that users or groups are allowed to run with the AppLocker.
+
 # 1.4.5 Windows Defender
+
+Malware includes viruses, worms, Trojan horses, keyloggers, spyware, and adware. These are designed to invade privacy, steal information, damage the computer, or corrupt data. It is important that you protect computers and mobile devices using reputable antimalware software. The following types of antimalware programs are available:
+
+- **Antivirus Protection:**
+  This program continuously monitors for viruses. When a virus is detected, the user is warned, and the program attempts to quarantine or delete the virus.
+- **Adware Protection:**
+  This program continuously looks for programs that display advertising on your computer.
+- **Phising Protection:**
+  This program blocks the IP addresses of known phishing websites and warns the user about suspicious sites.
+- **Spyware Protection:**
+  This program scans for keyloggers and other spyware.
+- **Trusted / untrusted Source:**
+  This program warns you about unsafe programs about to be installed or unsafe websites before they are visited.
+
+It may take several different programs and multiple scans to completely remove all malicious software. Run only one malware protection program at a time.
+
+Several reputable security organizations such as McAfee, Symantec, and Kaspersky offer all-inclusive malware protection for computers and mobile devices. Windows has built-in virus and spyware protection called Windows Defender, as shown in the figure. Windows Defender is turned on by default to provide real-time protection against infection.
+
+![f2476590-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/8b39ce61-5f77-4d93-b21c-b8bb4ccbc392)
+
+To open Windows Defender, search for it and click the program. Although Windows Defender works in the background, you can perform manual scans of the computer and storage devices. You can also manually update the virus and spyware definitions in the Update tab. Also, to see all of the items that were found during previous scans, click the History tab.
+
 # 1.4.6 Windows Defender Firewall
 
+A firewall selectively denies traffic to a computer or network segment. Firewalls generally work by opening and closing the ports used by various applications. By opening only the required ports on a firewall, you are implementing a restrictive security policy. Any packet not explicitly permitted is denied. In contrast, a permissive security policy permits access through all ports, except those explicitly denied. In the past, software and hardware were shipped with permissive settings. As users neglected to configure their equipment, the default permissive settings left many devices exposed to attackers. Most devices now ship with settings as restrictive as possible, while still allowing easy setup.
 
+To allow program access through the Windows Defender Firewall, search for **Control Panels**. Under **Systems and Security**, locate **Windows Defender Firewall**. Click **Allow an app or feature through Windows Defender Firewall**, as shown in the figure.
+
+If you wish to use a different software firewall, you will need to disable Windows Firewall. To disable the Windows Firewall, click **Turn Windows Firewall on or off.**
+
+Many additional settings can be found under **Advanced settings. Here you can create inbound or outbound traffic rules based on different criteria. You can also import and export policies or monitor different aspects of the firewall.**
+
+![f35ef010-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/125319ea-8d2a-4803-8953-441bcbd273b4)
 
 
