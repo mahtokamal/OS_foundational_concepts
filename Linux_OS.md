@@ -74,6 +74,12 @@ Kali Linux is a Linux distribution groups many penetration tools together in a s
 
 
 # 1.2 Working in the Linux Shell
+# 1.2.1 The Linux Shell
+# 1.2.2 Basic Commands
+# 1.2.3 File and Directory Commands
+# 1.2.4 Working with Text Files
+# 1.2.5 The Importance of Text Files in Linux
+
 # 1.3 Linux Servers and Clients
 # 1.4 Basic Server Administration
 # 1.5 The Linux File System
