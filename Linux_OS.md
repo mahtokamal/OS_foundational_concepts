@@ -5,6 +5,9 @@ Linux is an open-source operating system that is fast, powerful, and highly cust
 # 1.1 Linux Basics
 # 1.1.1 What is Linux ?
 
+![f47e42c0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/f0294ec4-558d-46ee-a9c0-4ed89db8ff05)
+
+
 Linux is an operating system that was created in 1991. Linux is open source, fast, reliable, and small. It requires very little hardware resources to run and is highly customizable. Unlike other operating systems such as Windows and Mac OS X, Linux was created, and is currently maintained by, a community of programmers. Linux is part of several platforms and can be found on devices anywhere from “wristwatches to supercomputers”.
 
 Another important aspect of Linux is that it is designed to be connected to the network, which makes it much simpler to write and use network-based applications. Because Linux is open source, any person or company can get the kernel’s source code, inspect it, modify it, and re-compile it at will. They are also allowed to redistribute the program with or without charges.
@@ -28,6 +31,18 @@ Linux is often the operating system of choice in the Security Operations Center 
 The flexibility provided by Linux is a great feature for the SOC. The entire operating system can be tailored to become the perfect security analysis platform. For example, administrators can add only the necessary packages to the OS, making it lean and efficient. Specific software tools can be installed and configured to work in conjunction, allowing administrators to build a customized computer that fits perfectly in the workflow of a SOC.
 
 The figure shows Sguil, which is the cybersecurity analyst console in a special version of Linux called Security Onion. Security Onion is an open source suite of tools that work together for network security analysis.
+
+![f59027f0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/625423cd-b0e0-47b9-896e-616a8962106b)
+
+# 1.1.4 Linux Tools
+
+In addition to SOC-specific tools, Linux computers that are used in the SOC often contain penetration testing tools. Also known as PenTesting, a penetration test is the process of looking for vulnerabilities in a network or computer by attacking it. Packet generators, port scanners, and proof-of-concept exploits are examples of PenTesting tools.
+
+Kali Linux is a Linux distribution groups many penetration tools together in a single Linux distribution. Kali contains a great selection of tools. The figure shows a screenshot of Kali Linux. Notice all the major categories of penetration testing tools.
+
+![f59298f0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/026a9300-deef-4e67-b582-ee97fd9667c9)
+
+
 # 1.2 Working in the Linux Shell
 # 1.3 Linux Servers and Clients
 # 1.4 Basic Server Administration
