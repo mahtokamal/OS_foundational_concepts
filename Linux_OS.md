@@ -75,10 +75,46 @@ Kali Linux is a Linux distribution groups many penetration tools together in a s
 
 # 1.2 Working in the Linux Shell
 # 1.2.1 The Linux Shell
+
+In Linux, the user communicates with the OS by using the CLI or the GUI. Linux often starts in the GUI by default. This hides the CLI from the user. One way to access the CLI from the GUI is through a terminal emulator application. These applications provide user access to the CLI and are often named as some variation of the word “terminal”. In Linux, popular terminal emulators are Terminator, eterm, xterm, konsole, and gnome-terminal.
+
+Fabrice Bellard has created JSLinux which allows an emulated version of Linux to run in a browser. Search for it on the internet. Open a Linux console in JSLinux and type the ls command to list the current directory content. Keep the tab open if you would like to try out some of the other commands discussed in this chapter.
+
+The figure shows gnome-terminal, a popular Linux terminal emulator.
+
+Note: The terms shell, console, console window, CLI terminal, and terminal window are often used interchangeably.
+
+![f59446a0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/2c8a6fdd-f527-4b41-98f7-f4139ddb41b1)
+
 # 1.2.2 Basic Commands
+
+
 # 1.2.3 File and Directory Commands
 # 1.2.4 Working with Text Files
+
+Linux has many different text editors, with various features and functions. Some text editors include graphical interfaces while others are command-line only tools. Each text editor includes a feature set designed to support a specific type of task. Some text editors focus on the programmer and include features such as syntax highlighting, brackets and parenthesis check, and other programming-focused features.
+
+While graphical text editors are convenient and easy to use, command line-based text editors are very important for Linux users. The main benefit of command-line-based text editors is that they allow for text file editing from a remote computer.
+
+Consider the following scenario: a user must perform administrative tasks on a Linux computer but is not sitting in front of that computer. Using SSH, the user starts a remote shell to the remote computer. Under the text-based remote shell, the graphical interface is not available, which makes it impossible to rely on tools such as graphical text editors. In this type of situation, text-based programs are crucial.
+
+The figure shows nano, a popular command-line text editor. The administrator is editing firewall rules. Text editors are often used for system configuration and maintenance in Linux.
+
+![f68a6670-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/c5b15602-e3ad-42a8-a397-023e263bba98)
+
+Due to the lack of graphical support, nano (or GNU nano) can only be controlled with the keyboard. For example, CTRL+O saves the current file; CTRL+W opens the search menu. GNU nano uses a two-line shortcut bar at the bottom of the screen, where commands for the current context are listed. Press CTRL+G for the help screen and a complete list of commands.
+
 # 1.2.5 The Importance of Text Files in Linux
+
+In Linux, everything is treated as a file. This includes the memory, the disks, the monitor, and the directories. For example, from the operating system standpoint, showing information on the display means to write to the file that represents the display device. It should be no surprise that the computer itself is configured through files. Known as configuration files, they are usually text files used to store adjustments and settings for specific applications or services. Practically everything in Linux relies on configuration files to work. Some services have not one, but several configuration files.
+
+Users with proper permission levels can use text editors to change the contents of configuration files. After the changes are made, the file is saved and can be used by the related service or application. Users are able to specify exactly how they want any given application or service to behave. When launched, services and applications check the contents of specific configuration files to adjust their behavior accordingly.
+
+In the figure, the administrator opened the host configuration file in nano for editing. The host file contains static mappings of host IP addresses to names. The names serve as shortcuts that allow connecting to other devices by using a name instead of an IP address. Only the superuser can change the host file.
+
+Note: The administrator used the command sudo nano /etc/hosts to open the file. The command sudo (short for “superuser do”) invokes the superuser privilege to use the nano text editor to open the host file.
+
+![f77821d0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/009aa52e-9ff9-4205-9619-7a0cc9d2a661)
 
 # 1.3 Linux Servers and Clients
 # 1.4 Basic Server Administration
