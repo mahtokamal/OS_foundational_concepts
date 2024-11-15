@@ -88,8 +88,48 @@ Note: The terms shell, console, console window, CLI terminal, and terminal windo
 
 # 1.2.2 Basic Commands
 
+Linux commands are programs created to perform a specific task. Use the man command (short for manual) to obtain documentation about commands. As an example, man Is provides documentation about the Is command from the user manual.
+
+Because commands are programs stored on the disk, when a user types a command, the shell must find it on the disk before it can be executed. The shell will look for user-typed commands in specific directories and attempt to execute them. The list of directories checked by the shell is called the path. The path contains many directories commonly used to store commands. If a command is not in the path, the user must specify its location, or the shell will not be able to find it. Users can easily add directories to the path, if necessary.
+
+To invoke a command via the shell, simply type its name. The shell will try to find it in the system path and execute it.
+
+The table lists basic Linux commands and their functions.
+
+|Command|Description|
+--------|-----------|
+|mv||
+|chmod||
+|chown||
+|dd||
+|pwd||
+|ps||
+|su||
+|sudo||
+|grep||
+|ifconfig||
+|apt-get||
+|iwconfig||
+|shutdown||
+|passwd||
+|cat||
+|man||
 
 # 1.2.3 File and Directory Commands
+
+Many command line tools are included in Linux by default. To adjust the command operation, users can pass parameters and switches along with the command. The table lists a few of the most common commands related to files and directories.
+
+|Command|Description|
+--------|-----------|
+|ls||
+|cd||
+|mkdir||
+|cp||
+|mv||
+|rm||
+|grep||
+|cat||
+
 # 1.2.4 Working with Text Files
 
 Linux has many different text editors, with various features and functions. Some text editors include graphical interfaces while others are command-line only tools. Each text editor includes a feature set designed to support a specific type of task. Some text editors focus on the programmer and include features such as syntax highlighting, brackets and parenthesis check, and other programming-focused features.
