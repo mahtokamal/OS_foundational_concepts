@@ -157,6 +157,12 @@ Note: The administrator used the command sudo nano /etc/hosts to open the file. 
 ![f77821d0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/009aa52e-9ff9-4205-9619-7a0cc9d2a661)
 
 # 1.3 Linux Servers and Clients
+# 1.3.1 An Introduction to Client-Server Communications
+# 1.3.2
+# 1.3.3
+# 1.3.4
+# 1.3.5
+
 # 1.4 Basic Server Administration
 # 1.5 The Linux File System
 # 1.6 Working with GUI
