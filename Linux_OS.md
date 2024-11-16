@@ -158,6 +158,11 @@ Note: The administrator used the command sudo nano /etc/hosts to open the file. 
 
 # 1.3 Linux Servers and Clients
 # 1.3.1 An Introduction to Client-Server Communications
+
+Servers are computers with software installed that enables them to provide services to clients across the network. There are many types of services. Some provide external resources such as files, email messages, or web pages to clients upon request. Other services run maintenance tasks such as log management, memory management, disk scanning, and more. Each service requires separate server software. For example, the server in the figure uses file server software to provide clients with the ability to retrieve and submit files.
+
+![Screenshot (727)](https://github.com/user-attachments/assets/5c0a85a6-740d-4630-bb81-07c02b0f2d4c)
+
 # 1.3.2
 # 1.3.3
 # 1.3.4
