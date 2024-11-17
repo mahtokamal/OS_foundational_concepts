@@ -163,8 +163,27 @@ Servers are computers with software installed that enables them to provide servi
 
 ![Screenshot (727)](https://github.com/user-attachments/assets/5c0a85a6-740d-4630-bb81-07c02b0f2d4c)
 
-# 1.3.2
-# 1.3.3
+# 1.3.2 Servers, Services, and Their Ports
+In order that a computer can be the server for multiple services, ports are used. A port is a reserved network resource used by a service. A server is said to be "listening" on a port when it has associated itself to that port.
+
+While the administrator can decide which port to use with any given service, many clients are configured to use a specific port by default. It is common practice to leave the service running in its default port. The table lists a few commonly used ports and their services. These are also called "well-known ports".
+
+| Ports| Description|
+-------|------------|
+|20/21|FTP|
+|22|SSH|
+|23|Telnet|
+|25|SMTP|
+|53|DNS|
+|67/68|DHCP|
+|69|TFTP|
+|80|HTTP|
+|110|POP3|
+|123|NTP|
+|143|IMAP|
+|161/162|SNMP|
+|443|HTTPS|
+# 1.3.3 Clients
 # 1.3.4
 # 1.3.5
 
