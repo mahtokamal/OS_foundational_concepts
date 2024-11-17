@@ -184,6 +184,10 @@ While the administrator can decide which port to use with any given service, man
 |161/162|SNMP|
 |443|HTTPS|
 # 1.3.3 Clients
+Clients are programs or applications designed to communicate with a specific type of server. Also known as client applications, clients use a well-defined protocol to communicate with the server. Web browsers are web clients that are used to communicate with web servers through the Hyper Text Transfer Protocol (HTTP) on port 80. The File Transfer Protocol (FTP) client is software used to communicate with an FTP server. The figure shows a client uploading files to a server.
+
+![Screenshot (728)](https://github.com/user-attachments/assets/8df9d77b-ec99-4a20-b74a-c1dbd6e3e599)
+
 # 1.3.4
 # 1.3.5
 
