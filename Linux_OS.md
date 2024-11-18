@@ -200,10 +200,15 @@ Because services often require superuser privileges to run, service configuratio
 
 The command output shows a portion of the configuration file for Nginx, which is a lightweight web server for Linux.
 
+![Screenshot (729)](https://github.com/user-attachments/assets/5120df8d-b9e9-4fc2-aadb-bed3ea08b5fa)
+
 The next command output shows the configuration file for the network time protocol (NTP).
+
+![Screenshot (730)](https://github.com/user-attachments/assets/460bade3-722d-4e11-9e4e-e99d0f556b0b)
 
 The last command output shows the configuration file for Snort, a Linux-based intrusion detection system (IDS).
 
+![Screenshot (731)](https://github.com/user-attachments/assets/cf7dffba-4ce5-4f9b-8f37-be82afad0018)
 
 There is no rule for a configuration file format; it is the choice of the service’s developer. However, the option = value format is often used. For example, in the last command output, the variable ipvar is configured with several options. The first option, HOME_NET, has the value 209.165.200.224/27. The hash character (#) is used to indicate comments.
 
