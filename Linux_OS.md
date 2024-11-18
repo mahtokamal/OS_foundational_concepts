@@ -192,7 +192,14 @@ Clients are programs or applications designed to communicate with a specific typ
 # 1.3.5
 
 # 1.4 Basic Server Administration
+# 1.4.1 Service Configuration Files
+# 1.4.2 Hardening Devices
+# 1.4.3 Monitoring Service Logs
+
 # 1.5 The Linux File System
+
+
 # 1.6 Working with GUI
+
 # 1.7 Working on a Linux Host
 
