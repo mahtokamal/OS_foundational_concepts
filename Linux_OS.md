@@ -193,6 +193,13 @@ Clients are programs or applications designed to communicate with a specific typ
 
 # 1.4 Basic Server Administration
 # 1.4.1 Service Configuration Files
+
+In Linux, services are managed using configuration files. Common options in configuration files are port number, location of the hosted resources, and client authorization details. When the service starts, it looks for its configuration files, loads them into memory, and adjusts itself according to the settings in the files. Configuration file modifications often require restarting the service before the changes take effect.
+
+Because services often require superuser privileges to run, service configuration files often require superuser privileges to edit.
+
+The command output shows a portion of the configuration file for Nginx, which is a lightweight web server for Linux.
+
 # 1.4.2 Hardening Devices
 # 1.4.3 Monitoring Service Logs
 
