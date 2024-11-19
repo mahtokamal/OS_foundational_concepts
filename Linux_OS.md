@@ -214,6 +214,28 @@ There is no rule for a configuration file format; it is the choice of the servic
 
 
 # 1.4.2 Hardening Devices
+
+Device hardening involves implementing proven methods of securing the device and protecting its administrative access. Some of these methods involve maintaining passwords, configuring enhanced remote login features, and implementing secure login with SSH. Defining administrative roles in terms of access is another important aspect of securing infrastructure devices because not all information technology personnel should have the same level of access to the infrastructure devices.
+
+Depending on the Linux distribution, many services are enabled by default. Some of these features are enabled for historical reasons but are no longer required. Stopping such services and ensuring they do not automatically start at boot time is another device hardening technique.
+
+OS updates are also extremely important to maintaining a hardened device. New vulnerabilities are discovered every day. OS developers create and issue fixes and patches regularly. An up-to-date computer is less likely to be compromised.
+
+The following are basic best practices for device hardening.
+
+- Ensure physical security
+- Minimize installed packages
+- Disable unused services
+- Use SSH and disable the root account login over SSH
+- Keep the system updated
+- Disable USB auto-detection
+- Enforce strong passwords
+- Force periodic password changes
+- Keep users from re-using old passwords
+
+Many other steps exist and are often service or application-dependent.
+
+
 # 1.4.3 Monitoring Service Logs
 
 # 1.5 The Linux File System
