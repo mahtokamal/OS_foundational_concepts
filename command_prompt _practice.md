@@ -671,6 +671,21 @@ It shows Hop 0 is a source with no packet loss, Hop 1 with round-time of 10ms wi
     Start Windows Reliability and Performance Monitor in a specific standalone mode.
 
 ## 7. Disk Space Management
+### 7.1 chkdsk
+### 7.2 diskpart
+### 7.3 fsutil volume diskfree
+### 7.4 format
+### 7.5 defrag
+### 7.6 dir
+### 7.7 diskpart
+### 7.8 bootrec
+### 7.9 wmic logicaldisk
+### 7.10 mountvol
+### 7.11 wmic diskdrive
+### 7.12 convert
+### 7.13 robocopy
+### 7.14 winsat
+
 
 
 ## 8. Other Important commands
