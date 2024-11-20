@@ -267,7 +267,8 @@ The command output shows a portion of **/var/log/messages** log file. Each line 
 
 # 1.5 The Linux File System
 # 1.5.1 The File System Types in Linux
-# 1.5.2
+# 1.5.2 Linux Roles and File Permissions
+# 1.5.3 Hard Links and Symbolic Links
 
 
 # 1.6 Working with GUI
