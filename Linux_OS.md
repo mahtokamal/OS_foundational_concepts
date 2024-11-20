@@ -238,7 +238,36 @@ Many other steps exist and are often service or application-dependent.
 
 # 1.4.3 Monitoring Service Logs
 
+Log files are the records that a computer stores to keep track of important events. Kernel, services, and application events are all recorded in log files. It is very important for an administrator to periodically review the logs of a computer to keep it healthy. By monitoring Linux log files, an administrator gains a clear picture of the computer's performance, security status, and any underlying issues. Log file analysis allows an administrator to guard against upcoming issues before they occur.
+
+In Linux, log files can be categorized as:
+- Application logs
+- Event logs
+- Service logs
+- System logs
+
+Some logs contain information about daemons that are running in the Linux system. A daemon is a background process that runs without the need for user interaction. For example, the System Security Services Daemon (SSSD) manages remote access and authentication for single sign-on capabilities.
+
+The table lists a few popular Linux log files and their functions.
+
+|Linux Log File|Description|
+|--------------|-----------|
+|/var/log/messages||
+|/var/log/auth.log||
+|/var/log/secure||
+|/var/log/boot.log||
+|/var/log/dmesg||
+|/var/log/kern.log||
+|/var/log/cron||
+|/var/log/mysqld.log or /var/log/mysql.log ||
+
+The command output shows a portion of **/var/log/messages** log file. Each line represents a logged event. The timestamps at the beginning of the lines mark the moment the event took place.
+
+![Screenshot (732)](https://github.com/user-attachments/assets/18251146-bc3a-451e-a4cc-30c1ff3c19c0)
+
 # 1.5 The Linux File System
+# 1.5.1 The File System Types in Linux
+# 1.5.2
 
 
 # 1.6 Working with GUI
