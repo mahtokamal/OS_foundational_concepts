@@ -284,6 +284,8 @@ Mounting is the term used for the process of assigning a directory to a partitio
 
 The command output shows the output of the **mount** command issued in the Cisco CyberOPS VM.
 
+![Screenshot (733)](https://github.com/user-attachments/assets/f9d780b0-218f-415e-bb7c-5a702f54a906)
+
 When issued with no options, **mount** returns the list of file systems currently mounted in a Linux computer. While many of the file systems shown are out of the scope of this course, notice the root file system (highlighted). The root file system is represented by the “/” symbol and holds all files in the computer by default. It is also shown in the output that the root file system was formatted as ext4 and occupies the first partition of the first drive (/dev/sda1).
 
 # 1.5.2 Linux Roles and File Permissions
