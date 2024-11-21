@@ -270,7 +270,7 @@ The command output shows a portion of **/var/log/messages** log file. Each line 
 
 There are many different kinds of file systems, varying in properties of speed, flexibility, security, size, structure, logic and more. It is up to the administrator to decide which file system type best suits the operating system and the files it will store.
 
-1. ext2
+1. ext2 (second extended file system)
 2. ext3 (third extended file system)
 3. ext4 (fourth extended file system)
 4. NFS (Network Files System)
@@ -279,6 +279,13 @@ There are many different kinds of file systems, varying in properties of speed, 
 7. HFS Plus or HFS+ (Hierarchical File System Plus)
 8. APFS (Apple File System)
 9. MBR (Master Boot Record)
+
+Mounting is the term used for the process of assigning a directory to a partition. After a successful mount operation, the file system contained on the partition is accessible through the specified directory. In this context, the directory is called the mounting point for that file system. Windows users may be familiar with a similar concept: the drive letter.
+
+The command output shows the output of the **mount** command issued in the Cisco CyberOPS VM.
+
+When issued with no options, **mount** returns the list of file systems currently mounted in a Linux computer. While many of the file systems shown are out of the scope of this course, notice the root file system (highlighted). The root file system is represented by the “/” symbol and holds all files in the computer by default. It is also shown in the output that the root file system was formatted as ext4 and occupies the first partition of the first drive (/dev/sda1).
+
 # 1.5.2 Linux Roles and File Permissions
 # 1.5.3 Hard Links and Symbolic Links
 
