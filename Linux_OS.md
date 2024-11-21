@@ -298,19 +298,20 @@ Consider the output of the ls -l command in the command output.
 
 The output provides a lot of information about the file space.txt.
 
-The first field of the output displays the permissions that are associated with space.txt (-rwxrw-r--). File permissions are always displayed in the User, Group, and Other order.
+The first field of the output displays the permissions that are associated with **space.txt (-rwxrw-r--).** File permissions are always displayed in the User, Group, and Other order.
 
-The file space.txt in has the following permissions:
+The file **space.txt** in has the following permissions:
 
-The dash (-) means that this is a file. For directories, the first dash would be a “d”.
-The first set of characters is for user permission (rwx ). The user, analyst, who owns the file can Read, Write and eXecute the file.
-The second set of characters is for group permissions (rw-). The group, staff, who owns the file can Read and Write to the file.
-The third set of characters is for any other user or group permissions (r--). Any other user or group on the computer can only Read the file.
+- The dash (-) means that this is a file. For directories, the first dash would be a “d”.
+- The first set of characters is for user permission (rwx ). The user, analyst, who owns the file can Read, Write and eXecute the file.
+- The second set of characters is for group permissions (rw-). The group, staff, who owns the file can Read and Write to the file.
+- The third set of characters is for any other user or group permissions (r--). Any other user or group on the computer can only Read the file.
+
 The second field defines the number of hard links to the file (the number 1 after the permissions). A hard link creates another file with a different name linked to the same place in the file system (called an inode). This is in contrast to a symbolic link, which is discussed on the next page.
 
-The third and fourth field display the user (analyst) and group (staff) who own the file, respectively.
+The third and fourth field display the user (**analyst**) and group (**staff**) who own the file, respectively.
 
-The fifth field displays the file size in bytes. The space.txt file has 253 bytes.
+The fifth field displays the file size in bytes. The **space.txt** file has 253 bytes.
 
 The sixth field displays the date and time of the last modification.
 
@@ -320,6 +321,20 @@ The figure shows a breakdown of file permissions in Linux.
 
 ![Screenshot (735)](https://github.com/user-attachments/assets/2de6d8be-ee4b-4793-af10-334bbed809f5)
 
+Use octal values to define permissions.
+
+|Binary|Octal|Permission|Description|
+|-------|-----|------|-----|
+|000|0|---|No Access|
+|001|1|--x|Execute only|
+|010|2|-w-|Write only|
+|011|3|-wx|Write and Execute |
+|100|4|r--|Read only|
+|101|5|r-x|Read and Execute|
+|110|6|rw-|Read and Write|
+|111|7|rwx|Read, Write and Execute|
+
+File permissions are a fundamental part of Linux and cannot be broken. A user has only the rights to a file that the file permissions allow. The only user that can override file permission on a Linux computer is the root user. Because the root user has the power to override file permissions, the root user can write to any file. Because everything is treated as a file, the root user has full control over a Linux computer. Root access is often required before performing maintenance and administrative tasks. Because of the power of the root user, root credentials should use strong passwords and not be shared with anyone other than system administrators and other high-level users.
 # 1.5.3 Hard Links and Symbolic Links
 
 
