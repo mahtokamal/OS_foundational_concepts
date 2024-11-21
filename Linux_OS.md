@@ -289,6 +289,37 @@ The command output shows the output of the **mount** command issued in the Cisco
 When issued with no options, **mount** returns the list of file systems currently mounted in a Linux computer. While many of the file systems shown are out of the scope of this course, notice the root file system (highlighted). The root file system is represented by the “/” symbol and holds all files in the computer by default. It is also shown in the output that the root file system was formatted as ext4 and occupies the first partition of the first drive (/dev/sda1).
 
 # 1.5.2 Linux Roles and File Permissions
+
+In Linux, most system entities are treated as files. In order to organize the system and enforce boundaries within the computer, Linux uses file permissions. File permissions are built into the file system structure and provide a mechanism to define permissions on every file. Every file in Linux carries its file permissions, which define the actions that the owner, the group, and others can perform with the file. The possible permission rights are Read, Write and Execute. The ls command with the -l parameter lists additional information about the file.
+
+Consider the output of the ls -l command in the command output.
+
+![Screenshot (734)](https://github.com/user-attachments/assets/1d8a09f8-8aef-405e-81e2-80fb3c372bc5)
+
+The output provides a lot of information about the file space.txt.
+
+The first field of the output displays the permissions that are associated with space.txt (-rwxrw-r--). File permissions are always displayed in the User, Group, and Other order.
+
+The file space.txt in has the following permissions:
+
+The dash (-) means that this is a file. For directories, the first dash would be a “d”.
+The first set of characters is for user permission (rwx ). The user, analyst, who owns the file can Read, Write and eXecute the file.
+The second set of characters is for group permissions (rw-). The group, staff, who owns the file can Read and Write to the file.
+The third set of characters is for any other user or group permissions (r--). Any other user or group on the computer can only Read the file.
+The second field defines the number of hard links to the file (the number 1 after the permissions). A hard link creates another file with a different name linked to the same place in the file system (called an inode). This is in contrast to a symbolic link, which is discussed on the next page.
+
+The third and fourth field display the user (analyst) and group (staff) who own the file, respectively.
+
+The fifth field displays the file size in bytes. The space.txt file has 253 bytes.
+
+The sixth field displays the date and time of the last modification.
+
+The seventh field displays the file name.
+
+The figure shows a breakdown of file permissions in Linux.
+
+![Screenshot (735)](https://github.com/user-attachments/assets/2de6d8be-ee4b-4793-af10-334bbed809f5)
+
 # 1.5.3 Hard Links and Symbolic Links
 
 
