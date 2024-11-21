@@ -267,6 +267,18 @@ The command output shows a portion of **/var/log/messages** log file. Each line 
 
 # 1.5 The Linux File System
 # 1.5.1 The File System Types in Linux
+
+There are many different kinds of file systems, varying in properties of speed, flexibility, security, size, structure, logic and more. It is up to the administrator to decide which file system type best suits the operating system and the files it will store.
+
+1. ext2
+2. ext3 (third extended file system)
+3. ext4 (fourth extended file system)
+4. NFS (Network Files System)
+5. CDFS (Compact Disc File System)
+6. Swap File System
+7. HFS Plus or HFS+ (Hierarchical File System Plus)
+8. APFS (Apple File System)
+9. MBR (Master Boot Record)
 # 1.5.2 Linux Roles and File Permissions
 # 1.5.3 Hard Links and Symbolic Links
 
