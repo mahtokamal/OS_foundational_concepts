@@ -335,8 +335,22 @@ Use octal values to define permissions.
 |111|7|rwx|Read, Write and Execute|
 
 File permissions are a fundamental part of Linux and cannot be broken. A user has only the rights to a file that the file permissions allow. The only user that can override file permission on a Linux computer is the root user. Because the root user has the power to override file permissions, the root user can write to any file. Because everything is treated as a file, the root user has full control over a Linux computer. Root access is often required before performing maintenance and administrative tasks. Because of the power of the root user, root credentials should use strong passwords and not be shared with anyone other than system administrators and other high-level users.
+
 # 1.5.3 Hard Links and Symbolic Links
 
+A hard link is another file that points to the same location as the original file. Use the command ln to create a hard link. The first argument is the existing file and the second argument is the new file. As shown in the command output, the file **space.txt** is linked to **space.hard.txt** and the link field now shows 2.
+
+Both files point to the same location in the file system. If you change one file, the other is changed, as well. The **echo** command is used to add some text to **space.txt.** Notice that the file size for both **space.txt** and **space.hard.txt** increased to 257 bytes. If you delete the space.hard.txt with the rm command (remove), the **space.txt** file still exists, as verified with the **more space.txt** command.
+
+A symbolic link, also called a symlink or soft link, is similar to a hard link in that applying changes to the symbolic link will also change the original file. As shown in the command output below, use the **ln** command option **-s** to create a symbolic link.
+
+Notice that adding a line of text to **test.txt** also adds the line to **mytest.txt**. However, unlike a hard link, deleting the original text.txt file means that **mytext.txt** is now linked to a file that no longer exists, as shown with the more **mytest.txt** and **ls -l mytest.txt**commands.
+
+Although symbolic links have a single point of failure (the underlying file), symbolic links have several benefits over hard links:
+
+- Locating hard links is more difficult. Symbolic links show the location of the original file in the ls -l command, as shown in the last line of output in the previous command output **(mytest.txt -> test.txt)**.
+- Hard links are limited to the file system in which they are created. Symbolic links can link to a file in another file system.
+- Hard links cannot link to a directory because the system itself uses hard links to define the hierarchy of the directory structure. However, symbolic links can link to directories.
 
 # 1.6 Working with GUI
 
