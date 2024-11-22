@@ -340,9 +340,13 @@ File permissions are a fundamental part of Linux and cannot be broken. A user ha
 
 A hard link is another file that points to the same location as the original file. Use the command ln to create a hard link. The first argument is the existing file and the second argument is the new file. As shown in the command output, the file **space.txt** is linked to **space.hard.txt** and the link field now shows 2.
 
+![Screenshot (736)](https://github.com/user-attachments/assets/90643140-4694-403a-b5f2-1806ff4c29a3)
+
 Both files point to the same location in the file system. If you change one file, the other is changed, as well. The **echo** command is used to add some text to **space.txt.** Notice that the file size for both **space.txt** and **space.hard.txt** increased to 257 bytes. If you delete the space.hard.txt with the rm command (remove), the **space.txt** file still exists, as verified with the **more space.txt** command.
 
 A symbolic link, also called a symlink or soft link, is similar to a hard link in that applying changes to the symbolic link will also change the original file. As shown in the command output below, use the **ln** command option **-s** to create a symbolic link.
+
+![Screenshot (737)](https://github.com/user-attachments/assets/2f8488c6-afb2-470c-9090-fb29b489a582)
 
 Notice that adding a line of text to **test.txt** also adds the line to **mytest.txt**. However, unlike a hard link, deleting the original text.txt file means that **mytext.txt** is now linked to a file that no longer exists, as shown with the more **mytest.txt** and **ls -l mytest.txt**commands.
 
