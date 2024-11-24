@@ -394,6 +394,16 @@ The figure shows the location of some of the features of the Ubuntu Gnome 3 Desk
 
 # 1.7 Working on a Linux Host
 # 1.7.1 Installing and Running Applications on a Linux Host
+
+Many end-user applications are complex programs written in compiled languages. To aid in the installation process, Linux often includes programs called package managers. A package is the term used to refer to a program and all its supporting files. By using a package manager to install a package, all the necessary files are placed in the correct file system location.
+
+Package managers vary depending on Linux distributions. For example, **pacman** is used by Arch Linux while **dpkg** (Debian package) and **apt** (Advanced Packaging Tool) are used in Debian and Ubuntu Linux distributions.
+
+The command output shows the output of a few **apt-get** commands used in Debian distributions.
+
+![Screenshot (738)](https://github.com/user-attachments/assets/4f97c145-7666-49a2-9377-b82a3808c7ca)
+
+The **apt-get update** command is used to get the package list from the package repository and update the local package database. The **apt-get upgrade** command is used to update all currently installed packages to their latest versions.
 # 1.7.2 Keeping the System Up to Date
 # 1.7.3 Processes and Forks
 # 1.7.4 Malware on a Linux Host
