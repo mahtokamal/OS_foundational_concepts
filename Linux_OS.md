@@ -385,7 +385,7 @@ The figure shows the location of some of the features of the Ubuntu Gnome 3 Desk
 
 |UI Component|Description|
 |------------|-----------|
-|Apps Menu||
+|Apps Menu|- The Apps Menu shows icons for the apps that are installed on the system.<br> - A right-click menu provides shortcuts that allow starting or configuring the apps.<br>  - The system search box is available from Activities View.|
 |Ubuntu Doc||
 |Top Bar||
 |Calendar and System Mesage Tray||
