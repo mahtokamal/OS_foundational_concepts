@@ -357,6 +357,23 @@ Although symbolic links have a single point of failure (the underlying file), sy
 - Hard links cannot link to a directory because the system itself uses hard links to define the hierarchy of the directory structure. However, symbolic links can link to directories.
 
 # 1.6 Working with GUI
+# 1.6.1 X Window System
+
+The graphical interface present in most Linux computers is based on the X Window System. Also known as X or X11, X Window is a windowing system designed to provide the basic framework for a GUI. X includes functions for drawing and moving windows on the display device and interacting with a mouse and keyboard.
+
+X works as a server which allows a remote user to use the network to connect, start a graphical application, and have the graphical window open on the remote terminal. While the application itself runs on the server, the graphical aspect of it is sent by X over the network and displayed on the remote computer.
+
+Notice that X does not specify the user interface, leaving it to other programs, such as window managers, to define all the graphical components. This abstraction allows for great flexibility and customization as graphical components such as buttons, fonts, icons, window borders, and color schemes are all defined by the user application. Because of this separation, the Linux GUI varies greatly from distribution to distribution. Examples of window managers are Gnome and KDE. While the look and feel of window managers vary, the main components are still present.
+
+The figure displays the Gnome Window Manager.
+
+![f78a9860-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/1e26fb4f-a741-41c8-9590-9d9b32aab4f2)
+
+This figure displays the KDE Windows Manager.
+
+![f78bf7f0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/312eb6f5-58eb-42ee-b776-297d56ec02bb)
+
+# 1.6.2 The Linux GUI
 
 # 1.7 Working on a Linux Host
 
