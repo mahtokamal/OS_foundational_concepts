@@ -393,4 +393,11 @@ The figure shows the location of some of the features of the Ubuntu Gnome 3 Desk
 |Status Menu|- Allows configuration of the network adaptor and other running devices.<br> - The current user can logoff or change their settings.<br> - System configuration changes can be made here.<br> - The workstation can be locked or shutdown from here.|
 
 # 1.7 Working on a Linux Host
+# 1.7.1 Installing and Running Applications on a Linux Host
+# 1.7.2 Keeping the System Up to Date
+# 1.7.3 Processes and Forks
+# 1.7.4 Malware on a Linux Host
+# 1.7.5 Rootkit Check
+# 1.7.6 Piping Commands
+# 1.7.8 Video - Applications, Rootkits, and Piping Commands
 
