@@ -375,5 +375,22 @@ This figure displays the KDE Windows Manager.
 
 # 1.6.2 The Linux GUI
 
+Although an operating system does not require a GUI to function, GUIs are considered more user-friendly than the CLI. The Linux GUI as a whole can be easily replaced by the user. As a result of the large number of Linux distributions, this module focuses on Ubuntu when covering Linux because it is a very popular and user-friendly distribution.
+
+Ubuntu Linux uses Gnome 3 as its default GUI. The goal of Gnome 3 is to make Ubuntu even more user-friendly. The table lists the main UI components of Unity.
+
+The figure shows the location of some of the features of the Ubuntu Gnome 3 Desktop.
+
+![f8a15f90-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/c9288e7d-3f12-4841-94c0-65bd736682ae)
+
+|UI Component|Description|
+|------------|-----------|
+|Apps Menu||
+|Ubuntu Doc||
+|Top Bar||
+|Calendar and System Mesage Tray||
+|Activities||
+|Status Menu||
+
 # 1.7 Working on a Linux Host
 
