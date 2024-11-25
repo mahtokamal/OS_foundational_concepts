@@ -404,7 +404,25 @@ The command output shows the output of a few **apt-get** commands used in Debian
 ![Screenshot (738)](https://github.com/user-attachments/assets/4f97c145-7666-49a2-9377-b82a3808c7ca)
 
 The **apt-get update** command is used to get the package list from the package repository and update the local package database. The **apt-get upgrade** command is used to update all currently installed packages to their latest versions.
+
 # 1.7.2 Keeping the System Up to Date
+
+Also known as patches, OS updates are released periodically by OS companies to address any known vulnerabilities in their operating systems. While companies have update schedules, the release of unscheduled OS updates can happen when a major vulnerability is found in the OS code. Modern operating systems will alert the user when updates are available for download and installation, but the user can check for updates at any time.
+
+The following table compares Arch Linux and Debian / Ubuntu Linux distribution commands to perform package system basic operations.
+
+|Task|Arch|Debian / Ubuntu|
+|-----|--|--|
+|Install a package by name |pacman -S |apt install|
+|Remove a package by name |pacman -Rs|apt remove|
+|Update a local package|pacman -Syy|apt-get update|
+|Upgrade all currently installed packages |pacman -Syu|apt-get upgrade|
+
+A Linux GUI can also be used to manually check and install updates. In Ubuntu for example, to install updates you would click **Dash Search Box** , type **software updater** , and then click the **Software Updater** icon, as shown in the figure.
+
+![f8a4baf0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/a77a973e-cfed-46f8-a4ce-e8cfc2d7516c)
+
+
 # 1.7.3 Processes and Forks
 # 1.7.4 Malware on a Linux Host
 # 1.7.5 Rootkit Check
