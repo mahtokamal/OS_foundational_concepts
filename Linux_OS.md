@@ -491,11 +491,16 @@ The two commands, **ls** and **grep**, can be piped together to filter out the o
 # 1.7.9.1 What did we learn in this module?
 
 1. Linux Basics
-2. Working in the Linux Shell
-3. Linux Server and Clients
-4. Basic Server Administrations
-5. The Linux File System
-6. working with Linux GUI
-7. Working on a Linux Host
+   Linux is a fast, reliable, and small open-source operating system. It requires few hardware resources to run and is highly customizable. It is designed to be used on networks. The Linux kernel is distributed by different organizations with different tools and software packages. A customized version of Linux that is called Security Onion contains software and tools that are designed for use in network security monitoring by cybersecurity analysts. Kali Linux is another customized Linux distribution that has numerous tools that are designed for network security penetration testing.
+   
+3. Working in the Linux Shell
+
+In Linux, the user communicates with the operating system through a GUI or a command-line interface (CLI), or shell. If a GUI is running, the shell is accessed through at terminal application such as xterm or gnome terminal. Linux commands are programs that perform a specific task. The man command, followed by a specific command, provides documentation for that command. It is important to know at least basic Linux commands, file and directory commands, and commands for working with text files. In Linux everything is treated is if it were a file, including the memory, disks, monitor, and directories.
+   
+5. Linux Server and Clients
+6. Basic Server Administrations
+7. The Linux File System
+8. working with Linux GUI
+9. Working on a Linux Host
 
 
