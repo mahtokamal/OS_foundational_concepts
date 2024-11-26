@@ -422,10 +422,80 @@ A Linux GUI can also be used to manually check and install updates. In Ubuntu fo
 
 ![f8a4baf0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/a77a973e-cfed-46f8-a4ce-e8cfc2d7516c)
 
-
 # 1.7.3 Processes and Forks
+
+A process is a running instance of a computer program. Multitasking operating systems can execute many processes at the same time.
+
+Forking is a method that the kernel uses to allow a process to create a copy of itself. Processes need a way to create new processes in multitasking operating systems. The fork operation is the only way of doing so in Linux.
+
+Forking is important for many reasons. One of them relates to process scalability. Apache, a popular web server, is a good example. By forking itself, Apache is able to serve a large number of requests with fewer system resources than a single-process-based server.
+
+When a process calls a fork, the caller process becomes the parent process, with the newly created process referred to as its child. After the fork, the processes are, to some extent, independent processes; they have different process IDs but run the same program code.
+
+The table lists three commands that are used to manage processes.
+
+|Command|Description|
+|------|------|
+|ps|- Used to list the processes running on the computer at the time it is invoked. <br> - It can be instructed to display running processes that belong to the current user or other users. <br> - While listing processes does not require root privileges, killing or modifying other user's processes does.|
+|top|- Used to list running processes, but unlike ps, top keeps displaying running processes dynamically. <br> - Press q to exit top.|
+|kill|- Used to modify the behavior of a specific process. <br> - Depending on the parameters, kill will remove, restart, or pause a process. <br> - In many cases, the user will run ps or top before running kill.<br> - This is done so the user can learn the PID of a process before running kill.|
+
+The command output shows the output of the top command on a Linux computer.
+![Screenshot (740)](https://github.com/user-attachments/assets/9fe6efb0-2ff1-43da-9a9b-9a7d52078c18)
+
 # 1.7.4 Malware on a Linux Host
+
+Linux malware includes viruses, Trojan horses, worms, and other types of malware that can affect the operating system. Due to a number of design components such as file system structure, file permissions, and user account restrictions, Linux operating systems are generally regarded as better protected against malware.
+
+While arguably better protected, Linux is not immune to malware. Many vulnerabilities have been found and exploited in Linux. These range from server software to kernel vulnerabilities. Attackers are able to exploit these vulnerabilities and compromise the target. Because Linux is open source, fixes and patches are often made available within hours of the discovery of such problems.
+
+If a malicious program is executed, it will cause damage, regardless of the platform. A common Linux attack vector is its services and processes. Vulnerabilities are frequently found in server and process code running on computers connected to the network. An outdated version of the Apache web server could contain an unpatched vulnerability which can be exploited by an attacker, for example. Attackers often probe open ports to assess the version and nature of the server running on that port. With that knowledge, attackers can research if there are any known issues with that particular version of that particular server to support the attack. As with most vulnerabilities, keeping the computer updated and closing any unused services and ports is a good way to reduce the opportunities for attack in a Linux computer.
+
+The command output shows an attacker using the Telnet command to probe the nature and version of a web server (port 80).
+
+![Screenshot (741)](https://github.com/user-attachments/assets/4a107b6f-4e36-4e07-b0a7-aa30b061c4dc)
+
+The attacker has learned that the server in question is running nginx version 1.12.0. The next step would be to research known vulnerabilities in the nginx 1.12.0 code.
+
 # 1.7.5 Rootkit Check
+
+A rootkit is a type of malware that is designed to increase an unauthorized user’s privileges or grant access to portions of the software that should not normally be allowed. Rootkits are also often used to secure a backdoor to a compromised computer.
+
+The installation of a rootkit can be automated (done as part of an infection) or an attacker can manually install it after compromising a computer. A rootkit is destructive because it changes kernel code and its modules, changing the most fundamental operations of the OS itself. With such a deep level of compromise, rootkits can hide the intrusion, remove any installation tracks, and even tamper with troubleshooting and diagnostic tools so that their output now hides the presence of the rootkit. While a few Linux vulnerabilities through history have allowed rootkit installation via regular user accounts, the vast majority of rootkit compromises require root or administrator access.
+
+Because the very nature of the computer is compromised, rootkit detection can be very difficult. Typical detection methods often include booting the computer from trusted media such as a diagnostics operating system live CD. The compromised drive is mounted and, from the trusted system toolset, trusted diagnostic tools can be launched to inspect the compromised file system. Inspection methods include behavioral-based methods, signature scanning, difference scanning, and memory dump analysis.
+
+Rootkit removal can be complicated and often impossible, especially in cases where the rootkit resides in the kernel; re-installation of the operating system is usually the only real solution to the problem. Firmware rootkits usually require hardware replacement.
+
+**chkrootkit** is a popular Linux-based program designed to check the computer for known rootkits. It is a shell script that uses common Linux tools such as **strings** and **grep** to compare the signatures of core programs. It also looks for discrepancies as it traverses the /proc file system comparing the signatures found there with the output of **ps**.
+
+While helpful, keep in mind that programs to check for rootkits are not 100% reliable.
+
+The command output shows the output of chkrootkit on an Ubuntu Linux.
+
+![Screenshot (742)](https://github.com/user-attachments/assets/6794c5bf-7859-46e7-8eab-5f2e75f09b8d)
+
 # 1.7.6 Piping Commands
+
+Although command line tools are usually designed to perform a specific, well-defined task, many commands can be combined to perform more complex tasks by a technique known as piping. Named after its defining character, the pipe (|), piping consists of chaining commands together, feeding the output of one command into the input of another.
+
+For example, the ls command is used to display all the files and directories of a given directory. The **grep** command compares searches through a file or text looking for the specified string. If found, **grep** displays the entire contents of the folder where the string was found.
+
+The two commands, **ls** and **grep**, can be piped together to filter out the output of **ls**. This is shown in the output of the **ls -l | grep host** command and the **ls -l | grep** file command.
+
+![Screenshot (743)](https://github.com/user-attachments/assets/d84c31fe-bc34-4bc8-9d44-2063e4711c72)
+
 # 1.7.8 Video - Applications, Rootkits, and Piping Commands
+
+# 1.7.9 Linux Overview Summary
+# 1.7.9.1 What did we learn in this module?
+
+1. Linux Basics
+2. Working in the Linux Shell
+3. Linux Server and Clients
+4. Basic Server Administrations
+5. The Linux File System
+6. working with Linux GUI
+7. Working on a Linux Host
+
 
