@@ -51,6 +51,16 @@ Connecting to Wi-Fi on an Android device.
 
 # 1.1.3 Lab-Mobile Wi-Fi
 # 1.1.4 Cellular Communications Standards
+
+Cell phones were introduced in the mid-1980s. Back then, cell phones were bigger and bulkier. It was also difficult and expensive to call people on another cellular network because there were few industry standards for cellular technology. Without standards, interoperability between cell phone manufacturers was very difficult.
+
+Industry standards have simplified interconnectivity between cell providers. These standards have also made it less expensive to use cellular technology. However, cellular standards have not been adopted uniformly around the world. Therefore, some cell phones may only work in one country and not operate in other countries. Other cell phones can use multiple standards and operate in many countries.
+
+1. 1G
+2. 2G
+3. 3G
+4. 4G
+5. 5G
 # 1.1.5 Airplane Mode
 # 1.1.6 Hotspot
 # 1.1.7 Check Your Understanding - Wireless Technology
