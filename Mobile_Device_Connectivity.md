@@ -76,6 +76,8 @@ Introduced in the late 2000s, 4G standards enables speeds of 100 Mb/s and up to 
 
 Introduced in 2019, 5G is the latest standard. It is more efficient than previous standards and may support speeds up to 20 Gb/s.
 
+NOTE : Many cell phones can also support multiple standards to enable backward compatibility. For instance, many cell phones support 4G and 5G standards. The cell phone will use 5G when available. If a 5G network is no longer public, it will automatically switch to 4G without losing connection.
+
 # 1.1.5 Airplane Mode
 # 1.1.6 Hotspot
 # 1.1.7 Check Your Understanding - Wireless Technology
