@@ -79,7 +79,47 @@ Introduced in 2019, 5G is the latest standard. It is more efficient than previou
 NOTE : Many cell phones can also support multiple standards to enable backward compatibility. For instance, many cell phones support 4G and 5G standards. The cell phone will use 5G when available. If a 5G network is no longer public, it will automatically switch to 4G without losing connection.
 
 # 1.1.5 Airplane Mode
+
+It may be required for you to disable your cellular access. For instance, airlines typically ask their passengers to disable cellular access. Most mobile devices have a setting called Airplane Mode to simplify this process. This setting turns off all cellular, Wi-Fi, and Bluetooth radios.
+
+Airplane Mode is useful when traveling on an airplane or when located where accessing data is prohibited or expensive. Most mobile device functions are still usable, but communication is not possible. Once airplane mode can be turned on, Wi-Fi, Bluetooth, and other wireless functionality can be turned on except for cellular. You can also enable or disable cellular access. The two figures display the screens to turn Airplane Mode on or off on an iOS device and the screen to enable or disable cellular access on an iOS.
+
+
+# Enabling Disabling Cellular Data on Android and iOS
+
+You can also enable or disable cellular access. Select each tab to view the steps to change cellular access settings on an Android and an iOS device.
+
+1. Android
+
+Cellular Data on an Android device.
+
+**Step 1.** Select **Settings.**
+**Step 2.** Touch **More** under Wireless and Networks.
+**Step 3**. Touch **Mobile Networks.**
+**Step 4.** Touch **Data** to enable or to disable it.
+
+2. iOS
+
+Cellular Data on an iOS device.
+
+**Step 1.** Select **Settings.**
+**Step 2.** Touch **General.**
+**Step 3**. Touch **Cellular Data** to enable or to disable it.
+
 # 1.1.6 Hotspot
+
+Another useful cellular feature is using a cellular device as a hotspot. A hotspot is when a cellular device provides an internet connection to other devices. The Wi-Fi devices could select the cellular device at its Wi-Fi connection. For instance, a user may need to connect a computer to the internet, but no Wi-Fi or wired connection is available. A cell phone can bridge the internet through the cellular carrier’s network.
+
+To enable an iOS device to become a personal hotspot, touch Personal Hotspot as shown below in the figure on the left. This opens the Personal Hotspot shown in the figure on the right. Notice how the iOS Personal Hotspot feature can connect Bluetooth or USB-connected devices to the internet.
+
+**Note:** A hotspot is sometimes referred to as tethering.
+
+Finally, there are apps available for mobile devices that can be useful tools when diagnosing mobile device radio problems. For instance, a Wi-Fi analyzer can display information about wireless networks, while a cell tower analyzer can be used on cellular networks.
+
+1. iOS Personal Hotspot Access
+
+2. iOS Personal Hotspot Settings
+
 # 1.1.7 Check Your Understanding - Wireless Technology
 
 # 1.2 Bluetooth
