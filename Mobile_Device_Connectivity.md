@@ -123,6 +123,56 @@ Finally, there are apps available for mobile devices that can be useful tools wh
 # 1.1.7 Check Your Understanding - Wireless Technology
 
 # 1.2 Bluetooth
+# 1.2.1 Bluetooth for Mobile Devices
+
+- Wireless Speaker
+This is a portable mobile speaker that connects to mobile devices to provide high-quality audio without a stereo system.
+
+- Wireless Headphones
+This is high-quality Bluetooth headphones for listening to music. Some also include a microphone and can be used as a hands-free headset for making and receiving telephone calls.
+
+- Wireless Keyboard or Mouse
+Some mobile devices can pair up with a Bluetooth keyboard and mouse to make input easier.
+
+- Wireless Gaming Controller
+Bluetooth game controllers can be paired to mobile devices.
+
+
+# 1.2.2 Bluetooth Pairing
+
+Bluetooth is a networking standard consisting of the physical and protocol levels. The physical level for Bluetooth is a radio frequency standard. Devices connect to other Bluetooth-enabled devices at the protocol level, called Bluetooth pairing. At the protocol level, devices agree on the timing, method, and comparison of sent bits. 
+
+Specifically, Bluetooth pairing is when two Bluetooth devices establish a connection to share resources. Bluetooth radios must be turned on for the devices to pair, and one device begins searching for other devices. Other devices must be set to discoverable mode, also called visible, so that they can detect them.
+
+When a Bluetooth device is in discoverable mode, it transmits Bluetooth and device information such as device name, services that the device can use, Bluetooth class, and device name.
+
+A PIN may be requested to authenticate the pairing process during the pairing process, as shown in the figure. The PIN is often a number but can also be a numeric code or passkey. The PIN is stored using pairing services, so it does not have to be entered the next time the device tries to connect. This is convenient when using a smartphone headset because it is paired when turned on within range.
+
+![Screenshot (748)](https://github.com/user-attachments/assets/4b768529-cc21-4f3d-8c62-69d91a602c75)
+
+- Android Pairing
+**Android Bluetooth Pairing**
+To pair a Bluetooth device with an Android device.
+
+**Step 1.** Follow the instructions for your device to place it in discoverable mode.
+**Step 2.** Check the instructions for your device to find the connection PIN.
+**Step 3.** Select **Settings > Bluetooth** (under Wireless & Networks section).
+**Step 4**. Touch the **Bluetooth** toggle to turn it on.
+**Step 5.** Wait until Android scans and locates the Bluetooth device previously placed in discoverable mode.
+**Step 6.** Touch the discovered device to select it.
+**Step 7.** Enter the PIN.
+
+- iOS Bluetooth Pairing
+**iOS Bluetooth Pairing**
+To pair a Bluetooth device with an iOS device.
+
+**Step 1.** Follow the instructions for your device to place it in discoverable mode.
+**Step 2.** Check the instructions for your device to find the connection PIN.
+**Step 3.** Select **Settings** **> Bluetooth.**
+**Step 4.** Touch **Bluetooth** to turn it on.
+**Step 5.** Touch the discovered device to select it.
+**Step 6.** Type the PIN.
+
 # 1.3 Email Configuration
 # 1.4 Mobile Device Synchronization
 # 1.5 Mobile Device Connectivity Summary
