@@ -7,8 +7,8 @@ The ability of a laptop, tablet, or cell phone to wirelessly connect to the inte
 
 Mobile devices typically have two wireless internet connectivity options:
 
-- Wi-Fi - Wireless network connections use local Wi-Fi settings.
-- Cellular - Wireless network connections are fee-provided using cellular data. Cellular networks require cellular towers and satellites to create a mesh of global coverage. A cellular data network connection can become expensive without an appropriate service plan.
+- **Wi-Fi** - Wireless network connections use local Wi-Fi settings.
+- **Cellular** - Wireless network connections are fee-provided using cellular data. Cellular networks require cellular towers and satellites to create a mesh of global coverage. A cellular data network connection can become expensive without an appropriate service plan.
 
 You may need to register a device with a carrier or provide some unique identifier. Every mobile device has a unique 15-digit number called an International Mobile Equipment Identity (IMEI). This number identifies the device to a carrier's network. The numbers come from a family of devices called the Global System for Mobile Communications (GSM). The number is found in the device's configuration settings or a battery compartment if the battery is removable.
 
@@ -22,14 +22,14 @@ Many businesses, organizations, and locations also offer free Wi-Fi connections 
 
 It is essential to secure home Wi-Fi networks. Precautions should be taken to protect Wi-Fi communications on mobile devices:
 
-- Enable security on home networks. Always enable the highest Wi-Fi security framework possible. Currently, WPA2 security is the most secure.
+- Enable security on home networks. Always enable the highest Wi-Fi security framework possible. Currently, WPA2 or WPA3 security is the most secure.
 - Never send login or password information using clear, unencrypted text.
 - Use a secure VPN connection when possible.
 
 Devices can connect automatically or manually to Wi-Fi networks.
 
 1. iOS
-iOS
+**iOS**
 Connecting to Wi-Fi on an iOS device.
 
 **Step 1.** Select **Settings** > **Wi-Fi** > **Other**.
@@ -39,8 +39,8 @@ Connecting to Wi-Fi on an iOS device.
 **Step 5.** Touch **Password** and enter the password.
 **Step 6.** Touch **Join.**
 
-3. Android
-Android
+2. Android
+**Android**
 Connecting to Wi-Fi on an Android device.
 
 **Step 1.** Select **Settings** > **Add network.**
@@ -76,13 +76,19 @@ Introduced in the late 2000s, 4G standards enables speeds of 100 Mb/s and up to 
 
 Introduced in 2019, 5G is the latest standard. It is more efficient than previous standards and may support speeds up to 20 Gb/s.
 
-NOTE : Many cell phones can also support multiple standards to enable backward compatibility. For instance, many cell phones support 4G and 5G standards. The cell phone will use 5G when available. If a 5G network is no longer public, it will automatically switch to 4G without losing connection.
+**NOTE :** Many cell phones can also support multiple standards to enable backward compatibility. For instance, many cell phones support 4G and 5G standards. The cell phone will use 5G when available. If a 5G network is no longer public, it will automatically switch to 4G without losing connection.
 
 # 1.1.5 Airplane Mode
 
 It may be required for you to disable your cellular access. For instance, airlines typically ask their passengers to disable cellular access. Most mobile devices have a setting called Airplane Mode to simplify this process. This setting turns off all cellular, Wi-Fi, and Bluetooth radios.
 
 Airplane Mode is useful when traveling on an airplane or when located where accessing data is prohibited or expensive. Most mobile device functions are still usable, but communication is not possible. Once airplane mode can be turned on, Wi-Fi, Bluetooth, and other wireless functionality can be turned on except for cellular. You can also enable or disable cellular access. The two figures display the screens to turn Airplane Mode on or off on an iOS device and the screen to enable or disable cellular access on an iOS.
+
+**iOS Airplane Mode & iOS Cellular Data**
+![Screenshot (752)](https://github.com/user-attachments/assets/ee7d8548-a20f-418b-bb1e-69811a0eb597)
+
+![Screenshot (753)](https://github.com/user-attachments/assets/f7743ea1-202a-4f83-885d-468195659146)
+
 
 
 # Enabling Disabling Cellular Data on Android and iOS
@@ -116,9 +122,12 @@ To enable an iOS device to become a personal hotspot, touch Personal Hotspot as 
 
 Finally, there are apps available for mobile devices that can be useful tools when diagnosing mobile device radio problems. For instance, a Wi-Fi analyzer can display information about wireless networks, while a cell tower analyzer can be used on cellular networks.
 
-1. iOS Personal Hotspot Access
+**iOS Personal Hotspot Access & iOS Personal Hotspot Settings**
 
-2. iOS Personal Hotspot Settings
+![Screenshot (750)](https://github.com/user-attachments/assets/553eed43-f38b-4f5f-aa51-a57112ecaba7)
+
+![Screenshot (751)](https://github.com/user-attachments/assets/6e7de084-f9e0-40bc-b083-f2a2575ee2bd)
+
 
 # 1.1.7 Check Your Understanding - Wireless Technology
 
