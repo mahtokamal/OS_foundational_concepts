@@ -189,9 +189,63 @@ We all use email but never really think about how email actually works. The emai
 
 **Note:** This section focuses on email clients for mobile devices.
 
+1. Email Servers
 Email Servers
+- Responsible for forwarding email messages sent by their users.
+- Servers forward emails to other email servers.
+- Servers store emails until retrieved by users.
 
+2. Email Clients
 Email Clients
+- Clients connect to the email servers to retrieve their emails.
+- Users utilize email clients to compose, read and manage their messages.
+- Email clients can be web-based or standalone applications.
+- Standalone email clients are platform dependent.
+
+Email clients and servers use various protocols and standards to exchange emails. 
+
+Popular email protocols and standards
+1. POP3
+Post Office Protocol 3 (POP3)
+- This is an email client protocol that is used to retrieve emails from a remote server over TCP/IP.
+- It enables a client to connect to an email server, download the user email from the server, and then disconnect.
+- POP3 typically does not leave a copy of the email on the server.
+- POP3 uses TCP port 110.
+- Compare with IMAP.
+3. IMAP
+Internet Mail Access Protocol (IMAP)
+- Email client similar to POP3 except that it synchronizes email folders between the server and client and downloads copies of the email from the email server.
+- IMAP is faster than POP3 but requires more disk space and more CPU resources.
+- It is often used in large networks, such as a university campus.
+- The most recent version of IMAP is IMAP4 and it uses TCP port 143.
+- Compare with POP3.
+4. SMTP
+Simple Mail Transfer Protocol (SMTP)
+- Email clients use SMTP to send email to servers.
+- Email servers also use SMTP to send emails to other email servers.
+- A message is sent only after recipients are identified and verified.
+- SMTP is text-based and uses only ASCII encoding and requires MIME to send all other file types.
+- SMTP uses TCP port 25.
+5. MIME
+Multipurpose Internet Mail Extension (MIME)
+- MIME is normally used in conjunction with SMTP.
+- Mime extends the text-based email format to include other formats, such as pictures and word processor documents.
+6. SSL
+Secure Sockets Layer (SSL)
+- SSL was developed to transmit files securely.
+- Most email clients and servers support encryption of emails.
+
+Email servers require email software such as Microsoft Server Exchange. Exchange is also a contact manager and calendaring software. It uses a proprietary messaging architecture called Messaging Application Programming Interface (MAPI). The Microsoft Office Outlook client uses MAPI to connect Exchange servers to provide email, calendar, and contact management.
+
+Email clients have to be installed on a mobile device. Many clients are configurable using a wizard. However, you still need to know key information to set up an email account. The table lists the information required to set up an email account.
+
+|Email Account Information|Description|
+|---|--|
+|---|--|
+|---|--|
+|---|--|
+|---|--|
+|---|--|
 
 # 1.4 Mobile Device Synchronization
 # 1.5 Mobile Device Connectivity Summary
