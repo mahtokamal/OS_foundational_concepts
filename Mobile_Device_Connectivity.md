@@ -183,5 +183,15 @@ To pair a Bluetooth device with an iOS device.
 **Step 6.** Type the PIN.
 
 # 1.3 Email Configuration
+# 1.3.1 Introducton to Email
+
+We all use email but never really think about how email actually works. The email structure relies on email servers and email clients. Select each for more information.
+
+**Note:** This section focuses on email clients for mobile devices.
+
+Email Servers
+
+Email Clients
+
 # 1.4 Mobile Device Synchronization
 # 1.5 Mobile Device Connectivity Summary
