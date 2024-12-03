@@ -241,11 +241,11 @@ Email clients have to be installed on a mobile device. Many clients are configur
 
 |Email Account Information|Description|
 |---|--|
-|---|--|
-|---|--|
-|---|--|
-|---|--|
-|---|--|
+|Email Address|This is the address people need to send email to you.<br> An email address is a username followed by the @ symbol and the domain of the email server (user@example.net).|
+|Display name|This can be your real name, nickname, or any name that you want people to see.|
+|Email protocols|Email protocols are used by the incoming mail server.<br> Different protocols provide different email services.|
+|Incoming and Outgoing mail server names|These names are provided by the network administrator or ISP.|
+|Account Credentials|This consists of the username that is used to log in to the mail server and the account password. <br> Always use strong passwords.|
 
 # 1.4 Mobile Device Synchronization
 # 1.5 Mobile Device Connectivity Summary
