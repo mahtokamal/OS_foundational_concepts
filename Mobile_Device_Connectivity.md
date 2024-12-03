@@ -301,4 +301,8 @@ Mobile email client apps, including Gmail and Yahoo.
 Email client apps provide a better user experience when compared to the web interface.
 
 # 1.4 Mobile Device Synchronization
+# 1.4.1 Types of Data to Synchronize
+# 1.4.2 Enabling Synchronizaton
+# 1.4.3 Synchronization Connection Types
+
 # 1.5 Mobile Device Connectivity Summary
