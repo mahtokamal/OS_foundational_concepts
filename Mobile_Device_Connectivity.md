@@ -247,5 +247,58 @@ Email clients have to be installed on a mobile device. Many clients are configur
 |Incoming and Outgoing mail server names|These names are provided by the network administrator or ISP.|
 |Account Credentials|This consists of the username that is used to log in to the mail server and the account password. <br> Always use strong passwords.|
 
+# 1.3.2 
+# 1.3.3 Android Email Configuration
+
+Android devices are capable of using advanced communication applications and data services. Many of these applications and features require using web services provided by Google.
+
+When you configure an Android mobile device for the first time, you are prompted to sign in to your Google account with your Gmail email address and password. Signing in to your Gmail account makes the Google Play store, data and settings backup, and other Google services accessible. The device synchronizes contacts, email messages, apps, downloaded content, and additional information from Google services. If you do not have a Gmail account, you can use the Google account sign-in page to create one.
+
+Use the following steps to add an email account on an Android device.
+
+**Step 1.** Touch the Email or the Gmail app icon.
+**Step 2.** Choose the type of account (i.e., Google/GMAIL, Personal, or Exchange), and tap NEXT.
+**Step 3.** Enter the device's passcode if needed.
+**Step 4.** Enter the email address you want to use and the password.
+**Step 5.** Tap Create New Account.
+**Step 6.** Enter your first name, last name, email address, and password.
+**Step 7.** Provide a phone number for account recovery purposes (optional).
+**Step 8.** Review the account information and tap Next.
+
+**Note:** If you want to restore Android settings to a tablet that you have previously backed up, you must sign in to the account when setting up the tablet for the first time. You cannot restore your Android settings if you sign in after the initial setup.
+
+After the initial setup, access your mailbox by touching the Gmail app icon. Android devices also have an email app for connecting to other email accounts, but it simply redirects the user to the Gmail app in later versions of Android.
+
+# 1.3.4 iOS Email Configuration
+
+iOS devices ship with a stock Mail app that can handle multiple email accounts simultaneously. The Mail app supports several different email account types, including iCloud, Yahoo, Gmail, AOL, Outlook.com, and Microsoft Exchange.
+
+An Apple ID is required to set up an iOS device. An Apple ID accessed the Apple App Store, the iTunes Store, and iCloud. iCloud provides email and the ability to store content on remote servers. The iCloud email is free and offers remote storage for backups, mail, and documents.
+
+All iOS devices, apps, and content link to your Apple ID. When an iOS device is activated for the first time, the Setup Assistant guides you through connecting the device and signing in with or creating an Apple ID. The Setup Assistant also allows you to create an iCloud email account. During the setup process, you can restore settings, content, and apps from a different iOS device from an iCloud backup.
+
+Use the following steps to add an email account on an iOS device.
+
+**Step 1.** Select **Settings > Passwords & Accounts > Add Account.**
+**Step 2.** Tap the account type (i.e., iCloud, Exchange, Google, Yahoo, AOL, or Outlook).
+**Step 3.** If the account type is not listed, touch Other.
+**Step 4.** Enter the account information.
+**Step 5.** Touch **Save.**
+
+# 1.3.5 Intenet Email
+
+Many people have multiple email addresses. For instance, you may have a personal email account and a school or work account.
+
+The email service provided uses either:
+
+**Local email** - A local IT department manages the email server, such as a school network, business network, or organizational network.
+**Internet email** - The email service is hosted on the internet and controlled by a service provider such as Gmail.
+Users can access their online mailboxes using the following:
+
+Default mobile email app included in the OS, such as iOS Mail.
+Browser-based email clients, such as Mail or Outlook.
+Mobile email client apps, including Gmail and Yahoo.
+Email client apps provide a better user experience when compared to the web interface.
+
 # 1.4 Mobile Device Synchronization
 # 1.5 Mobile Device Connectivity Summary
