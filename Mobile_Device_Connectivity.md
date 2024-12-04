@@ -302,6 +302,29 @@ Email client apps provide a better user experience when compared to the web inte
 
 # 1.4 Mobile Device Synchronization
 # 1.4.1 Types of Data to Synchronize
+
+Many people use a combination of desktop, laptop, tablet, and smartphone devices to access and store information. It is helpful when specific information is the same across multiple devices. For example, when scheduling appointments using a calendar program, each new appointment would need to be entered into each device to ensure that each device is up to date. Data synchronization eliminates the need to make changes to every device.
+
+Data synchronization is the exchange between two or more devices while maintaining consistent data on those devices.
+
+Synchronization methods include synchronization to the cloud, a desktop, and an automobile.
+
+There are many different types of data to synchronize:
+
+- Contacts
+- Applications
+- Email
+- Pictures
+- Music
+- Videos
+- Calendar
+- Bookmarks
+- Documents
+- Location data
+- Social media data
+- E-books
+- Passwords
+
 # 1.4.2 Enabling Synchronizaton
 # 1.4.3 Synchronization Connection Types
 
