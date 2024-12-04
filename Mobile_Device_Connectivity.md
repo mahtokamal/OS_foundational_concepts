@@ -326,6 +326,52 @@ There are many different types of data to synchronize:
 - Passwords
 
 # 1.4.2 Enabling Synchronizaton
+
+Sync typically means data synchronization. However, the meaning of sync varies slightly between an Android and an iOS device.
+
+Android devices can synchronize your contacts and other data from Facebook, Google, and Twitter. As a result, all devices using the same Google account will have access to the same data. This makes it easier to replace a damaged device without data loss. Android Sync also allows the user to choose the data types to synchronize.
+
+Android devices also support automatic synchronization with a feature called Auto Sync. This synchronizes the device with the service provider's servers automatically, without user intervention. To save on battery life, you can disable automatic synchronization for all or just some of the data.
+
+The following are the various steps to synchronize an Android device.
+
+To review what data to synchronize on an Android device.
+
+Step 1. Open your device's Settings app.
+Step 2. Tap Accounts and backup > Manage accounts.
+Step 3. If you have more than one account on your device, tap the one you want.
+Step 4. Tap Sync account.
+Step 5. Review the data to be synchronized and when they last synced. You can enable or disable which apps to sync.
+
+To disable auto-sync on an Android device.
+
+Step 1. Open your device's Settings app.
+Step 2. Tap Accounts and backup > Manage accounts.
+Step 3. Disable Auto-sync data.
+
+
+iOS devices support two types of synchronizing:
+
+Backup - Copies your data from your phone to your computer or iCloud. That includes application settings, text messages, voicemails, and other data types. Backup saves a copy of all data created by the user and by apps.
+Sync - Copies new apps, music, video, or books from iTunes to your phone and from your phone to iTunes, resulting in full synchronization on both devices. Sync copies only media downloaded via the iTunes Store mobile app, respecting what was specified through iTunes' Sync definitions. For example, a user can keep movies from syncing to the phone if the user does not watch movies on the phone.
+As a general rule, when connecting an iOS device to iTunes, always perform a Backup first and then Sync. The order can be changed in iTunes' Preferences.
+
+A few more useful options are available when performing Sync or Backup on iOS:
+
+Backup storage location - iTunes stores backups on the local computer hard drive or the iCloud online service.
+Backup straight from an iOS device - In addition to backing up data from an iOS device to the local hard drive or iCloud through iTunes, users can configure the iOS device to upload a copy of its data directly to iCloud. Backups can perform automatically, eliminating the need to connect to iTunes. Similar to Android, the user can also specify the type of data sent to the iCloud backup, as shown in the figure.
+Sync over Wi-Fi - iTunes can scan and connect to iOS on the same Wi-Fi network. When connected, the Backup process can be initiated automatically between iOS devices and iTunes. Backups happen automatically every time iTunes and the iOS device are on the same Wi-Fi, eliminating the need for a wired USB connection.
+ 
+When a new iPhone connects to the computer, iTunes will offer to restore it using the most recent backup of data from other iOS devices, if available. The figure below shows the iTunes window on a computer.
+
 # 1.4.3 Synchronization Connection Types
+
+The devices use USB and Wi-Fi connections to synchronize data between devices.
+
+Most Android devices do not have a desktop program for performing data synchronization. Therefore, most users sync with Google’s different web services, even when synchronizing with a desktop or laptop computer. One benefit of synchronizing data using this method is that the data is accessible from any computer or mobile device at any time by signing in to a Google account. The disadvantage of this arrangement is that it can be challenging to synchronize data with programs installed locally on a computer, such as Outlook for email, calendar, and contacts.
+
+iOS devices can also use Wi-Fi Sync to synchronize with iTunes. An iOS device must first synchronize with iTunes using a USB cable to use Wi-Fi Sync. It would help if you also turned on Sync over Wi-Fi Connection in the Summary pane of iTunes, as shown in the figure. After that, you can use Wi-Fi Sync or a USB cable. When the iOS device is on the same wireless network as the computer running iTunes and using a power source, it automatically synchronizes with iTunes.
+
+Microsoft also offers cloud storage for synchronizing data between devices through OneDrive. OneDrive is also able to synchronize data between mobile devices and PCs.
 
 # 1.5 Mobile Device Connectivity Summary
