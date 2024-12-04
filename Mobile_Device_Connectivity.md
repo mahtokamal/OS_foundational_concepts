@@ -375,3 +375,18 @@ iOS devices can also use Wi-Fi Sync to synchronize with iTunes. An iOS device mu
 Microsoft also offers cloud storage for synchronizing data between devices through OneDrive. OneDrive is also able to synchronize data between mobile devices and PCs.
 
 # 1.5 Mobile Device Connectivity Summary
+# 1.5.1 What Did I Learn in this Module?
+
+1. Wireless and Cellular Data Network
+**Topic Objective:** Explain how to configure wireless and cellular data settings.
+
+2. Bluetooth
+**Topic Objective:** Explain how to pair Bluetooth devices.
+
+3. Email Configuration
+**Topic Objective:** Explain how to configure email settings.
+
+4. Mobile Device Synchronization
+**Topic Objective:** Explain how to synchronize data.
+
+# 1.5.2 Quiz - Mobile Device Connectivity
