@@ -377,16 +377,16 @@ Microsoft also offers cloud storage for synchronizing data between devices throu
 # 1.5 Mobile Device Connectivity Summary
 # 1.5.1 What Did I Learn in this Module?
 
-1. Wireless and Cellular Data Network
+1. Wireless and Cellular Data Network <br>
 **Topic Objective:** Explain how to configure wireless and cellular data settings.
 
-2. Bluetooth
+2. Bluetooth <br>
 **Topic Objective:** Explain how to pair Bluetooth devices.
 
-3. Email Configuration
+3. Email Configuration <br>
 **Topic Objective:** Explain how to configure email settings.
 
-4. Mobile Device Synchronization
+4. Mobile Device Synchronization <br>
 **Topic Objective:** Explain how to synchronize data.
 
 # 1.5.2 Quiz - Mobile Device Connectivity
