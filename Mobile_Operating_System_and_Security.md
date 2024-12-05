@@ -11,6 +11,7 @@ The portable nature of mobile devices makes them at risk for theft and loss. You
 # 1.3 Common Mobile Device Features
 # 1.4 Passcode Locks
 # 1.5 Cloud-Enabled Services for Mobile Devices
-# 1.6 
+# 1.6 Mobile Device Software Security
+# 1.7 Mobile Operating Systems and Security Summary
 
 
