@@ -43,8 +43,39 @@ Third-party or custom programs are installed directly using an Android Applicati
 
 Many new cars have navigation built into them. Some also have what is known as in-vehicle entertainment systems. A growing trend is using many apps on your mobile device through this entertainment system. Your tablet or smartphone is connected to the system via USB or Bluetooth to enable what is known as Android Auto or Apple CarPlay. Navigation is one of the most common uses for this connection. You can also access the music on your mobile device and play it over the car stereo. Other features include talk-to-text, hands-free calling, access to digital assistants, and a display of your calendar contents.
 
-# 1.1.3 
+# 1.1.3 Quiz
+
 # 1.2 Mobile Touch Inteface
+# 1.2.1 Android Home Screen Items
+
+Much like a desktop or laptop computer, mobile devices organize icons and widgets on multiple screens for easy access.
+
+**Android Main Home Screen**
+
+One screen is designated as the home screen. Additional screens are accessed by sliding the home screen to the left or right. Each screen contains navigation icons, the main area where icons and widgets are accessed, and notification and system icons. The screen indicator displays which screen is currently active.
+
+**Navigation Icons**
+
+The Android OS uses the system bar to navigate apps and screens. The system bar is always displayed at the bottom of every screen.
+
+**Notification and System Icons**
+
+Each Android device has an area that contains system icons, such as the clock, battery status, and radio signal status for Wi-Fi and provider networks. Apps such as email, text messaging, and Facebook often display status icons to indicate communication activity.
+
+To open the notification area on Android devices, swipe down from the top of the screen. You can do the following when notifications are open:
+
+- Respond to a notification by touching it.
+- Dismiss a notification by swiping it off the screen to either side.
+- Dismiss all notifications with the icon.
+- Toggle often-used settings.
+- Adjust the brightness of the screen.
+- Open the Settings menu with the quick settings icon.
+- The Android OS uses the system bar to navigate apps and screens. The system bar is always displayed at the bottom of every screen.
+
+# 1.2.2 Lab - Working with Android
+# 1.2.3 iOS Home Screen Items
+# 1.2.4 Lab - Working with iOS
+
 # 1.3 Common Mobile Device Features
 # 1.4 Passcode Locks
 # 1.5 Cloud-Enabled Services for Mobile Devices
