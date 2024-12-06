@@ -74,6 +74,35 @@ To open the notification area on Android devices, swipe down from the top of the
 
 # 1.2.2 Lab - Working with Android
 # 1.2.3 iOS Home Screen Items
+
+The iOS interface works in much the same way as the Android interface. Screens are used to organize apps launched with a touch. There are some significant differences:
+
+- No navigation icons - A physical button may be pressed instead of touching navigation icons.
+- No widgets - Only apps and other content can be installed on iOS device screens.
+- No app shortcuts - Each app on a home screen is the actual app, not a shortcut.
+
+**Home button**
+
+Unlike Android, iOS devices do not use navigation icons to perform functions. On iPhone versions prior to the iPhone X, a single physical button called the Home button performs many of the same functions as the Android navigation buttons. For these older phones, the Home button is at the bottom of the device and can perform many functions. Some common functions performed by the home button with explanations of how these functions are performed on the iPhone X, which has eliminated the home button, are shown below:
+
+Wake the device - When the device’s screen is off, press the Home button once to turn it on. On iPhone X you can wake the device using either facial recognition or by raising the phone and tapping the screen. (Raise to wake is also available on iPhone versions 6s or later.)
+Return to the home screen - Press the Home button while using an app to return to the last home screen that was used. On iPhone X return to the home screen by swiping the screen up from the bottom.
+Start Siri or voice control – Press and hold the Home button to start Siri or voice control. Siri is special software that understands advanced voice controls. On iPhone X Siri is launched by pressing and holding the side button.
+
+**iOS Notification Center**
+
+iOS devices have a notification center that displays all alerts in one location. To open the notification area on iOS devices, touch the top center of the screen and swipe down. This will show the phone's lock screen. Any notifications will appear in the middle area of the screen, as shown in the figure. From here, you can browse notifications and alerts, dismiss them, clear them, and adjust them as necessary.
+
+**Commonly Used Settings**
+
+iOS devices allow the user to quickly access common settings and switches, even if the device is locked. To access the commonly used settings menu, swipe down from the top right corner.
+
+The Control Center comes with some default controls that are always available. You can configure addition controls by navigating to Settings > Control Center. In the figure, the user has added the Flashlight, Timer, Calculator, Camera, and other apps to the Control Center screen.
+
+**iOS Spotlight**
+
+From any screen of an iOS device, touch the screen and drag down to reveal the Spotlight search field. Any part of the screen except the very top or the very bottom should work. When Spotlight search field is revealed, type what you're looking for. Spotlight shows suggestions from many sources including your installed apps, Setting, the internet, iTunes, App Store, movie show times, and nearby locations. Spotlight also automatically updates the results as you type.
+
 # 1.2.4 Lab - Working with iOS
 
 # 1.3 Common Mobile Device Features
