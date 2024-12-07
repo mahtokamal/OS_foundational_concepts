@@ -164,10 +164,101 @@ To enable GPS on iOS devices use the following path:
 
 # 1.3.4 Lab - Mobile Device Features
 # 1.3.5 Wi-Fi Calling
+
+Instead of using the cellular carrier's network, modern smartphones can use the internet to transport voice calls by taking advantage of a local Wi-Fi hotspot. This is called Wi-Fi calling. Locations such as coffee shops, workplaces, libraries, or homes, usually have Wi-Fi networks connected to the internet. The phone can transport voice calls through the local Wi-Fi hotspot. If there is no Wi-Fi hotspot within reach, the phone will use the cellular carrier's network to transport voice calls.
+
+Wi-Fi calling is beneficial in areas with poor cellular coverage because it uses a local Wi-Fi hotspot to fill the gaps. The Wi-Fi hotspot must guarantee a throughput of at least 1Mbps to the internet for a good quality call. When Wi-Fi calling is enabled and used during a voice call, the phone will display "Wi-Fi" next to the carrier name.
+
+**Enabling Wi-Fi Calling on Android**
+
+To enable Wi-Fi calling on Android use the following path:
+
+**Settings > More (under Wireless & networks section) > Wi-Fi Calling > Tap on the toggle to turn it on**
+
+**Enabling Wi-Fi Calling on iOS**
+
+To enable Wi-Fi calling on iOS use the following path:
+
+**Settings > Wi-Fi and turn on Wi-Fi Calling**
+
+**Note:** Not all cellular carriers allow Wi-Fi calling. If you cannot enable it on your phone, your carrier or mobile device probably does not support it.
+
 # 1.3.6 Mobile Payments
+
+Mobile payments refer to any payments made through a mobile phone.
+
+**1. Premium SMS Based Transactional Payments**
+
+**Premium SMS Based Transactional Payments**
+
+Consumers send an SMS message to a carrier's special phone number containing a payment request. The seller is informed the payment has been received and is cleared to release the goods. The charge is then added to the customer's phone bill. Slow speed, poor reliability, and poor security are a few shortcomings of this method.
+
+**2. Direct Mobile Billing**
+**Direct Mobile Billing**
+
+Using a mobile billing option during check-out, a user identifies their self (usually through two-factor authentication) and allows the charge to be added to the mobile service bill. This is very popular in Asia and has the following benefits: security, convenience, and no need for bank cards or credit cards.
+
+**3. Mobile Web Payments Contactless**
+**Mobile Web Payments Contactless**
+
+The consumer uses the web or dedicated apps to complete the transaction. This method relies on the Wireless Application Protocol (WAP) and usually requires the use of credit cards or a pre-registered online payment solution, such as PayPal or Venmo.
+
+**4. Contactless NFC**
+**Contactless NFC**
+
+Near Field Communication (NFC) is a mobile payment method used mostly in physical store transactions. A consumer pays for good or services by waving the phone near the payment system. Based on a unique ID, the payment is charged directly against a pre-paid account or bank account. NFC is also used in mass-transportation services, the public parking sector, and many other consumer areas.
+
 # 1.3.7 Virtual Private Network
+
+A Virtual Private Network (VPN) is a private network that uses a public network (usually the internet) to connect remote sites or users. Instead of a dedicated leased line, a VPN uses "virtual" connections routed through the internet from the company's private network to the remote site or employee.
+
+Many companies create their VPNs to accommodate the needs of remote employees and distant offices. With the proliferation of mobile devices, it was a natural move to add VPN clients to smartphones and tablets.
+
+For a VPN established from a client to a server, the client accesses the network behind the server like it was connected directly to that network. Because VPN protocols also allow for data encryption, the communication between client and server is secure.
+
+When the device has VPN information loaded, that device must start before traffic can be sent and received.
+
+**Configuring a VPN Connection on Android**
+
+To create a new VPN connection on Android use the following path:
+
+**Settings > More (under Wireless & networks section) > VPN > Tap on the + sign to add a VPN connection**
+
+**Starting a VPN Connection on Android**
+
+To start a VPN on Android use the following path:
+
+**Settings > General > VPN > Select the desired VPN connection > enter username and password > tap CONNECT**
+
+**Configuring a VPN Connection on iOS**
+
+To create a new VPN connection on iOS use the following path:
+
+**Settings > General > VPN > Add VPN Configuration...**
+
+**Starting a VPN Connection on iOS**
+
+To start a VPN on iOS use the following path:
+
+**Settings > Toggle VPN to on**
+
 # 1.3.8 Virtual Assistants
 
+A digital assistant sometimes called a virtual assistant, is a program that can understand natural conversational language and perform tasks for the end user. Modern mobile devices are powerful computers, making them the perfect platform for digital assistants. Popular digital assistants include Google Now for Android, Siri for iOS, and Cortana for Windows Phone.
+
+These digital assistants rely on artificial intelligence, machine learning, and voice recognition technology to understand conversational-style voice commands. As the end user interacts with these digital assistants, sophisticated algorithms predict the user's needs and fulfill requests. By pairing simple voice requests with other inputs, such as GPS location, these assistants can perform several tasks, including playing a specific song, performing a web search, taking a note, or sending an email.
+
+**Google Now**
+
+To access Google Now on an Android device simply say "Okay google" and Google Now will activate and start listening to requests.
+
+**iOS Display & Brightness Menu**
+
+To access Siri on an iOS device, press and hold the Home button. Siri will activate and start listening to requests. Alternatively, Siri can be configured to start listening to commands when it hears "Hey Siri". To enable "Hey Siri", use the following path:
+
+**Settings > Siri & Search > Toggle Listen for "Hey Siri".**
+
+In the figure, Siri has responded to the user's request for a weather forecast.
 # 1.4 Passcode Locks
 # 1.5 Cloud-Enabled Services for Mobile Devices
 # 1.6 Mobile Device Software Security
