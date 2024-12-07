@@ -106,6 +106,68 @@ From any screen of an iOS device, touch the screen and drag down to reveal the S
 # 1.2.4 Lab - Working with iOS
 
 # 1.3 Common Mobile Device Features
+# 1.3.1 Screen Orientation
+
+Most mobile devices function in either portrait or landscape mode. A sensor inside the device, known as an accelerometer, detects how it is being held and will change the screen orientation appropriately. Users can choose the viewing mode that is the most comfortable for them for different types of content or applications. Content rotates to the position of the device. This feature is useful, for example, when taking a photograph. The camera app also turns to landscape mode when the device turns to landscape mode. Also, when a user writes a text, turning the device to landscape mode makes the keyboard larger and broader.
+
+Some devices have gyroscopes to provide more accurate movement readings. Gyroscopes allows a control mechanism for driving games where the phone or tablet functions as a steering wheel.
+
+**Android Screen Auto-Rotation Setting**
+
+When using an Android device, to enable auto rotation, open the notifications panel and turn on the auto-rotate function by tapping the screen rotation icon, indicated in the figure.
+
+**iOS Screen Auto-Rotation Setting**
+
+When using an iOS device, to enable automatic rotation use the following procedure:
+Swipe down from the top right corner to open the Control Center, and tap the lock icon, as shown in the figure.
+
+# 1.3.2 Screen Calibration
+
+You may need to adjust the screen's brightness when using a mobile device. When bright sunlight makes the screen difficult to read, increase the brightness level. Inversely, very low brightness is helpful when reading a book on a mobile device at night. Mobile devices can auto-adjust the brightness depending on the amount of surrounding light. The device must have a light sensor to use auto-brightness.
+
+The LCD screen for most mobile devices uses the most battery power. Lowering the brightness or using auto-brightness helps conserve battery power. Set the brightness to the lowest to get the device the most battery life.
+
+**Android Brightness Menu**
+
+When using an Android device, to configure screen brightness use the following path:
+
+**Swipe down from the very top of the screen > Display > Brightness > slide the brightness to the desired level**
+
+Alternatively, tap the **Adaptive Brightness** toggle to allow the device to decide the optimal screen brightness based on the amount of ambient light.
+
+**iOS Display & Brightness Menu**
+
+When using an iOS device, to configure screen brightness, use the following path:
+
+Swipe down from the top right corner and slide the brightness bar up or down to vary the brightness.
+
+Alternatively, to configure brightness in the Settings menu, use the following path:
+**Settings > Display & Brightness > slide the brightness to the desired level.**
+
+# 1.3.3 GPS
+
+Another common feature of mobile devices is the Global Positioning System (GPS). GPS is a navigation system that determines the time and geographical location of the device by using messages from satellites in space and a receiver on Earth. A GPS radio receiver uses at least four satellites to calculate its position based on the messages. GPS is very accurate, even used under most weather conditions. However, dense foliage, tunnels, and tall buildings can interrupt satellite signals. GPS receivers must have line-of-sight to GPS satellites and do not work indoors. Indoor Positioning Systems (IPS) can determine device location by triangulating its proximity to other radio signals, such as Wi-Fi access points.
+
+GPS services allow app vendors and websites to know a device's location and offer location-specific services (such as local weather and advertising). This is called geotracking.
+
+**Android Location Services**
+
+To enable GPS on Android devices use the following path:
+
+**Settings > Location > Tap on the toggle to turn location services on**
+
+**iOS Location Services**
+
+To enable GPS on iOS devices use the following path:
+
+**Settings > Privacy & Security > Location Services > Turn location services on**
+
+# 1.3.4 Lab - Mobile Device Features
+# 1.3.5 Wi-Fi Calling
+# 1.3.6 Mobile Payments
+# 1.3.7 Virtual Private Network
+# 1.3.8 Virtual Assistants
+
 # 1.4 Passcode Locks
 # 1.5 Cloud-Enabled Services for Mobile Devices
 # 1.6 Mobile Device Software Security
