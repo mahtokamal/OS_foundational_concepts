@@ -276,13 +276,53 @@ For iOS devices, you can turn on the Erase data option as shown. If the passcode
 **Note:** The iPhone in the figure is managed by Cisco. As part of Cisco's security policy, the user is not allowed to turn off **Erase Data.** Therefore, if the wrong password is entered 10 times, all data will be erased.
 
 **iOS GUI**
-
+Wipr
 On iOS, to increase security, the passcode is used as part of the encryption key for the entire system. Because the passcode is not stored anywhere, no one can gain access to the user data on iOS devices, including Apple. The system depends on the user to provide the passcode before the system can be unlocked and decrypted for use. A forgotten passcode will render user data unreachable, forcing the user to perform a full restore from a backup saved in iTunes or iCloud.
 
 
 # 1.4.4 Check Your Understanding - Screen Locks and Biometric Authentications
 
 # 1.5 Cloud-Enabled Services for Mobile Devices
+# 1.5.1 Remote Backup
+
+Mobile device data can be lost due to device failures or the loss or theft of the device. Periodically back up data to ensure it is recoverable if needed. With mobile devices, storage is often limited and not removable. Perform remote backups to overcome these limitations. A remote backup is when a device copies its data to cloud storage using a backup app. To restore data, run the backup app and access the website to retrieve the data.
+
+Most mobile operating systems have a user account linked to the vendor’s cloud services, such as iCloud for iOS, Google Sync for Android, and OneDrive for Microsoft. The user can enable automatic backups to the cloud for data, apps, and settings. Some third-party backup providers, such as Dropbox, can be used. Mobile devices can back up to a PC. iOS supports backups on iTunes running on a PC. Another option is configuring Mobile Device Management (MDM) software to back up user devices automatically.
+
+# 1.5.2 Locator Applications
+
+If a mobile device is misplaced or stolen, it is possible to find it using a locator app. A locator app should be installed and configured on each mobile device before it is lost. Both Android and iOS have apps for remotely locating a device.
+
+Like Apple’s Find My iPhone, Google Find My Device allows a user to locate, ring, or lock a lost Android device or erase data from the device. To manage a lost device, the user must visit Google Find My Device hosted at https://www.google.com/android/find and log in with the Google account used on the Android device. Google Find My Device is included and enabled by default on Android 5. x and can be found under **Settings > Biometrics Security > Find My Mobile.**
+
+iOS users can use the Find My iPhone app, as shown in the figure. The first step is to install the app, start it, and follow the instructions to configure the software. Different iOS devices locate a lost device with The Find My iPhone app.
+
+**Note:** If the app cannot locate the lost device, the device might be turned off or disconnected. Connect to a cellular or wireless network to receive app commands or send location information to the user.
+
+After locating the device, you might be able to perform additional functions, such as sending a message or playing a sound. These options are helpful if you have misplaced your device. If the device is close by, playing a sound indicates the location. If the device is at another site, sending a message to display on the screen allows the finder to contact you. 
+
+# 1.5.3 Remote Lock and Remote Wipe
+
+If attempts to locate a mobile device have failed, other security features can prevent data on the device from being compromised. Usually, the same apps that perform remote locations have security features. Two of the most common security features are remote lock and wipe.
+
+**Note:** For these remote security measures to function, the device must be powered on and connected to a cellular or Wi-Fi network.
+
+**Remote Lock**
+
+The remote lock feature for iOS devices is called lost mode. The Android Device Manager calls this feature Lock. It allows you to lock the device with a passcode, so others cannot gain access to the data in the device. For example, the user can display custom messages, or keep the phone from ringing due to incoming calls or text messages.
+
+**Remote Wipe**
+
+The remote wipe feature for iOS devices is called erase phone. The Android Device Manager calls this feature Erase. It deletes all data from the device and returns it to a factory state. To restore data to the device, Android users must set up the device using a Gmail account, and iOS users must synchronize their device to iTunes.
+
+Most mobile device operating systems provide a full device encryption feature. Full device encryption can prevent anyone in possession of the device from circumventing the device’s access controls and reading the raw data stored in memory.
+
+All user data on an iOS device is always encrypted and the key is stored on the device. When used to “wipe” the device, the OS deletes the key, and the data becomes inaccessible. Data Protection encryption is enabled automatically when a password lock is configured on the device.
+
+On Android OS, encryption is enabled through **Settings > Security.** Android uses full-disk encryption with a passcode-derived key.
+
+# 1.5.4 Check Your Understanding - Cloud - Enabled Services for Mobile Devices
+
 # 1.6 Mobile Device Software Security
 # 1.7 Mobile Operating Systems and Security Summary
 
