@@ -324,6 +324,55 @@ On Android OS, encryption is enabled through **Settings > Security.** Android us
 # 1.5.4 Check Your Understanding - Cloud - Enabled Services for Mobile Devices
 
 # 1.6 Mobile Device Software Security
-# 1.7 Mobile Operating Systems and Security Summary
+# 1.6.1 Antivirus
 
+All computers are vulnerable to malicious software. Smartphones and other mobile devices are computers and are also vulnerable. Antivirus apps are available for both Android and iOS. Depending on the permissions granted to antivirus apps when installed on an Android device, the app might not be able to scan files automatically or run scheduled scans. Manually initiate file scans. iOS does not allow automatic or scheduled scans. This safety feature prevents malicious programs from using unauthorized resources or contaminating other apps or the OS. Some antivirus apps also provide locator services, remote lock, or remote wipe.
+
+Mobile device apps run in a sandbox. A sandbox is a location of the OS that keeps code isolated from other resources and other code. It is difficult for malicious programs to infect a mobile device because apps run inside the sandbox. An Android app asks for permission to access specific resources upon installation. A malicious app can access any resources that were allowed permission during installation. This is another reason why it is vital to download apps only from trusted sources. A trusted app source is authenticated and authorized by a service provider. The service provider issues the developer a certificate to sign their apps and identify them as trusted.
+
+Due to the nature of the sandbox, malicious software does not usually damage mobile devices; it is far more likely for a mobile device to transfer a malicious program to another device, such as a laptop or desktop. For example, suppose a malicious program download from email, the Internet, or another device. In that case, a malicious program can be placed on a laptop the next time it connects to a mobile device.
+
+To prevent the malicious program from infecting additional devices, use a firewall. Firewall apps for mobile devices can Monitor app activity and prevent connections to specific ports or IP addresses. Because mobile device firewalls must be able to control other apps, they logically work at a higher (root) permission level. No root firewalls work by creating a virtual private network (VPN) and then controlling app access to the VPN.
+
+# 1.6.2 Rooting and jailbreaking
+
+Several software restrictions usually protect mobile operating systems. For example, an unmodified copy of iOS will only execute authorized code and allow minimal user access to its file system.
+
+Rooting and Jailbreaking are two methods for removing restrictions and protections added to mobile operating systems. They are a means of circumventing the usual operating of the device operating system to gain super-user or root administrator permissions. Rooting is used on Android devices to gain privileged or root-level access for modifying code or installing software not intended for the device. Jailbreaking is typically used on iOS devices to remove manufacturer restrictions allowing them to run arbitrary user code and granting users full access to the file system and kernel modules.
+
+Rooting or jailbreaking a mobile device usually voids the manufacturer's warranty. Although modifications are discouraged, a large group of users choose to remove their own devices' restrictions. Rooting or jailbreaking a mobile device customizes the GUI to improve the speed and responsiveness of the device. Apps come from secondary or unsupported sources.
+
+Jailbreaking exploits vulnerabilities in iOS. A program is written after finding a usable vulnerability. This program is the actual jailbreak software distributed on the internet. Apple discourages jailbreaking and actively works towards eliminating vulnerabilities that make jailbreaking possible on iOS. In addition to the OS updates and bug fixes, new iOS releases usually include patches to eliminate known vulnerabilities that allow jailbreaking. When updates fix iOS vulnerabilities, it forces hackers to start over.
+
+**Note:** The jailbreak process is completely reversible. To remove the jailbreak and bring the device back to its factory state, connect it to iTunes and perform a Restore.
+
+# 1.6.3 Patching and Updating Operating Systems
+
+You can update or patch the OS on mobile devices like the OS on a desktop or laptop. Updates add functionality or increase performance. Patches can fix security problems or issues with hardware and software.
+
+Because there are so many Android mobile devices, updates and patches do not release as one package for all devices. Sometimes a new version of Android cannot install on older devices where the hardware does not meet the minimum specifications. These devices might receive patches to fix known issues but not receive OS upgrades.
+
+Android updates and patches use an automated process for delivery. When a carrier or manufacturer has an update for a device, a notification on the device indicates that an update is ready. Touch the update to begin the download and installation process.
+
+iOS updates use an automated process for delivery. Devices that do not meet the hardware requirements are excluded. The easiest method to check for iOS updates is on the iPhone, go to **Settings > General > Software Update**, as shown in the figure.
+
+Two other types of updates for mobile device radio firmware are important. These are called baseband updates and consist of the Preferred Roaming List (PRL) and the Primary Rate ISDN (PRI). The PRL is configuration information that a cellular phone needs to communicate on other networks to call outside the carrier’s network. The PRI configures the data rates between the device and the cell tower. This ensures that the device can communicate with the tower at the correct rate.
+
+# 1.6.4 Check Your Understanding - Mobile Device Software Security
+
+# 1.7 Mobile Operating Systems and Security Summary
+# 1.7.1 What Did I learn in this Module?
+**1. Android Versus iOS**
+
+**2. Mobile Touch Interface**
+
+**3. Common Mobile Device features**
+
+**4. Passcode Locks**
+
+**5. Cloud-Enabled Services for Mobile Devices**
+
+**6. Mobile Device Software Security**
+
+# 1.7.2 Quiz - Mobile Operating Systems and Security
 
