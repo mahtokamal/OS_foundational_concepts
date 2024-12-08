@@ -259,7 +259,29 @@ To access Siri on an iOS device, press and hold the Home button. Siri will activ
 **Settings > Siri & Search > Toggle Listen for "Hey Siri".**
 
 In the figure, Siri has responded to the user's request for a weather forecast.
+
 # 1.4 Passcode Locks
+# 1.4.1 What do you already know? - Screen Locks
+# 1.4.2 Lab - passcodes Locks
+# 1.4.3 Restrictions on Failed Login Attempts
+
+Unlocking a mobile device requires entering the correct PIN, password, pattern, or another passcode type. In theory, a passcode, such as a PIN, could be guessed given enough time and perseverance. Mobile devices can perform defined actions after incorrect attempts to prevent someone from trying to guess a passcode.
+
+For Android devices, the number of failed attempts before lockout depends on the device and version of Android OS. Commonly, an Android device will lock when a passcode has failed from 4 to 12 times. After a device is locked, you can unlock it by entering the Gmail account information used to set up the device.
+
+**iOS Erase Data**
+
+For iOS devices, you can turn on the Erase data option as shown. If the passcode fails 10 times, the screen goes black, and all data on the device is deleted. To restore the iOS device and data, if you have backups, use either the Restore and Backup option in iTunes or the Manage Storage option in iCloud.
+
+**Note:** The iPhone in the figure is managed by Cisco. As part of Cisco's security policy, the user is not allowed to turn off **Erase Data.** Therefore, if the wrong password is entered 10 times, all data will be erased.
+
+**iOS GUI**
+
+On iOS, to increase security, the passcode is used as part of the encryption key for the entire system. Because the passcode is not stored anywhere, no one can gain access to the user data on iOS devices, including Apple. The system depends on the user to provide the passcode before the system can be unlocked and decrypted for use. A forgotten passcode will render user data unreachable, forcing the user to perform a full restore from a backup saved in iTunes or iCloud.
+
+
+# 1.4.4 Check Your Understanding - Screen Locks and Biometric Authentications
+
 # 1.5 Cloud-Enabled Services for Mobile Devices
 # 1.6 Mobile Device Software Security
 # 1.7 Mobile Operating Systems and Security Summary
