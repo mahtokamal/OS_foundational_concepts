@@ -334,6 +334,8 @@ Due to the nature of the sandbox, malicious software does not usually damage mob
 
 To prevent the malicious program from infecting additional devices, use a firewall. Firewall apps for mobile devices can Monitor app activity and prevent connections to specific ports or IP addresses. Because mobile device firewalls must be able to control other apps, they logically work at a higher (root) permission level. No root firewalls work by creating a virtual private network (VPN) and then controlling app access to the VPN.
 
+![1ec2ff28bc87a2c3a3b2a798406e9dfb750d8a10](https://github.com/user-attachments/assets/fd47223e-bcda-4ea1-819b-f2d2f0cf6b3a)
+
 # 1.6.2 Rooting and jailbreaking
 
 Several software restrictions usually protect mobile operating systems. For example, an unmodified copy of iOS will only execute authorized code and allow minimal user access to its file system.
@@ -346,6 +348,8 @@ Jailbreaking exploits vulnerabilities in iOS. A program is written after finding
 
 **Note:** The jailbreak process is completely reversible. To remove the jailbreak and bring the device back to its factory state, connect it to iTunes and perform a Restore.
 
+![04d4a5ba885748badb498a928e631ac1819d7d7f](https://github.com/user-attachments/assets/c9d8a1f7-b2b5-4f67-bd87-cbe1c9d87875)
+
 # 1.6.3 Patching and Updating Operating Systems
 
 You can update or patch the OS on mobile devices like the OS on a desktop or laptop. Updates add functionality or increase performance. Patches can fix security problems or issues with hardware and software.
@@ -356,6 +360,8 @@ Android updates and patches use an automated process for delivery. When a carrie
 
 iOS updates use an automated process for delivery. Devices that do not meet the hardware requirements are excluded. The easiest method to check for iOS updates is on the iPhone, go to **Settings > General > Software Update**, as shown in the figure.
 
+![1e6b0dbef538995b230450fe2c5de0f1f402339a](https://github.com/user-attachments/assets/17d2fd47-45b4-433c-95e7-8b9550f54ce4)
+
 Two other types of updates for mobile device radio firmware are important. These are called baseband updates and consist of the Preferred Roaming List (PRL) and the Primary Rate ISDN (PRI). The PRL is configuration information that a cellular phone needs to communicate on other networks to call outside the carrier’s network. The PRI configures the data rates between the device and the cell tower. This ensures that the device can communicate with the tower at the correct rate.
 
 # 1.6.4 Check Your Understanding - Mobile Device Software Security
@@ -364,15 +370,27 @@ Two other types of updates for mobile device radio firmware are important. These
 # 1.7.1 What Did I learn in this Module?
 **1. Android Versus iOS**
 
+**Topic Objective:** Compare the Android and iOS operating systems.
+
 **2. Mobile Touch Interface**
+
+**Topic Objective:** Describe the features of the Android and iOS touch interfaces.
 
 **3. Common Mobile Device features**
 
+**Topic Objective:** Describe operating system features that are common among mobile devices.
+
 **4. Passcode Locks**
+
+**Topic Objective:** Explain how to configure various types of passcode locks.
 
 **5. Cloud-Enabled Services for Mobile Devices**
 
+**Topic Objective:** Describe Cloud-enabled services for mobile devices.
+
 **6. Mobile Device Software Security**
+
+**Topic Objective:** Describe software security for mobile devices.
 
 # 1.7.2 Quiz - Mobile Operating Systems and Security
 
