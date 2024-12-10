@@ -289,6 +289,8 @@ Mobile device data can be lost due to device failures or the loss or theft of th
 
 Most mobile operating systems have a user account linked to the vendor’s cloud services, such as iCloud for iOS, Google Sync for Android, and OneDrive for Microsoft. The user can enable automatic backups to the cloud for data, apps, and settings. Some third-party backup providers, such as Dropbox, can be used. Mobile devices can back up to a PC. iOS supports backups on iTunes running on a PC. Another option is configuring Mobile Device Management (MDM) software to back up user devices automatically.
 
+![9c06f2333eab96abd2c98e3e8120ff3a370e440b](https://github.com/user-attachments/assets/c9d9b230-7fa6-4a1f-ba1a-6999a8d77b67)
+
 # 1.5.2 Locator Applications
 
 If a mobile device is misplaced or stolen, it is possible to find it using a locator app. A locator app should be installed and configured on each mobile device before it is lost. Both Android and iOS have apps for remotely locating a device.
@@ -296,6 +298,8 @@ If a mobile device is misplaced or stolen, it is possible to find it using a loc
 Like Apple’s Find My iPhone, Google Find My Device allows a user to locate, ring, or lock a lost Android device or erase data from the device. To manage a lost device, the user must visit Google Find My Device hosted at https://www.google.com/android/find and log in with the Google account used on the Android device. Google Find My Device is included and enabled by default on Android 5. x and can be found under **Settings > Biometrics Security > Find My Mobile.**
 
 iOS users can use the Find My iPhone app, as shown in the figure. The first step is to install the app, start it, and follow the instructions to configure the software. Different iOS devices locate a lost device with The Find My iPhone app.
+
+<img width="745" alt="89abd0d93282645d66b646fc7a176b452432a07a" src="https://github.com/user-attachments/assets/efc33650-ddde-498f-9443-33d3e49031d5">
 
 **Note:** If the app cannot locate the lost device, the device might be turned off or disconnected. Connect to a cellular or wireless network to receive app commands or send location information to the user.
 
@@ -311,6 +315,8 @@ If attempts to locate a mobile device have failed, other security features can p
 
 The remote lock feature for iOS devices is called lost mode. The Android Device Manager calls this feature Lock. It allows you to lock the device with a passcode, so others cannot gain access to the data in the device. For example, the user can display custom messages, or keep the phone from ringing due to incoming calls or text messages.
 
+<img width="745" alt="125f6d22feaf570bd0b88b9529a026802c92eab6" src="https://github.com/user-attachments/assets/fc919c80-6797-4a01-b68a-9f57060e57bd">
+
 **Remote Wipe**
 
 The remote wipe feature for iOS devices is called erase phone. The Android Device Manager calls this feature Erase. It deletes all data from the device and returns it to a factory state. To restore data to the device, Android users must set up the device using a Gmail account, and iOS users must synchronize their device to iTunes.
@@ -320,6 +326,8 @@ Most mobile device operating systems provide a full device encryption feature. F
 All user data on an iOS device is always encrypted and the key is stored on the device. When used to “wipe” the device, the OS deletes the key, and the data becomes inaccessible. Data Protection encryption is enabled automatically when a password lock is configured on the device.
 
 On Android OS, encryption is enabled through **Settings > Security.** Android uses full-disk encryption with a passcode-derived key.
+
+<img width="745" alt="65b5b5c773b15bb4c4481c625396458e76e05076" src="https://github.com/user-attachments/assets/54debd6c-05a1-445e-a6b3-0330dca4c287">
 
 # 1.5.4 Check Your Understanding - Cloud - Enabled Services for Mobile Devices
 
