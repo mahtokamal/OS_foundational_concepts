@@ -116,10 +116,14 @@ Some devices have gyroscopes to provide more accurate movement readings. Gyrosco
 
 When using an Android device, to enable auto rotation, open the notifications panel and turn on the auto-rotate function by tapping the screen rotation icon, indicated in the figure.
 
+![580ea56cd43fe4635a6851c197ca318bcff23728](https://github.com/user-attachments/assets/9f1b9305-7204-4e3a-a207-7984a2e3e2d9)
+
 **iOS Screen Auto-Rotation Setting**
 
 When using an iOS device, to enable automatic rotation use the following procedure:
 Swipe down from the top right corner to open the Control Center, and tap the lock icon, as shown in the figure.
+
+![9c5cfe68ad5a2adde5e71cbd95d53110cd996131](https://github.com/user-attachments/assets/aad77781-3b42-4744-8baa-5705e68a68e8)
 
 # 1.3.2 Screen Calibration
 
@@ -135,6 +139,8 @@ When using an Android device, to configure screen brightness use the following p
 
 Alternatively, tap the **Adaptive Brightness** toggle to allow the device to decide the optimal screen brightness based on the amount of ambient light.
 
+![537cedbd5f3a7cef06d6d1ddb516ab8c8738aad6](https://github.com/user-attachments/assets/ae3307b4-e551-4ad2-8097-08a3a441a7f4)
+
 **iOS Display & Brightness Menu**
 
 When using an iOS device, to configure screen brightness, use the following path:
@@ -143,6 +149,8 @@ Swipe down from the top right corner and slide the brightness bar up or down to 
 
 Alternatively, to configure brightness in the Settings menu, use the following path:
 **Settings > Display & Brightness > slide the brightness to the desired level.**
+
+![4363291a3b4d2c206e27c01d556599ae845c5f4e](https://github.com/user-attachments/assets/1ea2a841-b665-4906-bcf2-a2b0fad1974c)
 
 # 1.3.3 GPS
 
@@ -156,11 +164,15 @@ To enable GPS on Android devices use the following path:
 
 **Settings > Location > Tap on the toggle to turn location services on**
 
+![13e55cfaa35862001811e76993f5914b19081f35](https://github.com/user-attachments/assets/b98aba17-5c88-42a8-9fc4-e874bcdd2c83)
+
 **iOS Location Services**
 
 To enable GPS on iOS devices use the following path:
 
 **Settings > Privacy & Security > Location Services > Turn location services on**
+
+![99f22320775de799385bfcf943792dcc4ff8646a](https://github.com/user-attachments/assets/b9538afb-a4ca-445e-9175-244013b6cfef)
 
 # 1.3.4 Lab - Mobile Device Features
 # 1.3.5 Wi-Fi Calling
@@ -175,11 +187,15 @@ To enable Wi-Fi calling on Android use the following path:
 
 **Settings > More (under Wireless & networks section) > Wi-Fi Calling > Tap on the toggle to turn it on**
 
+![e81a722e5fcd2c8840da24d88fabed3194556dc0](https://github.com/user-attachments/assets/2ac63a56-9c00-410b-bac8-5315379af6de)
+
 **Enabling Wi-Fi Calling on iOS**
 
 To enable Wi-Fi calling on iOS use the following path:
 
 **Settings > Wi-Fi and turn on Wi-Fi Calling**
+
+![85e78ff87ac58423fd636d3d80457b0df65176c2](https://github.com/user-attachments/assets/b89961f9-cafc-4cf6-983e-2f2be1a6265a)
 
 **Note:** Not all cellular carriers allow Wi-Fi calling. If you cannot enable it on your phone, your carrier or mobile device probably does not support it.
 
@@ -222,11 +238,15 @@ When the device has VPN information loaded, that device must start before traffi
 
 To create a new VPN connection on Android use the following path:
 
+![7f4c46c87507a5f4108f837724d375fdecf30b17](https://github.com/user-attachments/assets/0572a3ac-7605-4fbb-b503-5673e6b9c378)
+
 **Settings > More (under Wireless & networks section) > VPN > Tap on the + sign to add a VPN connection**
 
 **Starting a VPN Connection on Android**
 
 To start a VPN on Android use the following path:
+
+![add444a72beec6b2c5a5e7f2ead359e70cd717f6](https://github.com/user-attachments/assets/e4b0dd48-d80e-42cc-b899-b2b4aabfce71)
 
 **Settings > General > VPN > Select the desired VPN connection > enter username and password > tap CONNECT**
 
@@ -234,11 +254,15 @@ To start a VPN on Android use the following path:
 
 To create a new VPN connection on iOS use the following path:
 
+![64440c07db5a690d363e19c2d11260dd9ff4255e](https://github.com/user-attachments/assets/851f6b44-20fe-432b-8e70-308205cf0c54)
+
 **Settings > General > VPN > Add VPN Configuration...**
 
 **Starting a VPN Connection on iOS**
 
 To start a VPN on iOS use the following path:
+
+![26330611d4d87425183b3c5408856195c086b612](https://github.com/user-attachments/assets/fcc4d467-ed27-4e61-947b-45f30df6c9fb)
 
 **Settings > Toggle VPN to on**
 
@@ -252,6 +276,8 @@ These digital assistants rely on artificial intelligence, machine learning, and 
 
 To access Google Now on an Android device simply say "Okay google" and Google Now will activate and start listening to requests.
 
+![e14cf2b7a89647c0444b75f0cba66c65e247dadf](https://github.com/user-attachments/assets/4e496802-61ce-40ea-ac70-499daa3cc769)
+
 **iOS Display & Brightness Menu**
 
 To access Siri on an iOS device, press and hold the Home button. Siri will activate and start listening to requests. Alternatively, Siri can be configured to start listening to commands when it hears "Hey Siri". To enable "Hey Siri", use the following path:
@@ -259,6 +285,8 @@ To access Siri on an iOS device, press and hold the Home button. Siri will activ
 **Settings > Siri & Search > Toggle Listen for "Hey Siri".**
 
 In the figure, Siri has responded to the user's request for a weather forecast.
+
+![1ea542af4c4ae040621844a5d254288e35c60485](https://github.com/user-attachments/assets/075832c5-bf22-413d-acd4-ef740b32ba50)
 
 # 1.4 Passcode Locks
 # 1.4.1 What do you already know? - Screen Locks
