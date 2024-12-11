@@ -275,10 +275,13 @@ For iOS devices, you can turn on the Erase data option as shown. If the passcode
 
 **Note:** The iPhone in the figure is managed by Cisco. As part of Cisco's security policy, the user is not allowed to turn off **Erase Data.** Therefore, if the wrong password is entered 10 times, all data will be erased.
 
+![a8c344d87925ceed14be8b298b566b6e28d82a9f](https://github.com/user-attachments/assets/3333c42c-c973-46dd-bff9-ef9c757bf209)
+
 **iOS GUI**
-Wipr
+
 On iOS, to increase security, the passcode is used as part of the encryption key for the entire system. Because the passcode is not stored anywhere, no one can gain access to the user data on iOS devices, including Apple. The system depends on the user to provide the passcode before the system can be unlocked and decrypted for use. A forgotten passcode will render user data unreachable, forcing the user to perform a full restore from a backup saved in iTunes or iCloud.
 
+![3407d9504aabde5fa495c944cc166521233681f6](https://github.com/user-attachments/assets/c451f86b-3e73-4516-ac8b-9cc9fcc3b1b0)
 
 # 1.4.4 Check Your Understanding - Screen Locks and Biometric Authentications
 
