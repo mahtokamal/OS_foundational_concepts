@@ -17,13 +17,19 @@ Before users can analyze and modify software, they must be able to see the sourc
 
 Android is an open source, Linux based smartphone/tablet operating system developed by the Open Handset Alliance, primarily driven by Google. Released in 2008 on the HTC Dream, the Android OS has been customized for use on a wide range of electronic devices. Because Android is open and customizable, programmers can use it to operate devices like laptops, smart TVs, and e-book readers. There have even been Android installations in devices like cameras, navigation systems, and portable media players. The figure shows Android running on a tablet.
 
+![07dd20f18244c6725d16cc686264947aaf40a63d (1)](https://github.com/user-attachments/assets/9325c366-cfcb-435c-888e-3266f42cb834)
+
 **iOS GUI**
 
 iOS is a closed source Unix based operating system for Apple’s iPhone smartphone and iPad tablet. Released in 2007 on the first iPhone, the Apple iOS source code was not released to the public. To copy, modify or redistribute iOS requires permission from Apple. The figure shows iOS running on an iPhone.
 
+![5a9604def55d1862c199ddbb1d23ae601e204788](https://github.com/user-attachments/assets/df313792-6ab5-4c81-bd38-ccceeae9f59a)
+
 **Windows 10 Mobile**
 
 iOS is not the only closed source OS for mobile devices. Microsoft also created a version of Windows for their mobile devices. This includes Windows CE, Windows Phone 7, shown in the figure, and Windows Phone 8. With the development of Windows 10 Mobile, Microsoft provides a very similar user interface and use of code an all of their devices. This includes their Windows 10 Mobile phones and tablets they develop under the name Surface.
+
+![ab5f5ff91e50c452e368b9577b7e3846ceb065fe](https://github.com/user-attachments/assets/915fc555-4678-49f5-9711-5db0796cc1ef)
 
 # 1.1.2 Application and Content Sources
 
@@ -34,10 +40,14 @@ Apps are used on mobile devices in the same way programs are used on computers. 
 
 Apps for Apple iOS mobile devices are available for free or purchase from the App Store. Apple uses a walled garden model for their apps meaning the apps must be submitted to and approved by Apple before they are released to users. This helps prevent the spread of malware and malicious code. Third-party developers can create apps for iOS devices by using Apple’s Software Development Kit (SDK) Xcode and the Swift programming language. Note that Xcode can only be installed on computers running OS X.
 
+![3bc49aa07fb4058369a5515f99dceb9276d95852](https://github.com/user-attachments/assets/7126b4f0-46c0-482e-9d01-8bfa9ccf7938)
+
 **Android Apps**
 
 Android apps are available from both Google PlayTM and third-party sites, such as Amazon’s App store. Android Studio, a Java-based SDK, is available on Linux, Windows, and OS X. Android apps run in a sandbox and have only the privileges enabled by the user. A prompt will appear if an app needs to obtain permissions. Permissions are granted via the app’s Settings page.
 Third-party or custom programs are installed directly using an Android Application Package (apk) file. This gives users the ability to directly install apps without going through the storefront interface. This is known as sideloading. Click each image below for more information on apps.
+
+![04b80822bd511934c01caae8d2c397feca9fefb3](https://github.com/user-attachments/assets/c22fc9ef-ebf7-4a06-954a-723b16711531)
 
 **Automobile Apps**
 
@@ -54,9 +64,13 @@ Much like a desktop or laptop computer, mobile devices organize icons and widget
 
 One screen is designated as the home screen. Additional screens are accessed by sliding the home screen to the left or right. Each screen contains navigation icons, the main area where icons and widgets are accessed, and notification and system icons. The screen indicator displays which screen is currently active.
 
+![07dd20f18244c6725d16cc686264947aaf40a63d](https://github.com/user-attachments/assets/b10040b7-5cb9-47e9-a81a-8ffa5d8149b4)
+
 **Navigation Icons**
 
 The Android OS uses the system bar to navigate apps and screens. The system bar is always displayed at the bottom of every screen.
+
+![f3c452a958df5e627e595511daf26ce9f4f1b50c](https://github.com/user-attachments/assets/b5791846-dcd3-4ac8-a0ca-cbb7edc8a586)
 
 **Notification and System Icons**
 
@@ -72,7 +86,10 @@ To open the notification area on Android devices, swipe down from the top of the
 - Open the Settings menu with the quick settings icon.
 - The Android OS uses the system bar to navigate apps and screens. The system bar is always displayed at the bottom of every screen.
 
+![4fa0ae585bdb7dcbe6eb32252e8ea30ea879c95b](https://github.com/user-attachments/assets/5b3f59b8-b4ea-426c-a313-4def45fd2fcc)
+
 # 1.2.2 Lab - Working with Android
+
 # 1.2.3 iOS Home Screen Items
 
 The iOS interface works in much the same way as the Android interface. Screens are used to organize apps launched with a touch. There are some significant differences:
@@ -85,23 +102,33 @@ The iOS interface works in much the same way as the Android interface. Screens a
 
 Unlike Android, iOS devices do not use navigation icons to perform functions. On iPhone versions prior to the iPhone X, a single physical button called the Home button performs many of the same functions as the Android navigation buttons. For these older phones, the Home button is at the bottom of the device and can perform many functions. Some common functions performed by the home button with explanations of how these functions are performed on the iPhone X, which has eliminated the home button, are shown below:
 
-Wake the device - When the device’s screen is off, press the Home button once to turn it on. On iPhone X you can wake the device using either facial recognition or by raising the phone and tapping the screen. (Raise to wake is also available on iPhone versions 6s or later.)
-Return to the home screen - Press the Home button while using an app to return to the last home screen that was used. On iPhone X return to the home screen by swiping the screen up from the bottom.
-Start Siri or voice control – Press and hold the Home button to start Siri or voice control. Siri is special software that understands advanced voice controls. On iPhone X Siri is launched by pressing and holding the side button.
+![24934774699e310a4e1567e8aec3175b4167b9d0](https://github.com/user-attachments/assets/6f0deed0-f9c1-4699-8c74-986044d3c885)
+
+**Wake the device** - When the device’s screen is off, press the Home button once to turn it on. On iPhone X you can wake the device using either facial recognition or by raising the phone and tapping the screen. (Raise to wake is also available on iPhone versions 6s or later.)
+
+**Return to the home screen** - Press the Home button while using an app to return to the last home screen that was used. On iPhone X return to the home screen by swiping the screen up from the bottom.
+
+**Start Siri or voice control** – Press and hold the Home button to start Siri or voice control. Siri is special software that understands advanced voice controls. On iPhone X Siri is launched by pressing and holding the side button.
 
 **iOS Notification Center**
 
 iOS devices have a notification center that displays all alerts in one location. To open the notification area on iOS devices, touch the top center of the screen and swipe down. This will show the phone's lock screen. Any notifications will appear in the middle area of the screen, as shown in the figure. From here, you can browse notifications and alerts, dismiss them, clear them, and adjust them as necessary.
 
+![7dadf2598817062c95998b8e74f4dad2bed4d5a5](https://github.com/user-attachments/assets/5d9ea96f-2ffd-4914-ab56-7b791085c4c4)
+
 **Commonly Used Settings**
 
 iOS devices allow the user to quickly access common settings and switches, even if the device is locked. To access the commonly used settings menu, swipe down from the top right corner.
 
-The Control Center comes with some default controls that are always available. You can configure addition controls by navigating to Settings > Control Center. In the figure, the user has added the Flashlight, Timer, Calculator, Camera, and other apps to the Control Center screen.
+The Control Center comes with some default controls that are always available. You can configure addition controls by navigating to **Settings > Control Center**. In the figure, the user has added the Flashlight, Timer, Calculator, Camera, and other apps to the Control Center screen.
+
+![6ab866f8f4510dd4368853a5b86a70e8ef6fe88c](https://github.com/user-attachments/assets/7b04ed08-132b-44b7-8da9-0912e6306386)
 
 **iOS Spotlight**
 
 From any screen of an iOS device, touch the screen and drag down to reveal the Spotlight search field. Any part of the screen except the very top or the very bottom should work. When Spotlight search field is revealed, type what you're looking for. Spotlight shows suggestions from many sources including your installed apps, Setting, the internet, iTunes, App Store, movie show times, and nearby locations. Spotlight also automatically updates the results as you type.
+
+![9f2be4bcf41ca574882f60a000fbb3add61a0219](https://github.com/user-attachments/assets/0c8ff982-9608-46d5-b25f-7e670d233ff2)
 
 # 1.2.4 Lab - Working with iOS
 
