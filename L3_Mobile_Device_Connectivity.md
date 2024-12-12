@@ -58,23 +58,23 @@ Cell phones were introduced in the mid-1980s. Back then, cell phones were bigger
 
 Industry standards have simplified interconnectivity between cell providers. These standards have also made it less expensive to use cellular technology. However, cellular standards have not been adopted uniformly around the world. Therefore, some cell phones may only work in one country and not operate in other countries. Other cell phones can use multiple standards and operate in many countries.
 
-1. 1G
+**1. 1G**
 Introduced in the 1980s, first generation (1G) standards used analog standards. However, analog systems were prone to noise and interference which made it difficult to get a clear voice signal. Few 1G devices are in use today.
 
-2. 2G
+**2. 2G**
 
 Introduced in the 1990s, the second generation (2G) standards switched from analog to digital standards. 2G provided speeds up to 1 Mb/s and supported higher call quality. 2G also introduced Short Message Service (SMS) which is used for text messaging and Multimedia Message Service (MMS) which is used for sending and receiving photos and videos.
 
-3. 3G
+**3. 3G**
 
 Introduced in the late 1990s, third-generation (3G) standards enabled speeds up to 2 Mb/s to support mobile internet access, web browsing, video calls, video streaming, and picture sharing.
 
 
-4. 4G
+**4. 4G**
 
 Introduced in the late 2000s, 4G standards enables speeds of 100 Mb/s and up to 1Gb/s. 4G supports gaming services, high-quality video conferencing, and high-definition television. 4G technology is commonly available with Long Term Evolution (LTE). LTE adds improvements to 4G.
 
-5. 5G
+**5. 5G**
 
 Introduced in 2019, 5G is the latest standard. It is more efficient than previous standards and may support speeds up to 20 Gb/s.
 
