@@ -1,5 +1,7 @@
 # 1.0 Introduction
 
+A mobile device is any device that is hand-held, lightweight, and typically has a touchscreen for input. Like a desktop or laptop computer, mobile devices use an operating system to run applications (apps), games, and play movies and music. Mobile devices also have a different CPU architecture, designed to have a reduced instruction set when compared to laptop and desktop processors. With the increase in demand for mobility, the popularity of laptops and other mobile devices continues to grow. This chapter focuses on many features and capabilities of mobile devices.
+
 # 1.1 Wireless and Cellular Data Network
 # 1.1.1 Wireless Data Networks
 
