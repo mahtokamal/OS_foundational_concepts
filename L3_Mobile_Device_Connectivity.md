@@ -197,6 +197,8 @@ Email Servers
 - Servers forward emails to other email servers.
 - Servers store emails until retrieved by users.
 
+![05799564af30f4be683538e4a6ba63938fb8cf77](https://github.com/user-attachments/assets/17836991-96ca-4d57-b4f7-42ccac5ce3c8)
+
 2. Email Clients
 Email Clients
 - Clients connect to the email servers to retrieve their emails.
