@@ -206,6 +206,8 @@ Email Clients
 - Email clients can be web-based or standalone applications.
 - Standalone email clients are platform dependent.
 
+![286f1d1022882977521fa7b616ca95fc25d2a409](https://github.com/user-attachments/assets/eccb5d4f-eb0c-4ae3-9fa0-72e7e7bcce27)
+
 Email clients and servers use various protocols and standards to exchange emails. 
 
 Popular email protocols and standards
