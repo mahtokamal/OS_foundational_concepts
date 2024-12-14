@@ -339,6 +339,8 @@ Android devices can synchronize your contacts and other data from Facebook, Goog
 
 Android devices also support automatic synchronization with a feature called Auto Sync. This synchronizes the device with the service provider's servers automatically, without user intervention. To save on battery life, you can disable automatic synchronization for all or just some of the data.
 
+![d36b237af69454fe2c9a5cb7e0fd3bee8a66fe93](https://github.com/user-attachments/assets/45a47327-3649-41c9-806b-ba47d48f4275)
+
 The following are the various steps to synchronize an Android device.
 
 To review what data to synchronize on an Android device.
@@ -362,6 +364,8 @@ iOS devices support two types of synchronizing:
 
 **Sync** - Copies new apps, music, video, or books from iTunes to your phone and from your phone to iTunes, resulting in full synchronization on both devices. Sync copies only media downloaded via the iTunes Store mobile app, respecting what was specified through iTunes' Sync definitions. For example, a user can keep movies from syncing to the phone if the user does not watch movies on the phone.
 
+![ab1e8a85db27e76da0c910548ef665cf423f206b](https://github.com/user-attachments/assets/90863e7d-e0a5-472a-ab3d-08b1337a5d39)
+
 As a general rule, when connecting an iOS device to iTunes, always perform a Backup first and then Sync. The order can be changed in iTunes' Preferences.
 
 A few more useful options are available when performing Sync or Backup on iOS:
@@ -374,11 +378,16 @@ A few more useful options are available when performing Sync or Backup on iOS:
  
 When a new iPhone connects to the computer, iTunes will offer to restore it using the most recent backup of data from other iOS devices, if available. The figure below shows the iTunes window on a computer.
 
+![062191ccc8b5e6a79d90dcccb7178ed27b444d1b](https://github.com/user-attachments/assets/2059330a-849b-4c80-81aa-021c849a6014)
+
 # 1.4.3 Synchronization Connection Types
 
 The devices use USB and Wi-Fi connections to synchronize data between devices.
 
 Most Android devices do not have a desktop program for performing data synchronization. Therefore, most users sync with Google’s different web services, even when synchronizing with a desktop or laptop computer. One benefit of synchronizing data using this method is that the data is accessible from any computer or mobile device at any time by signing in to a Google account. The disadvantage of this arrangement is that it can be challenging to synchronize data with programs installed locally on a computer, such as Outlook for email, calendar, and contacts.
+
+![ecd7fe34900295793d4a09e08efe2c8c94e7939a](https://github.com/user-attachments/assets/77fea2bc-97ab-45fb-bff2-2f7523b29873)
+
 
 iOS devices can also use Wi-Fi Sync to synchronize with iTunes. An iOS device must first synchronize with iTunes using a USB cable to use Wi-Fi Sync. It would help if you also turned on Sync over Wi-Fi Connection in the Summary pane of iTunes, as shown in the figure. After that, you can use Wi-Fi Sync or a USB cable. When the iOS device is on the same wireless network as the computer running iTunes and using a power source, it automatically synchronizes with iTunes.
 
