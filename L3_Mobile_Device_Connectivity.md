@@ -343,30 +343,34 @@ The following are the various steps to synchronize an Android device.
 
 To review what data to synchronize on an Android device.
 
-Step 1. Open your device's Settings app.
-Step 2. Tap Accounts and backup > Manage accounts.
-Step 3. If you have more than one account on your device, tap the one you want.
-Step 4. Tap Sync account.
-Step 5. Review the data to be synchronized and when they last synced. You can enable or disable which apps to sync.
+**Step 1.** Open your device's Settings app.
+**Step 2.** Tap **Accounts and backup > Manage accounts.**
+**Step 3.** If you have more than one account on your device, tap the one you want.
+**Step 4.** Tap **Sync account.**
+**Step 5.** Review the data to be synchronized and when they last synced. You can enable or disable which apps to sync.
 
 To disable auto-sync on an Android device.
 
-Step 1. Open your device's Settings app.
-Step 2. Tap Accounts and backup > Manage accounts.
-Step 3. Disable Auto-sync data.
+**Step 1.** Open your device's Settings app.
+**Step 2.** Tap **Accounts and backup > Manage accounts.**
+**Step 3.** Disable **Auto-sync data.**
 
 
 iOS devices support two types of synchronizing:
 
-Backup - Copies your data from your phone to your computer or iCloud. That includes application settings, text messages, voicemails, and other data types. Backup saves a copy of all data created by the user and by apps.
-Sync - Copies new apps, music, video, or books from iTunes to your phone and from your phone to iTunes, resulting in full synchronization on both devices. Sync copies only media downloaded via the iTunes Store mobile app, respecting what was specified through iTunes' Sync definitions. For example, a user can keep movies from syncing to the phone if the user does not watch movies on the phone.
+**Backup** - Copies your data from your phone to your computer or iCloud. That includes application settings, text messages, voicemails, and other data types. Backup saves a copy of all data created by the user and by apps.
+
+**Sync** - Copies new apps, music, video, or books from iTunes to your phone and from your phone to iTunes, resulting in full synchronization on both devices. Sync copies only media downloaded via the iTunes Store mobile app, respecting what was specified through iTunes' Sync definitions. For example, a user can keep movies from syncing to the phone if the user does not watch movies on the phone.
+
 As a general rule, when connecting an iOS device to iTunes, always perform a Backup first and then Sync. The order can be changed in iTunes' Preferences.
 
 A few more useful options are available when performing Sync or Backup on iOS:
 
-Backup storage location - iTunes stores backups on the local computer hard drive or the iCloud online service.
-Backup straight from an iOS device - In addition to backing up data from an iOS device to the local hard drive or iCloud through iTunes, users can configure the iOS device to upload a copy of its data directly to iCloud. Backups can perform automatically, eliminating the need to connect to iTunes. Similar to Android, the user can also specify the type of data sent to the iCloud backup, as shown in the figure.
-Sync over Wi-Fi - iTunes can scan and connect to iOS on the same Wi-Fi network. When connected, the Backup process can be initiated automatically between iOS devices and iTunes. Backups happen automatically every time iTunes and the iOS device are on the same Wi-Fi, eliminating the need for a wired USB connection.
+**Backup storage location** - iTunes stores backups on the local computer hard drive or the iCloud online service.
+
+**Backup straight from an iOS device** - In addition to backing up data from an iOS device to the local hard drive or iCloud through iTunes, users can configure the iOS device to upload a copy of its data directly to iCloud. Backups can perform automatically, eliminating the need to connect to iTunes. Similar to Android, the user can also specify the type of data sent to the iCloud backup, as shown in the figure.
+
+**Sync over Wi-Fi** - iTunes can scan and connect to iOS on the same Wi-Fi network. When connected, the Backup process can be initiated automatically between iOS devices and iTunes. Backups happen automatically every time iTunes and the iOS device are on the same Wi-Fi, eliminating the need for a wired USB connection.
  
 When a new iPhone connects to the computer, iTunes will offer to restore it using the most recent backup of data from other iOS devices, if available. The figure below shows the iTunes window on a computer.
 
