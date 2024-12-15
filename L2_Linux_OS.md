@@ -520,4 +520,13 @@ In order to install applications on Linux hosts, programs called package manager
 
 # 1.8 Linux Overview Summary
 # 1.8.1 What Did I Learn in this Module?
+- Linux Basics
+- Working in the Linux Shell
+- Linux Severs and Clients
+- Basic Servers Administartion
+- The Linux File System
+- Working with Linux GUI
+- Working on a Linux Host
+
+# 1.8.2 QUIZ: Linux Overview
 
