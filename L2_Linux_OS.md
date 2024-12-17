@@ -485,10 +485,11 @@ The two commands, **ls** and **grep**, can be piped together to filter out the o
 
 ![Screenshot (743)](https://github.com/user-attachments/assets/d84c31fe-bc34-4bc8-9d44-2063e4711c72)
 
-# 1.7.8 Video - Applications, Rootkits, and Piping Commands
+# 1.7.7 Video - Applications, Rootkits, and Piping Commands
+# 1.7.8 Lab - Configure Security Features in Windows and Linux
 
-# 1.7.9 Linux Overview Summary
-# 1.7.9.1 What did we learn in this module?
+# 1.8 Linux Overview Summary
+# 1.8.1 What did we learn in this module?
 
 1. Linux Basics
 
