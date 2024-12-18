@@ -356,6 +356,8 @@ Although symbolic links have a single point of failure (the underlying file), sy
 - Hard links are limited to the file system in which they are created. Symbolic links can link to a file in another file system.
 - Hard links cannot link to a directory because the system itself uses hard links to define the hierarchy of the directory structure. However, symbolic links can link to directories.
 
+# 1.5.4 Lab - Navigating the Linux Filesystem and Permission Settings
+
 # 1.6 Working with GUI
 # 1.6.1 X Window System
 
@@ -372,6 +374,8 @@ The figure displays the Gnome Window Manager.
 This figure displays the KDE Windows Manager.
 
 ![f78bf7f0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/312eb6f5-58eb-42ee-b776-297d56ec02bb)
+
+# 1.5.4 Lab - Navigating the Linux Filesystem and Permission Settings
 
 # 1.6.2 The Linux GUI
 
