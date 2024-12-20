@@ -270,7 +270,7 @@ The command output shows a portion of **/var/log/messages** log file. Each line 
 
 There are many different kinds of file systems, varying in properties of speed, flexibility, security, size, structure, logic and more. It is up to the administrator to decide which file system type best suits the operating system and the files it will store.
 
-1. ext2 (second extended file system)
+**1. ext2 (second extended file system)**
 
 - ext2 was the default file system in several major Linux distributions until supplanted by ext3.
 - Almost fully compatible with ext2, ext3 also supports journaling (see below).
@@ -278,7 +278,14 @@ There are many different kinds of file systems, varying in properties of speed, 
 - Because flash memory devices have a limited number of write operations, minimizing write operations increases the device’s lifetime.
 - However, contemporary Linux kernels also support ext4, an even more modern file system, with better performance and which can also operate in a journal-less mode.
 
-2. ext3 (third extended file system)
+**2. ext3 (third extended file system)**
+
+- ext3 is a journaled file system designed to improve the existing ext2 file system.
+- A journal, the main feature added to ext3, is a technique used to minimize the risk of file system corruption in the event of sudden power loss.
+- The file systems keeps a log (or journal) of all the file system changes about to be made.
+- If the computer crashes before the change is complete, the journal can be used to restore or correct any eventual issues created by the crash.
+- The maximum file size in ext3 file systems is 32 TB.
+
 3. ext4 (fourth extended file system)
 4. NFS (Network Files System)
 5. CDFS (Compact Disc File System)
