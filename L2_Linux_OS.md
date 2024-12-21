@@ -286,7 +286,12 @@ There are many different kinds of file systems, varying in properties of speed, 
 - If the computer crashes before the change is complete, the journal can be used to restore or correct any eventual issues created by the crash.
 - The maximum file size in ext3 file systems is 32 TB.
 
-3. ext4 (fourth extended file system)
+**3. ext4 (fourth extended file system)**
+
+- Designed as a successor of ext3, ext4 was created based on a series of extensions to ext3.
+- While the extensions improve the performance of ext3 and increase supported file sizes, Linux kernel developers were concerned about stability issues and were opposed to adding the extensions to the stable ext3.
+- The ext3 project was split in two; one kept as ext3 and its normal development and the other, named ext4, incorporated the mentioned extensions.
+
 4. NFS (Network Files System)
 5. CDFS (Compact Disc File System)
 6. Swap File System
