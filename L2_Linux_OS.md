@@ -292,7 +292,12 @@ There are many different kinds of file systems, varying in properties of speed, 
 - While the extensions improve the performance of ext3 and increase supported file sizes, Linux kernel developers were concerned about stability issues and were opposed to adding the extensions to the stable ext3.
 - The ext3 project was split in two; one kept as ext3 and its normal development and the other, named ext4, incorporated the mentioned extensions.
 
-4. NFS (Network Files System)
+**4. NFS (Network Files System)**
+
+- NFS is a network-based file system, allowing file access over the network.
+- From the user standpoint, there is no difference between accessing a file stored locally or on another computer on the network.
+- NFS is an open standard which allows anyone to implement it.
+
 5. CDFS (Compact Disc File System)
 6. Swap File System
 7. HFS Plus or HFS+ (Hierarchical File System Plus)
