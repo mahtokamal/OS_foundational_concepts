@@ -298,7 +298,10 @@ There are many different kinds of file systems, varying in properties of speed, 
 - From the user standpoint, there is no difference between accessing a file stored locally or on another computer on the network.
 - NFS is an open standard which allows anyone to implement it.
 
-5. CDFS (Compact Disc File System)
+**5. CDFS (Compact Disc File System)**
+
+CDFS was created specifically for optical disk media.
+
 6. Swap File System
 7. HFS Plus or HFS+ (Hierarchical File System Plus)
 8. APFS (Apple File System)
