@@ -304,13 +304,17 @@ CDFS was created specifically for optical disk media.
 
 **6. Swap File System**
 
-The swap file system is used by Linux when it runs out of RAM.
-Technically, it is a swap partition that does not have a specific file system, but it is relevant to the file system discussion.
-When this happens, the kernel moves inactive RAM content to the swap partition on the disk.
-While swap partitions (also known as swap space) can be useful to Linux computers with a limited amount of memory, they should not be considered as a primary solution.
-Swap partition is stored on disk which has much lower access speeds than RAM.
+- The swap file system is used by Linux when it runs out of RAM.
+- Technically, it is a swap partition that does not have a specific file system, but it is relevant to the file system discussion.
+- When this happens, the kernel moves inactive RAM content to the swap partition on the disk.
+- While swap partitions (also known as swap space) can be useful to Linux computers with a limited amount of memory, they should not be considered as a primary solution.
+- Swap partition is stored on disk which has much lower access speeds than RAM.
 
-7. HFS Plus or HFS+ (Hierarchical File System Plus)
+**7. HFS Plus or HFS+ (Hierarchical File System Plus)**
+
+- A file system used by Apple in its Macintosh computers.
+- The Linux kernel includes a module for mounting HFS+ for read-write operations.
+
 8. APFS (Apple File System)
 9. MBR (Master Boot Record)
 
