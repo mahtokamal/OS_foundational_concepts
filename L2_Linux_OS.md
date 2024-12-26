@@ -319,7 +319,10 @@ CDFS was created specifically for optical disk media.
 
 An updated file system that is used by Apple devices. It provides strong encryption and is optimized for flash and solid-state drives.
 
-9. MBR (Master Boot Record)
+**9. MBR (Master Boot Record)**
+
+- Located in the first sector of a partitioned computer, the MBR stores all the information about the way in which the file system is organized.
+- The MBR quickly hands over control to a loading function, which loads the OS.
 
 Mounting is the term used for the process of assigning a directory to a partition. After a successful mount operation, the file system contained on the partition is accessible through the specified directory. In this context, the directory is called the mounting point for that file system. Windows users may be familiar with a similar concept: the drive letter.
 
