@@ -315,7 +315,10 @@ CDFS was created specifically for optical disk media.
 - A file system used by Apple in its Macintosh computers.
 - The Linux kernel includes a module for mounting HFS+ for read-write operations.
 
-8. APFS (Apple File System)
+**8. APFS (Apple File System)**
+
+An updated file system that is used by Apple devices. It provides strong encryption and is optimized for flash and solid-state drives.
+
 9. MBR (Master Boot Record)
 
 Mounting is the term used for the process of assigning a directory to a partition. After a successful mount operation, the file system contained on the partition is accessible through the specified directory. In this context, the directory is called the mounting point for that file system. Windows users may be familiar with a similar concept: the drive letter.
