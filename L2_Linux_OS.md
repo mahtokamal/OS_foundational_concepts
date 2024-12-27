@@ -252,7 +252,7 @@ The table lists a few popular Linux log files and their functions.
 
 |Linux Log File|Description|
 |--------------|-----------|
-|/var/log/messages||
+|/var/log/messages|- This directory contains generic computer activity logs. <br> - It is mainly used to store informational and non-critical system messages. <br> - In Debian-based computers, /var/log/syslog directory serves the same purpose.|
 |/var/log/auth.log||
 |/var/log/secure||
 |/var/log/boot.log||
