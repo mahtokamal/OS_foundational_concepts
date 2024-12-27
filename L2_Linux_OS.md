@@ -265,6 +265,14 @@ The command output shows a portion of **/var/log/messages** log file. Each line 
 
 ![Screenshot (732)](https://github.com/user-attachments/assets/18251146-bc3a-451e-a4cc-30c1ff3c19c0)
 
+# 1.4.4 Lab - Locating Log Files
+
+In this lab, you will get familiar with locating and manipulating Linux log files.
+
+- Part 1: Log File Overview
+- Part 2: Locating Log Files in Unknown Systems
+- Part 3: Monitoring Log Files in Real Time
+
 # 1.5 The Linux File System
 # 1.5.1 The File System Types in Linux
 
