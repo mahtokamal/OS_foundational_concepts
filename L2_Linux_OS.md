@@ -255,7 +255,7 @@ The table lists a few popular Linux log files and their functions.
 |/var/log/messages|- This directory contains generic computer activity logs. <br> - It is mainly used to store informational and non-critical system messages. <br> - In Debian-based computers, /var/log/syslog directory serves the same purpose.|
 |/var/log/auth.log|- This file stores all authentication - related events in Debian and Ubuntu computers. <br> - Anything involving the user authorization mechanism can be found in this file.|
 |/var/log/secure|- This directory is used by RedHat and CentOS computers instead of /var/log/auth.log. <br> - It also tracks sudo logins, SSH logins, and other errors logged by SSSD.|
-|/var/log/boot.log||
+|/var/log/boot.log|- This file stores boot-related information and messages logged during the computer startup process.|
 |/var/log/dmesg||
 |/var/log/kern.log||
 |/var/log/cron||
