@@ -259,7 +259,7 @@ The table lists a few popular Linux log files and their functions.
 |/var/log/dmesg|- This directory contains kernel ring buffer messages. <br> - Information realted to hardware devices and their driver is recorded here. <br> - It is very important because, due to their low-level nature, logging systems such as syslog are not running when these events take place and therefore are often unavailable to the administrator in real-time.|
 |/var/log/kern.log|- This file contains information logged by the kernel.|
 |/var/log/cron|- Cron is a service used to schedule automated tasks in Linux and this directory stores its events. <br> - Whenever scheduled task (also called a cron job) runs, all its relevant information including execution status and error messages are stored here.|
-|/var/log/mysqld.log or /var/log/mysql.log ||
+|/var/log/mysqld.log or /var/log/mysql.log | - This is the MySQL log file. <br> - |
 
 The command output shows a portion of **/var/log/messages** log file. Each line represents a logged event. The timestamps at the beginning of the lines mark the moment the event took place.
 
