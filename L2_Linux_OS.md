@@ -231,7 +231,7 @@ The following are basic best practices for device hardening.
 - Disable USB auto-detection
 - Enforce strong passwords
 - Force periodic password changes
-- Keep users from re-using old passwords
+- Don't allowing users Keeping and re-using old passwords
 
 Many other steps exist and are often service or application-dependent.
 
