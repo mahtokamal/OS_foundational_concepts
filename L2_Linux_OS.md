@@ -170,7 +170,7 @@ While the administrator can decide which port to use with any given service, man
 
 | Ports| Description|
 -------|------------|
-|20/21|FTP|
+|20/21|FTP (File Transfer Protocol)|
 |22|SSH|
 |23|Telnet|
 |25|SMTP|
