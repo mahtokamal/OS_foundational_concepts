@@ -210,7 +210,7 @@ The last command output shows the configuration file for Snort, a Linux-based in
 
 ![Screenshot (731)](https://github.com/user-attachments/assets/cf7dffba-4ce5-4f9b-8f37-be82afad0018)
 
-There is no rule for a configuration file format; it is the choice of the service’s developer. However, the option = value format is often used. For example, in the last command output, the variable ipvar is configured with several options. The first option, HOME_NET, has the value 209.165.200.224/27. The hash character (#) is used to indicate comments.
+There is no rule for a configuration file format; it is the choice of the service’s developer. However, the **option = value** format is often used. For example, in the last command output, the variable **ipvar** is configured with several options. The first option, HOME_NET, has the value 209.165.200.224/27. The hash character **(#)** is used to indicate comments.
 
 
 # 1.4.2 Hardening Devices
