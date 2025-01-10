@@ -188,8 +188,9 @@ Clients are programs or applications designed to communicate with a specific typ
 
 ![Screenshot (728)](https://github.com/user-attachments/assets/8df9d77b-ec99-4a20-b74a-c1dbd6e3e599)
 
-# 1.3.4
-# 1.3.5
+# 1.3.4 Lab Video - Use a Port Scanner to Delete Open ports
+# 1.3.5 Lab - Use a Port Scanner To Detect Open Ports
+# 1.3.6 Lab - Linux Servers
 
 # 1.4 Basic Server Administration
 # 1.4.1 Service Configuration Files
