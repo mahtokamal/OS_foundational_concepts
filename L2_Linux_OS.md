@@ -174,7 +174,7 @@ While the administrator can decide which port to use with any given service, man
 |22|SSH (Secure Shell)|
 |23|Telnet remote login service|
 |25|SMTP (Simple Mail Transfer Protocol)|
-|53|DNS|
+|53|DNS (Domain Name System)|
 |67/68|DHCP|
 |69|TFTP|
 |80|HTTP|
