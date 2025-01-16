@@ -175,7 +175,7 @@ While the administrator can decide which port to use with any given service, man
 |23|Telnet remote login service|
 |25|SMTP (Simple Mail Transfer Protocol)|
 |53|DNS (Domain Name System)|
-|67/68|DHCP|
+|67/68|DHCP (Dynamic Host Configuration Protocol)|
 |69|TFTP|
 |80|HTTP|
 |110|POP3|
