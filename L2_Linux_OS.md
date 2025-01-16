@@ -176,7 +176,7 @@ While the administrator can decide which port to use with any given service, man
 |25|SMTP (Simple Mail Transfer Protocol)|
 |53|DNS (Domain Name System)|
 |67/68|DHCP (Dynamic Host Configuration Protocol)|
-|69|TFTP|
+|69|TFTP (Trivial File Transfer Protocol)|
 |80|HTTP|
 |110|POP3|
 |123|NTP|
