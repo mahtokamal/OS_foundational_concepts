@@ -178,7 +178,7 @@ While the administrator can decide which port to use with any given service, man
 |67/68|DHCP (Dynamic Host Configuration Protocol)|
 |69|TFTP (Trivial File Transfer Protocol)|
 |80|HTTP (Hyper Text Transfer Protocol)|
-|110|POP3|
+|110|POP3 (Post Office Protocol)|
 |123|NTP|
 |143|IMAP|
 |161/162|SNMP|
