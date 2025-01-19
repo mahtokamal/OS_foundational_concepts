@@ -179,7 +179,7 @@ While the administrator can decide which port to use with any given service, man
 |69|TFTP (Trivial File Transfer Protocol)|
 |80|HTTP (Hyper Text Transfer Protocol)|
 |110|POP3 (Post Office Protocol)|
-|123|NTP|
+|123|NTP (Network Time Protocol)|
 |143|IMAP|
 |161/162|SNMP|
 |443|HTTPS|
