@@ -180,7 +180,7 @@ While the administrator can decide which port to use with any given service, man
 |80|HTTP (Hyper Text Transfer Protocol)|
 |110|POP3 (Post Office Protocol)|
 |123|NTP (Network Time Protocol)|
-|143|IMAP|
+|143|IMAP (Internet Message Access Protocol)|
 |161/162|SNMP|
 |443|HTTPS|
 # 1.3.3 Clients
