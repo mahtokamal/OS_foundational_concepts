@@ -181,7 +181,7 @@ While the administrator can decide which port to use with any given service, man
 |110|POP3 (Post Office Protocol)|
 |123|NTP (Network Time Protocol)|
 |143|IMAP (Internet Message Access Protocol)|
-|161/162|SNMP|
+|161/162|SNMP (Simple Network Management Protocol)|
 |443|HTTPS|
 # 1.3.3 Clients
 Clients are programs or applications designed to communicate with a specific type of server. Also known as client applications, clients use a well-defined protocol to communicate with the server. Web browsers are web clients that are used to communicate with web servers through the Hyper Text Transfer Protocol (HTTP) on port 80. The File Transfer Protocol (FTP) client is software used to communicate with an FTP server. The figure shows a client uploading files to a server.
