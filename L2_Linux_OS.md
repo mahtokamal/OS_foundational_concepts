@@ -156,6 +156,10 @@ Note: The administrator used the command sudo nano /etc/hosts to open the file. 
 
 ![f77821d0-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/009aa52e-9ff9-4205-9619-7a0cc9d2a661)
 
+# 1.2.6 Lab - Working with Text Files in CLI
+# 1.2.7 Lab - 
+
+
 # 1.3 Linux Servers and Clients
 # 1.3.1 An Introduction to Client-Server Communications
 
