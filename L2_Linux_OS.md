@@ -128,7 +128,7 @@ Many command line tools are included in Linux by default. To adjust the command 
 |mv||
 |rm||
 |grep||
-|cat||
+|cat|Lists the contents of a file and expects the file name as the parameter|
 
 # 1.2.4 Working with Text Files
 
