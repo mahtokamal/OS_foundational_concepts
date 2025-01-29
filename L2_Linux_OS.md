@@ -124,7 +124,7 @@ Many command line tools are included in Linux by default. To adjust the command 
 |ls||
 |cd||
 |mkdir||
-|cp||
+|cp|Copies files from source to destination|
 |mv|Moves or renames files and directories|
 |rm|Removes files|
 |grep|Searches for specific strings of characters within a file or other commands outputs|
