@@ -122,7 +122,7 @@ Many command line tools are included in Linux by default. To adjust the command 
 |Command|Description|
 --------|-----------|
 |ls||
-|cd||
+|cd| Changes the current directory|
 |mkdir| Creates a directory under currrent directory|
 |cp|Copies files from source to destination|
 |mv|Moves or renames files and directories|
