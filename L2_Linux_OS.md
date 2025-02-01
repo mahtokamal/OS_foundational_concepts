@@ -121,7 +121,7 @@ Many command line tools are included in Linux by default. To adjust the command 
 
 |Command|Description|
 --------|-----------|
-|ls||
+|ls| Displays the files inside a directory|
 |cd| Changes the current directory|
 |mkdir| Creates a directory under currrent directory|
 |cp|Copies files from source to destination|
