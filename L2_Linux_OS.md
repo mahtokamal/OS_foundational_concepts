@@ -112,7 +112,7 @@ The table lists basic Linux commands and their functions.
 |iwconfig||
 |shutdown||
 |passwd||
-|cat||
+|cat| Used to list the contents of a file and expects the file name s the parameter. The **cat** command is usually used on text files. |
 |man| Used to dispaly the documentation for specific command.|
 
 # 1.2.3 File and Directory Commands
