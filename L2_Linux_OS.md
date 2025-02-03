@@ -113,7 +113,7 @@ The table lists basic Linux commands and their functions.
 |shutdown||
 |passwd||
 |cat||
-|man||
+|man| Used to dispaly the documentation for specific command.|
 
 # 1.2.3 File and Directory Commands
 
