@@ -110,7 +110,7 @@ The table lists basic Linux commands and their functions.
 |ifconfig||
 |apt-get||
 |iwconfig||
-|shutdown||
+|shutdown| Shuts down the system, **shutdown** can be instructed to perform a number of shut down related tasks, including restart, halt, put to sleep or kick out all currently connected users.|
 |passwd|Used to change the password. If no parametes are provided, **passwd** changes the password of the current user.|
 |cat| Used to list the contents of a file and expects the file name s the parameter. The **cat** command is usually used on text files. |
 |man| Used to dispaly the documentation for specific command.|
