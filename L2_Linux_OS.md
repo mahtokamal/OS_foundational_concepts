@@ -108,7 +108,7 @@ The table lists basic Linux commands and their functions.
 |sudo||
 |grep||
 |ifconfig||
-|apt-get||
+|apt-get|Used to install, configure and remove packages on Debian and its derivatives. Note: **apt-get** is a user-friendly command line front-end for **dpkg**, Debian's package manger. The combo **dpkg** and **apt-get** is the default package manager system in all Debian Linux derivatives, including Raspbian.|
 |iwconfig|Used to display or configure wireless network card related information.Similar to **ifconfig**, **iwconfig** will display wireless information when issued without parameters.|
 |shutdown| Shuts down the system, **shutdown** can be instructed to perform a number of shut down related tasks, including restart, halt, put to sleep or kick out all currently connected users.|
 |passwd|Used to change the password. If no parametes are provided, **passwd** changes the password of the current user.|
