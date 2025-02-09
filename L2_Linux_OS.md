@@ -107,7 +107,7 @@ The table lists basic Linux commands and their functions.
 |su||
 |sudo||
 |grep||
-|ifconfig||
+|ifconfig|used to display or configure network card related information. If issued without parameters, **ifconfig** will diaplay the current network cards(s) configuration. Note: While still widely in used, this command is deprecated. Use **ip address** instead.|
 |apt-get|Used to install, configure and remove packages on Debian and its derivatives. Note: **apt-get** is a user-friendly command line front-end for **dpkg**, Debian's package manger. The combo **dpkg** and **apt-get** is the default package manager system in all Debian Linux derivatives, including Raspbian.|
 |iwconfig|Used to display or configure wireless network card related information.Similar to **ifconfig**, **iwconfig** will display wireless information when issued without parameters.|
 |shutdown| Shuts down the system, **shutdown** can be instructed to perform a number of shut down related tasks, including restart, halt, put to sleep or kick out all currently connected users.|
