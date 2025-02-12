@@ -104,7 +104,7 @@ The table lists basic Linux commands and their functions.
 |dd||
 |pwd||
 |ps||
-|su||
+|su| Simulates a login as another user or to become a superuser |
 |sudo|Runs a command as a super user, by default, or another named user|
 |grep|Used to search for specific strings of characters within a file or other command outputs. To search through the output of a previous command, **grep** must be piped at the end of the previous command.|
 |ifconfig|used to display or configure network card related information. If issued without parameters, **ifconfig** will diaplay the current network cards(s) configuration. Note: While still widely in used, this command is deprecated. Use **ip address** instead.|
