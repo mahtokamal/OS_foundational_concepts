@@ -103,7 +103,7 @@ The table lists basic Linux commands and their functions.
 |chown||
 |dd||
 |pwd||
-|ps||
+|ps| Lists the processes that are currently running |
 |su| Simulates a login as another user or to become a superuser |
 |sudo|Runs a command as a super user, by default, or another named user|
 |grep|Used to search for specific strings of characters within a file or other command outputs. To search through the output of a previous command, **grep** must be piped at the end of the previous command.|
