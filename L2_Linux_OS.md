@@ -102,7 +102,7 @@ The table lists basic Linux commands and their functions.
 |chmod||
 |chown||
 |dd||
-|pwd||
+|pwd| Displays the name of the current directory|
 |ps| Lists the processes that are currently running |
 |su| Simulates a login as another user or to become a superuser |
 |sudo|Runs a command as a super user, by default, or another named user|
