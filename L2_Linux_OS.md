@@ -101,7 +101,7 @@ The table lists basic Linux commands and their functions.
 |mv||
 |chmod||
 |chown||
-|dd||
+|dd| Copies data from an input to an output|
 |pwd| Displays the name of the current directory|
 |ps| Lists the processes that are currently running |
 |su| Simulates a login as another user or to become a superuser |
