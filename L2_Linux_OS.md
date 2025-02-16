@@ -99,7 +99,7 @@ The table lists basic Linux commands and their functions.
 |Command|Description|
 --------|-----------|
 |mv||
-|chmod||
+|chmod| Modifies file permissions|
 |chown|Changes the ownerships of a file|
 |dd| Copies data from an input to an output|
 |pwd| Displays the name of the current directory|
