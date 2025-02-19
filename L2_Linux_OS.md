@@ -2,6 +2,8 @@
 
 Linux is an open-source operating system that is fast, powerful, and highly customizable. It is built for network use as either a client or server. Linux is well-loved by a large community of users, including cybersecurity personnel.
 
+Cybersecurity analysts use many tools while threat hunting and conducting cybersecurity research. The virtual machine used in this activity has been prebuilt with some of these tools, so that you can easily get to work.
+
 # 1.1 Linux Basics
 # 1.1.1 What is Linux ?
 
