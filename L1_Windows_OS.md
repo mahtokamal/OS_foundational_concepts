@@ -568,4 +568,6 @@ Many additional settings can be found under **Advanced settings. Here you can cr
 
 ![f35ef010-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/125319ea-8d2a-4803-8953-441bcbd273b4)
 
+# 1.5 The Windows Operating System Summary
+
 
