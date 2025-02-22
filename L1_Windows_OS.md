@@ -4,7 +4,7 @@ Windows Operating System first launched around 35 years ago in 1985. Since then,
 
 # 1.1.1 Disk Operating System
 # 1.1.2 Windows Versions
-# 1.1.3 Disk Operating System
+# 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
 Since OS is a System Software that consists of millions line of codes and some code might have vulnerabilities.
 Vulnerabilities are design flaw or weakness that an attacker can take adavantage of these flaws using some tools and techniques to exploit the System. The main goal is to gain unauthorized access for malicious or illegal purposes such
