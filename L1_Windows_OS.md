@@ -7,6 +7,9 @@ The first computers did not have modern storage devices such as hard drives, opt
 Floppy disk and hard disk storage require software to read from, write to, and manage the data that they store. The Disk Operating System (DOS) is an operating system that the computer uses to enable these data storage devices to read and write files. DOS provides a file system which organizes the files in a specific way on the disk. Microsoft bought DOS and developed MS-DOS.
 
 MS-DOS used a command line as the interface for people to create programs and manipulate data files, as shown in the command output. DOS commands are shown in bold text.
+
+![Screenshot (19)](https://github.com/user-attachments/assets/4d31f730-9887-48e7-a5b8-f977d4fd5749)
+
 # 1.1.2 Windows Versions
 # 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
