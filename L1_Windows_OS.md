@@ -1,8 +1,12 @@
 # 1.0. Windows Background & Versions History
 Windows Operating System first launched around 35 years ago in 1985. Since then, many versions and editions are released as per requirements or business need. For example - from Windows 1.0 to today's Windows desktop versions 11 and Windows Server version 2019.
-# 1.1. Windows History
-
+# 1.1 Windows History
 # 1.1.1 Disk Operating System
+The first computers did not have modern storage devices such as hard drives, optical drives, or flash storage. The first storage methods used punch cards, paper tape, magnetic tape, and even audio cassettes.
+
+Floppy disk and hard disk storage require software to read from, write to, and manage the data that they store. The Disk Operating System (DOS) is an operating system that the computer uses to enable these data storage devices to read and write files. DOS provides a file system which organizes the files in a specific way on the disk. Microsoft bought DOS and developed MS-DOS.
+
+MS-DOS used a command line as the interface for people to create programs and manipulate data files, as shown in the command output. DOS commands are shown in bold text.
 # 1.1.2 Windows Versions
 # 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
