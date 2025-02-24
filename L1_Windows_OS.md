@@ -10,6 +10,11 @@ MS-DOS used a command line as the interface for people to create programs and ma
 
 ![Screenshot (19)](https://github.com/user-attachments/assets/4d31f730-9887-48e7-a5b8-f977d4fd5749)
 
+With MS-DOS, the computer had a basic working knowledge of how to access the disk drive and load the operating system files directly from disk as part of the boot process. When it was loaded, MS-DOS could easily access the disk because it was built into the operating system.
+Early versions of Windows consisted of a Graphical User Interface (GUI) that ran over MS-DOS, starting with Windows 1.0 in 1985. The disk operating system still controlled the computer and its hardware. A modern operating system like Windows 10 is not considered a disk operating system. It is built on Windows NT, which stands for "New Technologies". The operating system itself is in direct control of the computer hardware. NT is an OS with support for multiple user processes. This is much different than the single process, single-user MS-DOS.
+
+Today, many things that used to be accomplished through the command line interface of MS-DOS can be accomplished in the Windows GUI. You can still experience what it was like to use MS-DOS by opening a command window, but what you see is no longer MS-DOS, it is a function of Windows. To experience a little of what it was like to work in MS-DOS, open a command window by typing cmd in Windows Search and pressing Enter. The table lists some commands that you can use. Enter help followed by the command to learn more about the command.
+
 # 1.1.2 Windows Versions
 # 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
