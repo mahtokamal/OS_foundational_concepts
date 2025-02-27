@@ -15,6 +15,11 @@ Early versions of Windows consisted of a Graphical User Interface (GUI) that ran
 
 Today, many things that used to be accomplished through the command line interface of MS-DOS can be accomplished in the Windows GUI. You can still experience what it was like to use MS-DOS by opening a command window, but what you see is no longer MS-DOS, it is a function of Windows. To experience a little of what it was like to work in MS-DOS, open a command window by typing cmd in Windows Search and pressing Enter. The table lists some commands that you can use. Enter help followed by the command to learn more about the command.
 
+|MS-Dos Command |Descriptions|
+|-----|------|
+|dir|------|
+|cd directory |------|
+
 # 1.1.2 Windows Versions
 
 |OS |Versions|
