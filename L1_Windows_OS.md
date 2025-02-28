@@ -19,6 +19,15 @@ Today, many things that used to be accomplished through the command line interfa
 |-----|------|
 |dir|------|
 |cd directory |------|
+|cd .. |------|
+|cd\|------|
+|copy source destinatin|------|
+|del filename |------|
+|find |------|
+|mkdir directory |------|
+|ren oldname newame |------|
+|help |------|
+|help command |------|
 
 # 1.1.2 Windows Versions
 
