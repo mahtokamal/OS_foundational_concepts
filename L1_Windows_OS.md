@@ -34,6 +34,7 @@ Today, many things that used to be accomplished through the command line interfa
 |OS |Versions|
 |----|------|
 |WIndows 7|------|
+|WIndows Server 2008 R2|------|
 
 # 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
