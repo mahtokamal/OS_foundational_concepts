@@ -38,6 +38,8 @@ Today, many things that used to be accomplished through the command line interfa
 |Windows Home Server 2011|None|
 |Windows 8||
 |Windows Server 2012||
+|Windows 8.1||
+|Windows Server 2012 R2||
 
 # 1.1.3 Windows GUI
 # 1.1.4 Operating System Vulnerabilities
