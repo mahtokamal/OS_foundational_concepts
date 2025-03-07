@@ -31,6 +31,8 @@ Today, many things that used to be accomplished through the command line interfa
 
 # 1.1.2 Windows Versions
 
+Since 1993, there have been more than 20 releases of Windows that are based on the NT operating system. Most of these versions were for use by the general public and businesses because of the file security offered by the file system that was used by the NT OS. Businesses also adopted NT OS-based Windows operating systems. This is because many editions were built specifically for workstation, professional, server, advanced server, and datacenter server, to name just a few of the many purpose-built versions.
+
 |OS |Versions|
 |----|------|
 |WIndows 7|------|
