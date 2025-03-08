@@ -53,6 +53,22 @@ The table lists common Windows versions.
 
 
 # 1.1.3 Windows GUI
+
+Windows has a graphical user interface (GUI) for users to work with data files and software. The GUI has a main area that is known as the Desktop, shown in the figure.
+
+![Screenshot (132)](https://github.com/user-attachments/assets/8523756c-8ab1-4dfc-8085-2a9a56a9ccce)
+
+The Desktop can be customized with various colors and background images. Windows supports multiple users, so each user can customize the Desktop to their liking. The Desktop can store files, folders, shortcuts to locations and programs, and applications. The Desktop also has a recycle bin icon, where files are stored when the user deletes them. Files can be restored from the recycle bin or the recycle bin can be emptied of files, which truly deletes them.
+
+At the bottom of the desktop is the Task Bar. The Task Bar has three areas that are used for different purposes. At the left is the Start menu. It is used to access all of the installed programs, configuration options, and the search feature. At the center of the Task Bar, users place quick launch icons that run specific programs or open specific folders when they are clicked. Finally, on the right of the Task Bar is the notification area. The notification area shows, at a glance, the functionality of many different programs and features. For example, a blinking envelope icon may indicate new email, or a network icon with a red “x” may indicate a problem with the network.
+
+Often, right-clicking an icon will bring up additional functions that can be used. This list is known as a Context Menu, shown in the figure.
+
+![Screenshot (133)](https://github.com/user-attachments/assets/5eec608a-15c3-4fb7-94bb-c862c4591eb5)
+
+There are Context Menus for the icons in the notification area, for quick launch icons, system configuration icons, and for files and folders. The Context Menu provides many of the most commonly used functions by just clicking. For example, the Context Menu for a file will contain such items as copy, delete, share, and print. To open folders and manipulate files, Windows uses the Windows File Explorer.
+
+
 # 1.1.4 Operating System Vulnerabilities
 Since OS is a System Software that consists of millions line of codes and some code might have vulnerabilities.
 Vulnerabilities are design flaw or weakness that an attacker can take adavantage of these flaws using some tools and techniques to exploit the System. The main goal is to gain unauthorized access for malicious or illegal purposes such
@@ -88,7 +104,7 @@ Following are the some of the common Windows OS security recommendations:-
     - Many people choose weak passwords or do not use a password at all.
     - It is especially important to make sure that all accounts, especially the Administrator account, have a very strong 
       password.
-13. Login as Administrator
+9. Login as Administrator
     - When a user logs in as an administrator, any program that they run will have the privileges of that account.
     - It is best to log in as a Standard User and only use the administrator password to accomplish certain tasks.
 
