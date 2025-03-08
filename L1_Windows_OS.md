@@ -33,6 +33,12 @@ Today, many things that used to be accomplished through the command line interfa
 
 Since 1993, there have been more than 20 releases of Windows that are based on the NT operating system. Most of these versions were for use by the general public and businesses because of the file security offered by the file system that was used by the NT OS. Businesses also adopted NT OS-based Windows operating systems. This is because many editions were built specifically for workstation, professional, server, advanced server, and datacenter server, to name just a few of the many purpose-built versions.
 
+Beginning with Windows XP, a 64-bit edition was available. The 64-bit operating system was an entirely new architecture. It had a 64-bit address space instead of a 32-bit address space. This is not simply twice amount of space because these bits are binary numbers. While 32-bit Windows can address a little I 4 GB of RAM, 64-bit Windows can theoretically address 16.8 million terabytes. When the OS and the hardware all support 64-bit operation, extremely large data sets can be used. These large data sets inciuue very large databases, scientific computing, and manipulation of high definition digital video with special effects. In general, 64-bit computers and operating systems are backward-compatible with older, 32-bit programs, but 64-bit programs cannot be run on older, 32-bit hardware.
+
+With each subsequent release of Windows, the operating system has become more refined by incorporating more features. Windows 7 was offered with six different editions, Windows 8 with as many as five, and Windows 10 with eight different editions! Each edition not only offers different capabilities, but also different price points. Microsoft has said that Windows 10 is the last version of Windows, and that Windows has become a service rather than just an OS. They say that rather than purchasing new operating systems, users will just update Windows 10 instead.
+
+The table lists common Windows versions.
+
 |OS |Versions|
 |----|------|
 |WIndows 7|------|
