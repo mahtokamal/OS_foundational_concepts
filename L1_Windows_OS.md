@@ -18,7 +18,7 @@ Today, many things that used to be accomplished through the command line interfa
 |MS-Dos Command |Descriptions|
 |-----|------|
 |dir|Shows a listing of all files in the current directory (folder)|
-|cd directory |------|
+|cd directory |Changes the directory to the indicated directory|
 |cd .. |------|
 |cd\|------|
 |copy source destinatin|------|
