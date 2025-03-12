@@ -19,7 +19,7 @@ Today, many things that used to be accomplished through the command line interfa
 |-----|------|
 |dir|Shows a listing of all files in the current directory (folder)|
 |cd directory |Changes the directory to the indicated directory|
-|cd .. |------|
+|cd .. |changes the directory to the direcotry above the current directory|
 |cd\|------|
 |copy source destinatin|------|
 |del filename |------|
