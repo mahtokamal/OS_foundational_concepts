@@ -20,7 +20,7 @@ Today, many things that used to be accomplished through the command line interfa
 |dir|Shows a listing of all files in the current directory (folder)|
 |cd directory |Changes the directory to the indicated directory|
 |cd .. |changes the directory to the direcotry above the current directory|
-|cd\|------|
+|cd\|Changes the directory back to the root directory (often C: in Windows)|
 |copy source destinatin|------|
 |del filename |------|
 |find |------|
