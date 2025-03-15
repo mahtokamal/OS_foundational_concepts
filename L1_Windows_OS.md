@@ -22,7 +22,7 @@ Today, many things that used to be accomplished through the command line interfa
 |cd .. |changes the directory to the direcotry above the current directory|
 |cd\|Changes the directory back to the root directory (often C: in Windows)|
 |copy source destinatin|Copies files to another location|
-|del filename |------|
+|del filename |Deletes one or more files|
 |find |------|
 |mkdir directory |------|
 |ren oldname newame |------|
