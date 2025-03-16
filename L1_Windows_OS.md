@@ -23,7 +23,7 @@ Today, many things that used to be accomplished through the command line interfa
 |cd\|Changes the directory back to the root directory (often C: in Windows)|
 |copy source destinatin|Copies files to another location|
 |del filename |Deletes one or more files|
-|find |------|
+|find |Searches for text in files|
 |mkdir directory |------|
 |ren oldname newame |------|
 |help |------|
