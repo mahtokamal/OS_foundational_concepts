@@ -24,7 +24,7 @@ Today, many things that used to be accomplished through the command line interfa
 |copy source destinatin|Copies files to another location|
 |del filename |Deletes one or more files|
 |find |Searches for text in files|
-|mkdir directory |------|
+|mkdir directory |Creates a new directory|
 |ren oldname newame |------|
 |help |------|
 |help command |------|
