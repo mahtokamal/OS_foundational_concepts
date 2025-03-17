@@ -25,7 +25,7 @@ Today, many things that used to be accomplished through the command line interfa
 |del filename |Deletes one or more files|
 |find |Searches for text in files|
 |mkdir directory |Creates a new directory|
-|ren oldname newame |------|
+|ren oldname newame |Renames a file|
 |help |------|
 |help command |------|
 
