@@ -26,7 +26,7 @@ Today, many things that used to be accomplished through the command line interfa
 |find |Searches for text in files|
 |mkdir directory |Creates a new directory|
 |ren oldname newame |Renames a file|
-|help |------|
+|help |Displays all commands that can be used, with a brief descriptions|
 |help command |------|
 
 # 1.1.2 Windows Versions
