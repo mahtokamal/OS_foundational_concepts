@@ -27,7 +27,7 @@ Today, many things that used to be accomplished through the command line interfa
 |mkdir directory |Creates a new directory|
 |ren oldname newame |Renames a file|
 |help |Displays all commands that can be used, with a brief descriptions|
-|help command |------|
+|help command| Displays extensive help for the indicated command|
 
 # 1.1.2 Windows Versions
 
