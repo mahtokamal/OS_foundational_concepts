@@ -41,7 +41,7 @@ The table lists common Windows versions.
 
 |OS |Versions|
 |----|------|
-|WIndows 7|------|
+|WIndows 7|Starter, Home Basic, Home Premium, Professional, Enterprise, Ultimate|
 |WIndows Server 2008 R2|------|
 |Windows Home Server 2011|None|
 |Windows 8||
