@@ -45,7 +45,7 @@ The table lists common Windows versions.
 |WIndows Server 2008 R2|Foundation, Standard, Enterprise, DataCenter, Web Server, HPC Server, Itanium-based Systems |
 |Windows Home Server 2011|None|
 |Windows 8|Windows 8, Windows 8 Pro, Windows 8 Enterprise, Windows RT|
-|Windows Server 2012||
+|Windows Server 2012| Foundations, Essentials, Standard, Datacenter |
 |Windows 8.1||
 |Windows Server 2012 R2||
 |Windows 10||
