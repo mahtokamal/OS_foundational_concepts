@@ -46,7 +46,7 @@ The table lists common Windows versions.
 |Windows Home Server 2011|None|
 |Windows 8|Windows 8, Windows 8 Pro, Windows 8 Enterprise, Windows RT|
 |Windows Server 2012| Foundations, Essentials, Standard, Datacenter |
-|Windows 8.1||
+|Windows 8.1| Windows 8.1,Windows 8.1 Pro, Windows 8.1 Enterprise, Windows RT 8.1|
 |Windows Server 2012 R2||
 |Windows 10||
 |Windows Server 2016 ||
