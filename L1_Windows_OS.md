@@ -48,7 +48,7 @@ The table lists common Windows versions.
 |Windows Server 2012| Foundations, Essentials, Standard, Datacenter |
 |Windows 8.1| Windows 8.1,Windows 8.1 Pro, Windows 8.1 Enterprise, Windows RT 8.1|
 |Windows Server 2012 R2|Foundations, Essentials, Standard, Datacenter|
-|Windows 10||
+|Windows 10|Home, Pro, Pro Education, Enterprise, Education, IoT Core, Mobile, Mobile Enterprise|
 |Windows Server 2016 ||
 
 
