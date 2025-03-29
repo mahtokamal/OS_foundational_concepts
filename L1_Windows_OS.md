@@ -49,7 +49,7 @@ The table lists common Windows versions.
 |Windows 8.1| Windows 8.1,Windows 8.1 Pro, Windows 8.1 Enterprise, Windows RT 8.1|
 |Windows Server 2012 R2|Foundations, Essentials, Standard, Datacenter|
 |Windows 10|Home, Pro, Pro Education, Enterprise, Education, IoT Core, Mobile, Mobile Enterprise|
-|Windows Server 2016 ||
+|Windows Server 2016 |Essentials, Standard, Datacenter, Multipoint Premium Server, Storage Server, Hyper-V Server |
 
 
 # 1.1.3 Windows GUI
