@@ -111,6 +111,9 @@ Following are the some of the common Windows OS security recommendations:-
 # 1.2. Windows Architecture and Operations
 
 # 1.2.1 HAL (Hardware Abstraction Layers)
+
+Windows computers use many different types of hardware. The operating system can be installed on a purchased computer or a on computer that is assembled by the user. When the operating system is installed, it must be isolated from differences in hardware. The basic Windows architecture is shown in the figure.
+
 ![Screenshot (703)](https://github.com/user-attachments/assets/2d72a147-5eb3-4181-9543-2e267d703600)
 
 # 1.2.2 User Mode and Kernel Mode
