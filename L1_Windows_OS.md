@@ -51,6 +51,8 @@ The table lists common Windows versions.
 |Windows 10|Home, Pro, Pro Education, Enterprise, Education, IoT Core, Mobile, Mobile Enterprise|
 |Windows Server 2016 |Essentials, Standard, Datacenter, Multipoint Premium Server, Storage Server, Hyper-V Server |
 
+NOTE:
+
 
 # 1.1.3 Windows GUI
 
