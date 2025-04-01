@@ -52,6 +52,7 @@ The table lists common Windows versions.
 |Windows Server 2016 |Essentials, Standard, Datacenter, Multipoint Premium Server, Storage Server, Hyper-V Server |
 
 NOTE:
+NOTE2:
 
 
 # 1.1.3 Windows GUI
