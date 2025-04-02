@@ -53,6 +53,7 @@ The table lists common Windows versions.
 
 NOTE:
 NOTE2:
+note3:
 
 
 # 1.1.3 Windows GUI
