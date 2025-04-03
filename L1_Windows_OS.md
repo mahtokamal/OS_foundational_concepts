@@ -326,9 +326,9 @@ As a security best practice, do not enable the Administrator account and do not 
 
 The Guests account should not be enabled. The guest account does not have a password associated with it because it is created when a computer is going to be used by many different people who do not have accounts on the computer. Each time the guest account logs on, a default environment is provided to them with limited privileges.
 
-To make administration of users easier, Windows uses groups. A group will have a name and a specific set of permissions associated with it. When a user is placed into a group, the permissions of that group are given to that user. A user can be placed into multiple groups to be provided with many different permissions. When the permissions overlap, certain permissions, like “explicitly deny” will override the permission provided by a different group. There are many different user groups built into Windows that are used for specific tasks. For example, the Performance Log Users group allows members to schedule logging of performance counters and collect logs either locally or remotely. Local users and groups are managed with the lusrmgr.msc control panel applet, as shown in the figure.
+To make administration of users easier, Windows uses groups. A group will have a name and a specific set of permissions associated with it. When a user is placed into a group, the permissions of that group are given to that user. A user can be placed into multiple groups to be provided with many different permissions. When the permissions overlap, certain permissions, like “explicitly deny” will override the permission provided by a different group. There are many different user groups built into Windows that are used for specific tasks. For example, the Performance Log Users group allows members to schedule logging of performance counters and collect logs either locally or remotely. Local users and groups are managed with the **lusrmgr.msc** control panel applet, as shown in the figure.
 
-
+![Screenshot (299)](https://github.com/user-attachments/assets/3ae4e27f-00af-4e2f-955c-6770c64ffc20)
 
 In addition to groups, Windows can also use domains to set permissions. A domain is a type of network service where all of the users, groups, computers, peripherals, and security settings are stored on and controlled by a database. This database is stored on special computers or groups of computers called domain controllers (DCs). Each user and computer on the domain must authenticate against the DC to logon and access network resources. The security settings for each user and each computer are set by the DC for each session. Any setting supplied by the DC defaults to the local computer or user account setting.
 # 1.3.3 CLI and PowerShell
@@ -339,18 +339,19 @@ To open the Windows CLI, search for cmd.exe and click the program. Remember that
 
 The prompt displays the current location within the file system. These are a few things to remember when using the CLI:
 
-The file names and paths are not case-sensitive, by default.
-Storage devices are assigned a letter for reference. The drive letter is followed by a colon and backslash (∖). This indicates the root, or highest level, of the device. Folder and file hierarchy on the device is indicated by separating them with the backslash. For example, the path C:∖Users∖Jim∖Desktop∖file.txt refers to a file called file.txt that is in the Desktop folder within the Jim folder within the Users folder at the root of drive C:.
-Commands that have optional switches use the forward slash (/) to delineate between the command and the switch option.
-You can use the Tab key to auto-complete commands when directories or files are referenced.
-Windows keeps a history of the commands that were entered during a CLI session. Access previously entered commands by using the up and down arrow keys.
-To switch between storage devices, type the letter of the device, followed by a colon, and then press Enter.
+- The file names and paths are not case-sensitive, by default.
+- Storage devices are assigned a letter for reference. The drive letter is followed by a colon and backslash (∖). This indicates the root, or highest level, of the device. Folder and file hierarchy on the device is indicated by separating them with the backslash. For example, the path C:∖Users∖Jim∖Desktop∖file.txt refers to a file called file.txt that is in the Desktop folder within the Jim folder within the Users folder at the root of drive C:.
+- Commands that have optional switches use the forward slash (/) to delineate between the command and the switch option.
+- You can use the Tab key to auto-complete commands when directories or files are referenced.
+- Windows keeps a history of the commands that were entered during a CLI session. Access previously entered commands by using the up and down arrow keys.
+- To switch between storage devices, type the letter of the device, followed by a colon, and then press Enter.
+
 Even though the CLI has many commands and features, it cannot work together with the core of Windows or the GUI. Another environment, called the Windows PowerShell, can be used to create scripts to automate tasks that the regular CLI is unable to create. PowerShell also provides a CLI for initiating commands. PowerShell is an integrated program within Windows and can be opened by searching for “powershell” and clicking the program. Like the CLI, PowerShell can also be run with administrative privileges.
 
 These are the types of commands that PowerShell can execute:
 
 - cmdlets - These commands perform an action and return an output or object to the next command that will be executed.
-- PowerShell scripts - These are files with a .ps1 extension that contain PowerShell commands that are executed.
+- PowerShell scripts - These are files with a **.ps1** extension that contain PowerShell commands that are executed.
 - PowerShell functions - These are pieces of code that can be referenced in a script.
 
 To see more information about Windows PowerShell and get started using it, type help in PowerShell, as shown in the command output.
@@ -359,13 +360,13 @@ To see more information about Windows PowerShell and get started using it, type 
 
 There are four levels of help in Windows PowerShell:
 
-get-help PS command - Displays basic help for a command
-get-help PS command [-examples] - Displays basic help for a command with examples
-get-help PS command [-detailed] - Displays detailed help for a command with examples
-get-help PS command [-full] - Displays all help information for a command with examples in greater depth
+- **get-help** PS command - Displays basic help for a command
+- **get-help** PS command [-examples] - Displays basic help for a command with examples
+- **get-help** PS command [-detailed] - Displays detailed help for a command with examples
+- **get-help** PS command [-full] - Displays all help information for a command with examples in greater depth
 
 # 1.3.4 Windows Management Intruementations
-Windows Management Instrumentation (WMI) is used to manage remote computers. It can retrieve information about computer components, hardware and software statistics, and monitor the health of remote computers. To open the WMI control from the Control Panel, double-click Administrative Tools > Computer Management to open the Computer Management window, expand the Services and Applications tree and right-click the WMI Control icon > Properties.
+Windows Management Instrumentation (WMI) is used to manage remote computers. It can retrieve information about computer components, hardware and software statistics, and monitor the health of remote computers. To open the WMI control from the Control Panel, double-click **Administrative Tools > Computer Management** to open the Computer Management window, expand the **Services and Applications** tree and right-click the **WMI Control icon > Properties**.
 
 The WMI Control Properties window is shown in the figure.
 
@@ -382,9 +383,9 @@ Some attacks today use WMI to connect to remote systems, modify the registry, an
 
 # 1.3.5 The net Command
 
-Windows has many commands that can be entered at the command line. One important command is the net command, which is used in the administration and maintenance of the OS. The net command supports many subcommands that follow the net command and can be combined with switches to focus on specific output.
+Windows has many commands that can be entered at the command line. One important command is the **net** command, which is used in the administration and maintenance of the OS. The **net** command supports many subcommands that follow the **net** command and can be combined with switches to focus on specific output.
 
-To see a list of the many net commands, type net help at the command prompt. The command output shows the commands that the net command can use. To see verbose help about any of the net commands, type C:∖> net help ,as shown below.
+To see a list of the many **net** commands, type **net help** at the command prompt. The command output shows the commands that the **net** command can use. To see verbose help about any of the net commands, type C:∖> **net help** ,as shown below.
 
 ![Screenshot (721)](https://github.com/user-attachments/assets/4f5e5fd8-013f-4f59-a382-dac143134e60)
 
@@ -511,10 +512,11 @@ One of the most important features of any operating system is the ability for th
 
 ![f0968140-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/79916749-fbd8-4fc7-a1ab-7a8119a817dc)
 
+The initial view shows an overview of the active network. This view shows whether there is internet access and if the network is private, public, or guest. The type of network, either wired or wireless, is also shown. From this window, you can see the HomeGroup the computer belongs to, or create one if it is not already part of a HomeGroup. This tool can also be used to change adapter settings, change advance sharing settings, set up a new connection, or troubleshoot problems. Note that HomeGroup was removed from Windows 10 in version 1803.
 
 **Change Adapter Settings**
 
-To configure a network adapter, choose Change adapter settings in the Networking and Sharing Center to show all of the network connections that are available. Select the adapter that you want to configure. In this case, we change an Ethernet adapter to acquire its IPv4 address automatically from the network.
+To configure a network adapter, choose **Change adapter settings** in the Networking and Sharing Center to show all of the network connections that are available. Select the adapter that you want to configure. In this case, we change an Ethernet adapter to acquire its IPv4 address automatically from the network.
 
 Access Adapter Properties
 
@@ -524,19 +526,19 @@ Right-click the adapter you wish to configure and choose Properties, as shown in
 
 Access TCP/IPV4 Properties
 
-This connection uses the following items: Internet Protocol Version 4 (TCP/IPv4) or Internet Protocol Version 6 (TCP/IPv6) depending on which version you wish to use. In the figure, IPv4 is being selected.
+This connection uses the following items: **Internet Protocol Version 4 (TCP/IPv4)** or **Internet Protocol Version 6 (TCP/IPv6)** depending on which version you wish to use. In the figure, IPv4 is being selected.
 
 ![f09b8a50-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/81a5313f-9077-4211-80bc-1c35d6769a36)
 
 Change Settings
 
-Click Properties to configure the adapter. In the Properties dialogue box, shown in the figure, you can choose to Obtain an address automatically if there is a DHCP server available on the network. If you wish to configure addressing manually, you can fill in the address, subnet, default gateway, and DNS servers to configure the adapter. Click OK to accept the changes. You can also use the netsh.exe tool to configure networking parameters from a command prompt. This program can display and modify the network configuration. Type netsh /? at the command prompt to see a list of all the switches that can be used with this command.
+Click **Properties** to configure the adapter. In the **Properties** dialogue box, shown in the figure, you can choose to **Obtain an address automatically** if there is a DHCP server available on the network. If you wish to configure addressing manually, you can fill in the address, subnet, default gateway, and DNS servers to configure the adapter. Click **OK** to accept the changes. You can also use the netsh.exe tool to configure networking parameters from a command prompt. This program can display and modify the network configuration. Type **netsh /?** at the command prompt to see a list of all the switches that can be used with this command.
 
 ![f09b8a50-a1fb-11ea-bb42-49e522ad4be8 (1)](https://github.com/user-attachments/assets/22ed856e-3ca8-44b0-8fc2-9a6e9b9a7be6)
 
 **nslookup and netstat**
 
-Domain Name System (DNS) should also be tested because it is essential to finding the address of hosts by translating it from a name, such as a URL. Use the nslookup command to test DNS. Type nslookup cisco.com at the command prompt to find the address of the Cisco webserver. When the address is returned, you know that DNS is functioning correctly. You can also check to see what ports are open, where they are connected, and what their current status is. Type netstat at the command line to see details of active network connections, as shown in the command output. The netstat command will be examined further later in this module
+Domain Name System (DNS) should also be tested because it is essential to finding the address of hosts by translating it from a name, such as a URL. Use the **nslookup ** command to test DNS. Type **nslookup cisco.com** at the command prompt to find the address of the Cisco webserver. When the address is returned, you know that DNS is functioning correctly. You can also check to see what ports are open, where they are connected, and what their current status is. Type **netstat** at the command line to see details of active network connections, as shown in the command output. The **netstat** command will be examined further later in this module
 
 ![Screenshot (722)](https://github.com/user-attachments/assets/75fb46b1-6fb4-4826-97c2-8050fd1cda61)
 
@@ -574,20 +576,52 @@ These are some of the services that Windows Server provides:
 
 - **Management** - Group policy and Active Directory domain services control
 
+# 1.3.10 Lab - Create User Accounts
+
+In this lab, you will create and modify user accounts in Windows.
+
+- Part 1: Creating a New Local User Account
+- Part 2: Reviewing User Account Properties
+- Part 3: Modifying Local User Accounts
+
+# 1.3.11 Lab - Using Windows PowerShell
+
+In this lab, you will explore some of the functions of PowerShell.
+
+- Part 1: Access PowerShell console.
+- Part 2: Explore Command Prompt and PowerShell commands.
+- Part 3: Explore cmdlets.
+- Part 4: Explore the netstat command using PowerShell.
+- Part 5: Empty recycle bin using PowerShell.
+
+# 1.3.12 Lab - Windows Task Manager
+In this lab, you will explore Task Manager and manage processes from within Task Manager.
+
+- Part 1: Working in the Processes tab
+- Part 2: Working in the Services tab
+- Part 3: Working in the Performance tab
+
+# 1.3.13 Lab - Monitor and Manage System Resources in Windows
+In this lab, you will use administrative tools to monitor and manage Windows system resources.
+
+- Part 1: Starting and Stopping the Routing and Remote Access service
+- Part 2: Working in the Computer Management Utility
+- Part 3: Configuring Administrative Tools
+
 # 1.4. Windows Security
 # 1.4.1 The netstat Command
 
-When malware is present in a computer, it will often open communication ports on the host to send and receive data. The netstat command can be used to look for inbound or outbound connections that are not authorized. When used on its own, the netstat command will display all of the active TCP connections.
+When malware is present in a computer, it will often open communication ports on the host to send and receive data. The **netstat** command can be used to look for inbound or outbound connections that are not authorized. When used on its own, the **netstat** command will display all of the active TCP connections.
 
 By examining these connections, it is possible to determine which of the programs are listening for connections that are not authorized. When a program is suspected of being malware, a little research can be performed to determine its legitimacy. From there, the process can be shut down with Task Manager, and malware removal software can be used to clean the computer.
 
-To make this process easier, you can link the connections to the running processes that created them in Task Manager. To do this, open a command prompt with administrative privileges and enter the netstat -abno command, as shown in the command output.
+To make this process easier, you can link the connections to the running processes that created them in Task Manager. To do this, open a command prompt with administrative privileges and enter the **netstat -abno** command, as shown in the command output.
 
 ![Screenshot (723)](https://github.com/user-attachments/assets/7b6c2696-84a7-47e1-a324-3b90a9448ca7)
 
-Note: If you are not in administrator mode, a “The requested operation requires elevation” message will appear. Search for Command Prompt. Right-click on Command Prompt and chose Run as administrator.
+Note: If you are not in administrator mode, a “The requested operation requires elevation” message will appear. Search for Command Prompt. Right-click on **Command Prompt** and choose **Run as administrator**.
 
-By examining the active TCP connections, an analyst should be able to determine if there are any suspicious programs that are listening for incoming connections on the host. You can also trace that process to the Windows Task Manager and cancel the process. There may be more than one process listed with the same name. If this is the case, use the PID to find the correct process. Each process running on the computer has a unique PID. To display the PIDs for the processes in the Task Manager, open the Task Manager, right-click the table heading and select PID.
+By examining the active TCP connections, an analyst should be able to determine if there are any suspicious programs that are listening for incoming connections on the host. You can also trace that process to the Windows Task Manager and cancel the process. There may be more than one process listed with the same name. If this is the case, use the PID to find the correct process. Each process running on the computer has a unique PID. To display the PIDs for the processes in the Task Manager, open the **Task Manager**, right-click the table heading and select **PID**.
 
 # 1.4.2 Event Viewer
 
@@ -654,7 +688,7 @@ Several reputable security organizations such as McAfee, Symantec, and Kaspersky
 
 ![f2476590-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/8b39ce61-5f77-4d93-b21c-b8bb4ccbc392)
 
-To open Windows Defender, search for it and click the program. Although Windows Defender works in the background, you can perform manual scans of the computer and storage devices. You can also manually update the virus and spyware definitions in the Update tab. Also, to see all of the items that were found during previous scans, click the History tab.
+To open Windows Defender, search for it and click the program. Although Windows Defender works in the background, you can perform manual scans of the computer and storage devices. You can also manually update the virus and spyware definitions in the **Update** tab. Also, to see all of the items that were found during previous scans, click the **History** tab.
 
 # 1.4.6 Windows Defender Firewall
 
@@ -668,6 +702,28 @@ Many additional settings can be found under **Advanced settings. Here you can cr
 
 ![f35ef010-a1fb-11ea-bb42-49e522ad4be8](https://github.com/user-attachments/assets/125319ea-8d2a-4803-8953-441bcbd273b4)
 
+# 1.4.7 Check Your Understanding - Identify the Windows Tool
+
 # 1.5 The Windows Operating System Summary
 
+- Windows History
 
+The first computers required a Disk Operating System (DOS) to create and manage files. Microsoft developed MS-DOS as a command line interface (CLI) to access the disk drive and load the operating system files. Early versions of Windows consisted of a Graphical User Interface (GUI) that ran over MS-DOS. However, modern Windows versions are in direct control of the computer and its hardware and support multiple user processes. This is much different than the single process, single user MS-DOS. Since 1993, there have been more than 20 releases of Windows that are based on the NT operating system. Users use a Windows GUI to work with data files and software. The GUI has a main area that is known as the Desktop and a Task Bar situated below the desktop. The Task Bar includes the Start menu, quick launch icons, and a notification area. Windows has many vulnerabilities. Recommendations to secure the Windows OS include use of virus or malware protection, use of strong passwords, use of firewall, and limited use of the administrator account, among others.
+
+- Windows Architecture and Operations
+
+Windows consists of a hardware abstraction layer (HAL) that is software that handles all of the communication between the hardware and the kernel. The kernel has control over the entire computer and handles input and output requests, memory, and all of the peripherals connected to the computer. Windows operates in two different modes. The first is user mode. Most Windows programs run in user mode. The second is kernel mode. It allows operating system code direct access to the computer hardware. Windows supports several different file systems, but NTFS is the most widely used. NTFS volumes include the partition boot sector, master file table, system files and the file area. When a computer boots, it first accesses system information and code that is stored in BIOS hardware. The BIOS boot code performs a system self-test called POST, locates and loads the Windows OS, and loads other associated programs to start the operating system. Windows should always be shutdown properly.
+
+A computer works by storing instructions in RAM until the CPU processes them. Each process in a 32-bit Windows computer supports a virtual address space that enables addressing up to 4 gigabytes. Each process in a 64-bit Windows computer supports a virtual address space of up to 8 terabytes. Windows stores all of the information about hardware, applications, users, and system settings in a large database known as the registry. The registry is a hierarchical database where the highest level is known as a hive, below that there are keys, followed by subkeys. There are five registry hives that contain data regarding the configuration and operation of Windows. There are hundreds of keys and subkeys.
+
+- Windows Configuration and Monitoring
+
+For security reasons, it is not advisable to log on to Windows using the Administrator account or an account with administrative privileges. Do not give standard users administrative privileges. Do not enable the Guests account unless the computer is going to be used by many different people who do not have accounts. Use Windows groups to make administration of users easier. Local users and groups are managed with the lusrmgr.msc control panel applet.
+
+You can use the CLI or the Windows PowerShell to execute commands. PowerShell can be used to create scripts to automate tasks that the regular CLI is unable to automate. Windows Management Instrumentation (WMI) is used to manage remote computers. The net command can be combined with switches to focus on specific output. Task Manager provides a lot of information about what is running, and the general performance of the computer. The Resource Monitor provides more detailed information about resource usage. The Network and Sharing Center is used to configure Windows networking properties and test networking settings. The Server Message Block (SMB) protocol is used to share network resources such as files on remote hosts. The Universal Naming Convention (UNC) format is used to connect to resources. Windows Server is an edition of Windows that is mainly used in data centers. It provides network, file, web, and management services to a Windows network or domain.
+
+- Windows Security
+
+Malware can open communication ports to communicate and spread. The Windows netstat command displays all open communication ports on a computer and can also display the software processes that are associated with the ports. This enables unknown potentially malicious software to be identified and shutdown. Windows Event Viewer provides access to numerous logged events regarding the operation of a computer. Windows logs Windows events and applications and services events. Logged event severity levels range through the information, warning, error, or critical levels. It is very important to keep Windows up to date to guard against new security threats. Software patches, updates, and service packs address security vulnerabilities as they are discovered. Windows should be configured to automatically download and install updates as they become available. Windows can be configured to only install and restart a computer at specified times of day.
+
+# 1.5.2 Quiz: The Windows Operating System
