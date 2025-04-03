@@ -120,8 +120,21 @@ Windows computers use many different types of hardware. The operating system can
 
 ![Screenshot (703)](https://github.com/user-attachments/assets/2d72a147-5eb3-4181-9543-2e267d703600)
 
+A hardware abstraction layer (HAL) is software that handles all of the communication between the hardware and the kernel. The kernel is the core of the operating system and has control over the entire computer. It handles all of the input and output requests, memory, and all of the peripherals connected to the computer.
+
+In some instances, the kernel still communicates with the hardware directly, so it is not completely independent of the HAL. The HAL also needs the kernel to perform some functions.
+
 # 1.2.2 User Mode and Kernel Mode
+
+As identified in the figure, there are two different modes in which a CPU operates when the computer has Windows installed: the user mode and the kernel mode.
+
 ![Screenshot (704)](https://github.com/user-attachments/assets/9fb627f4-ab35-4b15-91e6-ce599d08f754)
+
+Installed applications run in user mode, and operating system code runs in kernel mode. Code that is executing in kernel mode has unrestricted access to the underlying hardware and is capable of executing any CPU instruction. Kernel mode code also can reference any memory address directly. Generally reserved for the most trusted functions of the OS, crashes in code running in kernel mode stop the operation of the entire computer. Conversely, programs such as user applications, run in user mode and have no direct access to hardware or memory locations. User mode code must go through the operating system to access hardware resources. Because of the isolation provided by user mode, crashes in user mode are restricted to the application only and are recoverable. Most of the programs in Windows run in user mode. Device drivers, pieces of software that allow the operating system and a device to communicate, may run in either kernel or user mode, depending on the driver.
+
+All of the code that runs in kernel mode uses the same address space. Kernel-mode drivers have no isolation from the operating system. If an error occurs with the driver running in kernel mode, and it writes to the wrong address space, the operating system or another kernel-mode driver could be adversely affected. In this respect, the driver might crash, causing the entire operating system to crash.
+
+When user mode code runs, it is granted its own restricted address space by the kernel, along with a process created specifically for the application. The reason for this functionality is mainly to prevent applications from changing operating system code that is running at the same time. By having its own process, that application has its own private address space, rendering other applications unable to modify the data in it. This also helps to prevent the operating system and other applications from crashing if that application crashes.
 
 # 1.2.3 Windows File System
 1. eXFAT
@@ -149,6 +162,9 @@ Mac-OS X computers can only read an NTFS partition. They are able to write to an
 4. These security descriptors contain file ownership and permissions all the way down to the file level. NTFS also tracks many time stamps to track file activity. Sometimes referred to as MACE, the timestamps Modify, Access, Create, and Entry Modified are often used in forensic investigations to determine the history of a file or folder.
 5. NTFS also supports file system encryption to secure the entire storage media.
 
+NTFS is the most widely used file system for Windows for many reasons. NTFS supports very large files and partitions and it is very compatible with other operating systems. NTFS is also very reliable and supports recovery features. Most importantly, it supports many security features. Data access control is achieved through security descriptors. These security descriptors contain file ownership and permissions all the way down to the file level. NTFS also tracks many time stamps to track file activity. Sometimes referred to as MACE, the timestamps Modify, Access, Create, and Entry Modified are often used in forensic investigations to determine the history of a file or folder. NTFS also supports file system encryption to secure the entire storage media.
+
+Before a storage device such as a disk can be used, it must be formatted with a file system. In turn, before a file system can be put into place on a storage device, the device needs to be partitioned. A hard drive is divided into areas called partitions. Each partition is a logical storage unit that can be formatted to store information, such as data files or applications. During the installation process, most operating systems automatically partition and format the available drive space with a file system such as NTFS.
 
 NTFS formatting creates important structures on the disk for file storage, and tables for recording the locations of files:
 
@@ -162,17 +178,19 @@ NTFS formatting creates important structures on the disk for file storage, and t
 # 1.2.4 Aternate Data Streams (ADS)
 NTFS stores files as a series of attributes, such as the name of the file, or a timestamp. The data which the file contains is stored in the attribute $DATA, and is known as a data stream. By using NTFS, you can connect Alternate Data Streams (ADSs) to the file. This is sometimes used by applications that are storing additional information about the file. The ADS is an important factor when discussing malware. This is because it is easy to hide data in an ADS. An attacker could store malicious code within an ADS that can then be called from a different file.
 
-In the NTFS file system, a file with an ADS is identified after the filename and a colon, for example, Testfile.txt:ADS. This filename indicates an ADS called ADS is associated with the file called Testfile.txt. An example of ADS is shown in the command output.
+In the NTFS file system, a file with an ADS is identified after the filename and a colon, for example, **Testfile.txt:ADS**. This filename indicates an ADS called ADS is associated with the file called **Testfile.txt**. An example of ADS is shown in the command output.
 
 ![Screenshot (705)](https://github.com/user-attachments/assets/78242cad-4039-49a5-834a-992c19bd6d8f)
 
 In the output:
 - The first command places the text “Alternate Data Here” into an ADS of the file Testfile.txt called “ADS”.
-- After that, dir, shows that the file was created, but the ADS is not visible.
+- After that, **dir**, shows that the file was created, but the ADS is not visible.
 - The next command shows that there is data in the Testfile.txt:ADS data stream.
-- The last command shows the ADS of the Testfile.txt file because the r switch was used with the dir command.
+- The last command shows the ADS of the Testfile.txt file because the **r** switch was used with the **dir** command.
 
 # 1.2.5 Windows Boot Process
+
+https://github.com/mahtokamal/OS_foundational_concepts/blob/main/L5_windows_OS_booting.md
 
 # 1.2.6 Windows Startup
 There are two important registry items that are used to automatically start applications and services:
@@ -234,6 +252,7 @@ Be very careful when manipulating the settings of these services. Some programs 
 Program -
 Process -
 Thread -
+
 # 1.2.9 Memory Allocation and Handles
 A computer works by storing instructions in RAM until the CPU processes them. The virtual address space for a process is the set of virtual addresses that the process can use. The virtual address is not the actual physical location in memory, but an entry in a page table that is used to translate the virtual address into the physical address.
 
@@ -273,6 +292,16 @@ Registry keys can contain either a subkey or a value. The different values that 
 Because the registry holds almost all the operating system and user information, it is critical to make sure that it does not become compromised. Potentially malicious applications can add registry keys so that they start when the computer is started. During a normal boot, the user will not see the program start because the entry is in the registry and the application displays no windows or indication of starting when the computer boots. A keylogger, for example, would be devastating to the security of a computer if it were to start at boot without the user’s knowledge or consent. When performing normal security audits, or remediating an infected system, review the application startup locations within the registry to ensure that each item is known and safe to run.
 
 The registry also contains the activity that a user performs during normal day-to-day computer use. This includes the history of hardware devices, including all devices that have been connected to the computer including the name, manufacturer and serial number. Other information, such as what documents a user and program have opened, where they are located, and when they were accessed is stored in the registry. This is all very useful information when a forensics investigation needs to be performed.
+
+# 1.2.11 Lab - Exploring Processes, Threads, Handles, and Windows Registry
+
+In this lab, you will explore the processes, threads, and handles using Process Explorer in the SysInternals Suite. You will also use the Windows Registry to change a setting.
+
+- Part 1: Exploring Processes
+- Part 2: Exploring Threads and Handles
+- Part 3: Exploring Windows Registry
+
+# 1.2.12 Check Your Understanding - Identify the Windows Registry Hive
 
 # 1.3. Windows Configurations and Monitoring
 # 1.3.1 Run as Administrsator
