@@ -51,11 +51,6 @@ The table lists common Windows versions.
 |Windows 10|Home, Pro, Pro Education, Enterprise, Education, IoT Core, Mobile, Mobile Enterprise|
 |Windows Server 2016 |Essentials, Standard, Datacenter, Multipoint Premium Server, Storage Server, Hyper-V Server |
 
-NOTE:
-NOTE2:
-note3:
-
-
 # 1.1.3 Windows GUI
 
 Windows has a graphical user interface (GUI) for users to work with data files and software. The GUI has a main area that is known as the Desktop, shown in the figure.
