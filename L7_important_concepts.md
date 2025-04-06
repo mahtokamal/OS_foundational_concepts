@@ -10,4 +10,11 @@
 # 9. Process
 # 10. Thread
 # 11. Task
+# 12. File Management
+# 13. Disk Management
+# 14. Process Management
+# 15. Memory Management
+# 16. User Management
+# 17. Resource Management
+# 18.
 
