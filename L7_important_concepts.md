@@ -3,8 +3,8 @@
 # 2. Hyperthreading
 # 3. Virtual Memory Management
 # 4. Buffer Overflow
-# 5. Swapping
-# 6. Paging
+# 5. Swapping (Seap file)
+# 6. Paging (Page file)
 # 7. Disk Fragmentation and Defragmentation
 # 8. Program
 # 9. Process
@@ -16,5 +16,7 @@
 # 15. Memory Management
 # 16. User Management
 # 17. Resource Management
-# 18.
+# 18. Multikprocessing
+# 19. Multithreading
+# 20.
 
