@@ -18,5 +18,6 @@
 # 17. Resource Management
 # 18. Multikprocessing
 # 19. Multithreading
-# 20.
+# 20. Device Managemnt
+# 21. Inter-Process Communication
 
