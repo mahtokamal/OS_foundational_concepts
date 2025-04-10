@@ -1,5 +1,6 @@
 # Operating System Foundation Concepts Everyone should knonw
 # 1. Virtualization
+# How is virtualization different from cloud computing?
 # 2. Hyperthreading
 # 3. Virtual Memory Management
 # 4. Buffer Overflow
