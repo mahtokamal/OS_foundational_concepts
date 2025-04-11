@@ -1,5 +1,7 @@
 # Operating System Foundation Concepts Everyone should knonw
-# 1. Virtualization
+# 1. Virtualization vs Conatinerization
+
+
 # How is virtualization different from cloud computing?
 # 2. Hyperthreading
 # 3. Virtual Memory Management
@@ -21,4 +23,5 @@
 # 19. Multithreading
 # 20. Device Managemnt
 # 21. Inter-Process Communication
+# 22. Clou- Computing
 
