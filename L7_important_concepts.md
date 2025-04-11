@@ -10,8 +10,8 @@ Virtualization utlizies a special kind of software known as hypervisor that enab
 A Hypervisor is a software that really assists the virtualization to work. Hypervisor also known as virtual machine monitor (VMM). It acts as an intermediary between the physical computer and virtual computer(machine).
 The work of hypervisor is to ensure, control and manage the virtual machines' usage of the physical resources (Memory and CPU) of the host computer.
 
-**Categories of Hypervisor**
-There are 2 categories of Hypervisor availabel:
+**Categories of Hypervisor**:
+There are 2 categories of Hypervisor available:
 
 **Type-1**
 A Type-1, native or bare-metal hypervisors, which are directly installed on computer's hardware without any OS is sitting between them, which means it has a direct access on computer's resources. Thus, it is considered as highly efficient and for this reason, large enterprise applications preferred Type 1 hypervisors. KVM( Kernel-based Virtual Machine ) uses the type 1 hypervisor to host multiple virtual machines on the Linux operating system. Examples of Type-1 hypervisor: VMware ESXi, Microsoft Hyper-V, KVM,Citrix Hypervisor (XenServer).
