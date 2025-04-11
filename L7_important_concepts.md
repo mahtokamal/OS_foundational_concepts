@@ -23,5 +23,5 @@
 # 19. Multithreading
 # 20. Device Managemnt
 # 21. Inter-Process Communication
-# 22. Clou- Computing
+# 22. Cloud Computing
 
