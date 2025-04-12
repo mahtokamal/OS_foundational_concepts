@@ -14,6 +14,9 @@ The work of hypervisor is to ensure, control and manage the virtual machines' us
 **Categories of Hypervisor**<br>
 There are 2 categories of Hypervisor available:
 
+![0_r7b1FbiZM3bdTZDf](https://github.com/user-attachments/assets/62a93392-d9db-458b-bccc-202ed89eaa69)
+
+
 **Type-1** <br>
 A Type-1, native or bare-metal hypervisors, which are directly installed on computer's hardware without any OS is sitting between them, which means it has a direct access on computer's resources. Thus, it is considered as highly efficient and for this reason, large enterprise applications preferred Type 1 hypervisors. KVM( Kernel-based Virtual Machine ) uses the type 1 hypervisor to host multiple virtual machines on the Linux operating system. Examples of Type-1 hypervisor: VMware ESXi, Microsoft Hyper-V, KVM,Citrix Hypervisor (XenServer).
 
