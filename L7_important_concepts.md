@@ -28,6 +28,41 @@ Examples of Type-2 hypervisor: Oracle VirtualBox, VMware Workstation, Microsoft 
 After Installation of Hypervisor software (virtualization software, just like another software), we can create multiple virtual machine or computer as per our requirements and each virtual machine has its own configuration and resource to operate like a physical(actual) computer does. The Actual computer is **Host** and the Virtual Computers are **Guests**.
 
 # Conatinerization
+Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. <br>
+
+Containerization also allows users to run many instances on a single physical host, but it does so without needing the hypervisor to act as an intermediary. Instead, the functionality of the host system kernel is used to isolate multiple independent instances (containers). By sharing the host kernel and operating system, containers avoid the overhead of virtualization, as there’s no need to provide a separate virtual kernel and OS for each instance. This is why containers are considered a more lightweight solution – they require fewer resources without compromising on performance. <br>
+
+
+**Which one to choose?** <br>
+
+Whether you should go for virtualization, containerization or a mix of the two really depends on your use case and needs. Do you need to run multiple applications with different OS requirements? Virtualization is the way to go. Are you building something new from the ground up and want to optimize it for the cloud? Containerization is the choice for you. A lot of the same considerations are needed when choosing your cloud migration strategy.
+
+1. Resource Overhead
+   containers share the host system’s operating system, and do not need to run a full operating system, they are significantly more lightweight and consume fewer resources. Virtual machines, on the other hand, each require their own OS, which increases the overhead, especially when many VMs are running on the same host system.
+   
+2. Startup Time
+
+   In general, containers start up more quickly than VMs, because they don’t have to start up an entire operating system. Virtual machines take much longer to boot up. This means containers are more flexible and can be torn down and restarted whenever needed, supporting immutability, which means that a resource never changes after being deployed.
+   
+3. Portability
+
+   containers have a slight edge because they package the application and all of its dependencies together into a single unit, which can be run on any system that supports the container platform. Virtual machines, while also portable, are more dependent on the underlying hardware.
+   
+4. Security Isolation
+
+   In terms of security isolation, virtual machines have the advantage. Because each VM is completely isolated from the host system and other VMs, a security breach in one VM typically does not affect the others (although it is possible to compromise the hypervisor and take control of all VMs on the device). Containers, while isolated from each other, still share the host system’s OS, so a breach in one container could possibly leak to other containers.
+
+5. Scalability and Management
+The lightweight nature and rapid startup time offered by containers make them ideal for scaling applications quickly and efficiently. They also lend themselves well to the microservices architecture, which can simplify the management of complex applications. Virtual machines, while also scalable, are more resource-intensive and take longer to start, making them less suitable for microservices and distributed applications.
+
+
+
+|Virtualization|Containerization|
+|-----|--|
+|Legacy Applications|Microservices Architectures|
+|Environments Needing Strong Isolation|CI/CD|
+|IaaS Scenarios|PaaS Scenarios|
+
 ![1715412904464](https://github.com/user-attachments/assets/4e5038ed-ea5d-4a17-9258-c9caffb911a7)
 ![1669534020612](https://github.com/user-attachments/assets/971929bf-bae0-45dc-b576-708feaf1c96d)
 ![Container-based-Virtualization-vs-Traditional-Virtualization](https://github.com/user-attachments/assets/abe95e77-808c-45e9-a224-36cc69e99be8)
