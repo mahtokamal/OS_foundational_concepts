@@ -27,11 +27,15 @@ Examples of Type-2 hypervisor: Oracle VirtualBox, VMware Workstation, Microsoft 
 # Virtual Machine
 After Installation of Hypervisor software (virtualization software, just like another software), we can create multiple virtual machine or computer as per our requirements and each virtual machine has its own configuration and resource to operate like a physical(actual) computer does. The Actual computer is **Host** and the Virtual Computers are **Guests**.
 
-# Conatinerization
+# Containerization
 Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. <br>
 
 Containerization also allows users to run many instances on a single physical host, but it does so without needing the hypervisor to act as an intermediary. Instead, the functionality of the host system kernel is used to isolate multiple independent instances (containers). By sharing the host kernel and operating system, containers avoid the overhead of virtualization, as there’s no need to provide a separate virtual kernel and OS for each instance. This is why containers are considered a more lightweight solution – they require fewer resources without compromising on performance. <br>
 
+# Docker
+Docker is an open-source platform for developers to build, deploy, and manage containers. Containers are executable units of software which package and manage the software and components to run a service. They are pretty lightweight because they isolate the application and use the host OS kernel.
+
+# Kubernetes
 
 **Which one to choose?** <br>
 
@@ -63,23 +67,30 @@ The lightweight nature and rapid startup time offered by containers make them id
 |Environments Needing Strong Isolation|CI/CD|
 |IaaS Scenarios|PaaS Scenarios|
 
+**NoTE:** A virtual machine runs on a hypervisor (software that emulates and manages multiple operating systems on one physical host). It includes a full guest OS, making it heavier but fully isolated. Containers share the host OS kernel, isolating only applications and their dependencies, which makes them lightweight and fast to start. Virtual machines are ideal for running multiple different operating systems or legacy applications, while containers excel at deploying scalable, portable micro-services.
+
 ![1715412904464](https://github.com/user-attachments/assets/4e5038ed-ea5d-4a17-9258-c9caffb911a7)
 ![1669534020612](https://github.com/user-attachments/assets/971929bf-bae0-45dc-b576-708feaf1c96d)
 ![Container-based-Virtualization-vs-Traditional-Virtualization](https://github.com/user-attachments/assets/abe95e77-808c-45e9-a224-36cc69e99be8)
 
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # How is virtualization different from cloud computing?
+# 1. CPU
+## Process, Threads, Handles, Uptime
+## Base Speed, Sockets
+## Cores, Logical Processors
+## Cache L1, L2, L3
+## Registers
+
 # 2. Hyperthreading
 # 3. Virtual Memory Management
 # 4. Buffer Overflow
-# 5. Swapping (Seap file)
+# 5. Swapping (Swap file)
 # 6. Paging (Page file)
 # 7. Disk Fragmentation and Defragmentation
 # 8. Program
 # 9. Process
-# 10. Thread
+# 10. Thread vs Multi-threading
 # 11. Task
 # 12. File Management
 # 13. Disk Management
@@ -87,9 +98,11 @@ The lightweight nature and rapid startup time offered by containers make them id
 # 15. Memory Management
 # 16. User Management
 # 17. Resource Management
-# 18. Multikprocessing
+# 18. Multiprocessing
 # 19. Multithreading
 # 20. Device Managemnt
 # 21. Inter-Process Communication
 # 22. Cloud Computing
+# 23. Stratup-apps
+# 24. Services.msc
 
