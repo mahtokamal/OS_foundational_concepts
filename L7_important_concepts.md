@@ -106,3 +106,383 @@ The lightweight nature and rapid startup time offered by containers make them id
 # 23. Stratup-apps
 # 24. Services.msc
 
+# Concepts 1
+
+🏦 Scenario: Online payment in a banking system
+
+A customer clicks “Transfer Money” on a banking app.
+Backend runs on servers (e.g., VMs on VMware ESXi, app tier, DB tier like Oracle Database).
+
+We’ll follow that one request through the system.
+
+🧠 1. CPU (Central Processing Unit)
+
+👉 Role: Executes instructions
+
+Inside the system:
+CPU fetches instructions → decodes → executes
+Handles calculations, logic, data movement
+Analogy:
+
+Executive decision-maker
+
+Example:
+
+When calculating new balance after transfer:
+
+new_balance = old_balance - amount
+
+CPU performs this computation.
+
+⚙️ 2. Process
+
+👉 Role: A running program with its own memory space
+
+Inside the system:
+Banking backend (Java/.NET service) runs as a process
+Database runs as a separate process
+Analogy:
+
+A department in a company
+
+Example:
+“Payment Service” process
+Database process (Oracle Database)
+🧵 3. Thread
+
+👉 Role: Unit of execution inside a process
+
+Inside the system:
+One process → many threads handling multiple users
+Analogy:
+
+Employees inside a department
+
+Example:
+Thread 1 → handles User A transfer
+Thread 2 → handles User B login
+
+👉 Threads share memory (faster communication)
+
+🔗 4. Handles
+
+👉 Role: References to system resources
+
+Inside the system:
+OS assigns handles to access:
+Files
+Network sockets
+Database connections
+Analogy:
+
+Access cards / keys
+
+Example:
+Handle to:
+Transaction log file
+TCP connection to user
+⏱️ 5. Uptime
+
+👉 Role: Duration system has been running
+
+Inside the system:
+Critical for reliability monitoring
+Analogy:
+
+How long the bank has stayed open without closing
+
+Example:
+Banking server uptime: 180 days
+High uptime = stable infrastructure
+⚡ 6. Base Speed
+
+👉 Role: Default CPU frequency
+
+Inside the system:
+Determines baseline instruction processing rate
+Analogy:
+
+Normal working pace of an employee
+
+Example:
+CPU base speed: 2.4 GHz
+Can boost to 3.5 GHz under load
+🔌 7. Sockets
+
+👉 Role: Physical CPU slots on motherboard
+
+Inside the system:
+Each socket holds one CPU
+Analogy:
+
+Workstations for managers
+
+Example:
+2-socket server:
+2 CPUs installed (common in enterprise servers from Hewlett Packard Enterprise)
+🧩 8. Cores
+
+👉 Role: Independent processing units inside CPU
+
+Inside the system:
+Each core executes tasks independently
+Analogy:
+
+Multiple managers working simultaneously
+
+Example:
+1 CPU with 8 cores → 8 parallel tasks
+🔀 9. Logical Processors
+
+👉 Role: Virtual cores (via hyper-threading)
+
+Inside the system:
+Each core can handle multiple threads
+Analogy:
+
+One manager multitasking between two tasks
+
+Example:
+8 cores → 16 logical processors (common in Intel CPUs)
+🧠 10. Cache (L1, L2, L3)
+
+👉 Role: Fast memory close to CPU
+
+Inside the system:
+
+When processing a transaction:
+
+CPU checks L1 cache (fastest)
+If not found → L2
+Then → L3
+Then → RAM
+Analogy:
+L1 → sticky notes on desk
+L2 → drawer
+L3 → shared cabinet
+Example:
+Frequently accessed account data stays in cache for quick reuse
+📦 11. Registers
+
+👉 Role: Smallest, fastest storage inside CPU
+
+Inside the system:
+Holds immediate values during execution
+Analogy:
+
+Numbers in your head during calculation
+
+Example:
+While subtracting balance:
+Amount stored in register
+Intermediate result stored in another register
+🔄 How everything works together (step-by-step)
+💳 User initiates transfer:
+1. Request enters system
+Network connection created → handle assigned
+2. Process handles request
+Banking app process receives it
+3. Thread executes task
+A thread is assigned to this request
+4. CPU scheduling
+OS assigns thread to:
+Core
+Possibly a logical processor
+5. Execution inside CPU
+Instructions processed using:
+Registers (immediate values)
+Cache (L1/L2/L3) for quick data access
+6. Data access
+Thread uses handles to:
+Read/write database
+Log transaction
+7. Output generated
+Response sent back to user
+8. System continues running
+Uptime increases
+
+# concepts 2
+🧠 1. Hyperthreading
+
+👉 A single CPU core runs multiple threads (logical processors)
+
+Example:
+An Intel CPU with 8 cores appears as 16 logical processors.
+👉 A web server handles more user requests simultaneously.
+
+💾 3. Virtual Memory Management
+
+👉 Uses disk space as extra RAM
+
+Example:
+A banking app exceeds RAM → OS moves inactive data to disk so system doesn’t crash.
+
+⚠️ 4. Buffer Overflow
+
+👉 When a program writes more data than allocated memory
+
+Example:
+A login form without limits → attacker sends huge input → overwrites memory → potential security breach.
+
+🔄 5. Swapping (Swap file)
+
+👉 Moves entire processes between RAM and disk
+
+Example:
+Low-memory server swaps out an idle reporting process to free RAM for active users.
+
+📄 6. Paging (Page file)
+
+👉 Moves memory in fixed-size chunks (pages)
+
+Example:
+Instead of moving full app, OS swaps only required pages → more efficient than swapping.
+
+💽 7. Disk Fragmentation & Defragmentation
+
+👉 Files split across disk → slower access
+
+Example:
+
+Fragmented: file stored in pieces → slow read
+Defragmented: stored contiguously → faster
+
+👉 Common in older HDD systems
+
+📦 8. Program
+
+👉 A static file (not running)
+
+Example:
+Installer for Microsoft Word sitting on disk
+
+⚙️ 9. Process
+
+👉 A running program
+
+Example:
+Opening Word → creates a process in memory
+
+🧵 10. Thread vs Multithreading
+
+👉 Thread = execution unit
+👉 Multithreading = multiple threads in one process
+
+Example:
+Browser:
+
+One thread loads page
+Another loads images
+Another handles user input
+🧾 11. Task
+
+👉 General term for work being executed
+
+Example:
+In Windows Task Manager → each running app is a task
+
+📁 12. File Management
+
+👉 OS organizes and controls files
+
+Example:
+Saving reports in folders with permissions (read/write)
+
+💿 13. Disk Management
+
+👉 Managing storage devices
+
+Example:
+Creating partitions, formatting drives, assigning letters
+
+⚙️ 14. Process Management
+
+👉 OS controls process lifecycle
+
+Example:
+
+Start app
+Allocate CPU
+Terminate if needed
+🧠 15. Memory Management
+
+👉 Allocates and frees RAM
+
+Example:
+Multiple apps running → OS ensures each gets required memory without conflict
+
+👤 16. User Management
+
+👉 Controls users and permissions
+
+Example:
+
+Admin vs normal user
+Login authentication in enterprise systems
+🔧 17. Resource Management
+
+👉 OS distributes CPU, memory, disk, network
+
+Example:
+Database gets more CPU than background apps
+
+⚡ 18. Multiprocessing
+
+👉 Multiple CPUs working together
+
+Example:
+Server with 2 CPUs handles thousands of transactions in parallel
+
+🧵 19. Multithreading
+
+👉 Same as above concept (inside process)
+
+Example:
+E-commerce app processes multiple orders simultaneously
+
+🔌 20. Device Management
+
+👉 OS controls hardware devices
+
+Example:
+Printer drivers, disk drivers, network adapters
+
+🔗 21. Inter-Process Communication (IPC)
+
+👉 Processes communicate with each other
+
+Example:
+
+App server talks to database
+Uses sockets, pipes, shared memory
+☁️ 22. Cloud Computing
+
+👉 Running apps on remote servers via internet
+
+Example:
+Apps hosted on Amazon Web Services or Microsoft Azure
+
+🚀 23. Startup Apps
+
+👉 Programs that start automatically with OS
+
+Example:
+
+Antivirus
+Cloud sync tools
+⚙️ 24. Services.msc
+
+👉 Windows tool to manage background services
+
+Example:
+
+Start/stop database service
+Control system services like Windows Update
+🧠 Final mental model
+
+All of these are handled by the Operating System, which acts like a central manager:
+
+Runs programs → processes → threads
+Allocates memory & CPU
+Manages files, disks, users, and devices
+Ensures everything runs efficiently and securely
