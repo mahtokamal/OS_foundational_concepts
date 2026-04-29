@@ -74,13 +74,13 @@ Once identified, the modules can be downloaded and installed from the repository
 <img width="1769" height="286" alt="Screenshot (3109)" src="https://github.com/user-attachments/assets/637926c1-01af-4d18-a3b3-ac1d10fa246d" />
 
 # 2.0 Navigating the File System and Working with Files
-- Get-ChildItem
-- Set-Location
+- Get-ChildItem : (dir,ls)
+- Set-Location : (cd)
 - New-Item
-- Remove-Item
-- Copy-Item
-- Move-Item
-- Get-Content
+- Remove-Item : (rmdir, del)
+- Copy-Item : (copy,)
+- Move-Item : (move)
+- Get-Content : (type, cat)
 
 PowerShell provides a range of cmdlets for navigating the file system and managing files, many of which have counterparts in the traditional Windows CLI.
 
