@@ -244,4 +244,28 @@ The first two examples provided by the Get-Help "examples" page and reported abo
 The first example shows how the cmdlet can be very easily combined with any custom script to automate tasks on remote computers.
 
 The second example demonstrates that we don't need to know how to script to benefit from the power of Invoke-Command. In fact, by appending the -ScriptBlock { ... } parameter to the cmdlet's syntax, we can execute any command (or sequence of commands) on the remote computer. The result would be the same as if we were typing the commands in a local PowerShell session on the remote computer itself.
+
+# Practical
+- Get-Command -> shows lists of all cmdlet, scripts, function and aliases.
+   - Get-Command -CommandType "Function/Cmdlet/Alias" -> list all command based on either Function, Cmdlet or Alias
+- Get-Help: -> info about specific command. Example : Get-Help Get-Date -Examples
+- Get-Alias -> 
+- Get-ChildItem(dir,ls) -> shows list of all available files and directories within a directory.
+- Set-Location(cd) -> Change the location of directory
+   - Set-Location -Path "location" -> Set-Location -Path ".\Documents"
+- New-Item -> creates a new directory or file on a specified path
+   - For directory -> New-Item -Path ".\PowerShell_Directory" ItemType "Directory"
+   - For file -> New-Item -Path ".\PowerShell_Directory" ItemType "File"
+- Remove-Item : (rmdir, del, erase) -> deletes a file and directory from a given path.
+   - Remove-Item -Path ".\newpowershell\powershell.txt"
+   - Remove-Item -Path ".\newpowershell\"
+- Copy-Item : (copy,) -> copies files and directories from source path to destination path. Example -> Copy-Item -Path .\Powershell\testtext.txt -Destination .\PracticePowershell\
+- Move-Item : (move) ->
+- Get-Content : (type, cat) -> to view contents of a file.
+- Write-Output : (echo) -> prints on the terminal
+- Get-History : (h, history)
+- Get-Item:
+- Get-ComputerInfo :
+
 # Others
+
