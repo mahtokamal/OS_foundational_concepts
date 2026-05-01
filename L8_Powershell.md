@@ -286,6 +286,37 @@ The second example demonstrates that we don't need to know how to script to bene
    - Example : Get-ComputerInfo
 - 
 
+**Piping, Filtering, and soring Data**
+- Piping
+  - Get-ChildItem | Sort-Object Length
+- Where-Object
+  - Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
+- Get-ChildItem | Where-Object -Property "Name" -like "hell*"
+- Select-Object
+  - Get-ChildItem | Select-Object Name,Length
+- Get-ChildItem | Sort-Object Length -Descending | Select-Object -First 1
+- Select-String (grep,findstr)
+  - Select-String -Path ".\captain-hat.txt" -Pattern "hat" 
+
+# 1. File and Directory
+
+# 2. Networking
+**2.1 Get-NetIPConfiguration**
+-
+**2.2 Get-NetIPAddress**
+- 
+# 3. User & Groups
+
+# 4. Permissions & Ownerships
+
+# 5. System & Process Management
+
+# 6. Disk Space Usage
+
+#
+#
+#
+
 # Basics command
 
 # Powershell Advanced Cmdlets
