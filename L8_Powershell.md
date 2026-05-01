@@ -253,19 +253,96 @@ The second example demonstrates that we don't need to know how to script to bene
 - Get-ChildItem(dir,ls) -> shows list of all available files and directories within a directory.
 - Set-Location(cd) -> Change the location of directory
    - Set-Location -Path "location" -> Set-Location -Path ".\Documents"
+- Get-Location (pwd) ->
+   - Get-Location
 - New-Item -> creates a new directory or file on a specified path
    - For directory -> New-Item -Path ".\PowerShell_Directory" ItemType "Directory"
-   - For file -> New-Item -Path ".\PowerShell_Directory" ItemType "File"
+   - For file -> New-Item -Path ".\PowerShell_Directory\test.txt" ItemType "File"
 - Remove-Item : (rmdir, del, erase) -> deletes a file and directory from a given path.
    - Remove-Item -Path ".\newpowershell\powershell.txt"
    - Remove-Item -Path ".\newpowershell\"
-- Copy-Item : (copy,) -> copies files and directories from source path to destination path. Example -> Copy-Item -Path .\Powershell\testtext.txt -Destination .\PracticePowershell\
-- Move-Item : (move) ->
+- Copy-Item : (copy,) -> copies files and directories from source path to destination path.
+   - Example -> Copy-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+   - 
+- Move-Item : (move) -> moves files and directories from source path to destination path.
+   - Example -> Move-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+- Rename-Item :
+   - Example -> Rename-Item ".\powershell_test\" powershell_test2
 - Get-Content : (type, cat) -> to view contents of a file.
+   - Example : Get-Content ".\powershell\testtext.txt"
+- Set-Content
+   - Example : Set-Content ".\testfile.txt" "welcome to the PowerShell MasteClass!"
+- Add-content : It appends to the file
+   - Example -> Add-Content .\testfile.txt "Welcome again!"
+- Clear-Content :
+   - Example -> Clear-Content .\testfile.txt
 - Write-Output : (echo) -> prints on the terminal
+   - Example : Write-Output "Hello! Welcome to the Powershell Scripting"
+- Test-Path : It checks folder existence
+   - Example -> Test-Path ".\powershell_test" -> if found returns true, otherwise False
 - Get-History : (h, history)
 - Get-Item:
-- Get-ComputerInfo :
+- Get-ComputerInfo : It retrieves System Information
+   - Example : Get-ComputerInfo
+- 
+
+# Basics command
+
+# Powershell Advanced Cmdlets
+
+**Get-Unique Cmdlet** <br>
+
+Get-Unique cmdlet can be used to get the unique objects from a sorted list of objects.
+
+**Group-Object Cmdlet** <br>
+ 
+**Measure-Object Cmdlet** <br>
+
+**Compare-Object Cmdlet** <br>
+
+**Format-List Cmdlet** <br>
+
+**Format-Wide Cmdlet** <br>
+
+**Where-Object Cmdlet** <br>
+
+**Get-ChildItem Cmdlet** <br>
+
+**ForEach-Object Cmdlet** <br>
+
+**Start-Sleep Cmdlet** <br>
+
+**Read-Host Cmdlet** <br>
+
+**Select-Object Cmdlet** <br>
+
+**Sort-Object Cmdlet** <br>
+
+**Write-Warning Cmdlet** <br>
+
+**Write-Host Cmdlet** <br>
+
+**Invoke-Item Cmdlet** <br>
+
+**Invoke-Expression Cmdlet** <br>
+
+**Measure-Command Cmdlet** <br>
+
+**Invoke-History Cmdlet** <br>
+
+**Add-History Cmdlet** <br>
+**Get-History Cmdlet** <br>
+**Get-Culture Cmdlet** <br>
+
+# Basics 
+**Date and Times**
+
+- Get-Date
+- Set-Date
+
+# Powershell Scripting
+
 
 # Others
+
 
