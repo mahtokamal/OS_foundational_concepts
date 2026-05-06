@@ -469,6 +469,29 @@ It overwrites the content to an existing files.
 - Example -> Get-FileHash -Path ".\new.txt"
 <img width="1920" height="701" alt="Screenshot (3173)" src="https://github.com/user-attachments/assets/d4b4e69a-d7e2-4ac5-98d8-d11495e1ae03" />
 
+**5.4 Get-FileHash** <br>
+
+**5.5 Get-FileHash** <br>
+
+**5.6 Get-FileHash** <br>
+
+**5.7 Get-FileHash** <br>
+
+**5.8 Get-FileHash** <br>
+
+**5.9 Get-FileHash** <br>
+
+**5.10 Get-FileHash** <br>
+
+**5.11 Get-FileHash** <br>
+
+**5.12 Get-FileHash** <br>
+
+**5.13 Get-FileHash** <br>
+**5.14 Get-FileHash** <br>
+
+**5.15 Get-FileHash** <br>
+
 # 6. Disk Space Usage
 
 #
