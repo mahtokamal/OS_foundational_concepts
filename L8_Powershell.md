@@ -298,7 +298,7 @@ The second example demonstrates that we don't need to know how to script to bene
 - Select-String (grep,findstr)
   - Select-String -Path ".\captain-hat.txt" -Pattern "hat" 
 
-# 1. File and Directory
+# 1. File and Directory 
 
 **1.0 Get-ChildItem (dir,ls)** <br>
 -
@@ -314,46 +314,80 @@ The second example demonstrates that we don't need to know how to script to bene
 
 **1.3 New-Item** <br>
 - creates a new directory or file on a specified path
-   - For directory -> New-Item -Path ".\PowerShell_Directory" ItemType "Directory"
-   - For file -> New-Item -Path ".\PowerShell_Directory\test.txt" ItemType "File"
+   - For directory -> New-Item -Path ".\PowerShell_Directory" -ItemType "Directory"
+   - For file -> New-Item -Path ".\PowerShell_Directory\test.txt" -ItemType "File"
+
+<img width="1907" height="676" alt="Screenshot (3153)" src="https://github.com/user-attachments/assets/906446dd-caac-4570-a16a-d3f5df0b1634" />
 
 **1.4 Remove-Item : (rmdir, del, erase)** <br>
 - deletes a file and directory from a given path.
-   - Remove-Item -Path ".\newpowershell\powershell.txt"
-   - Remove-Item -Path ".\newpowershell\"
+   - Remove-Item -Path ".\powershell_test1\test.txt"
+   - Remove-Item ".\powershell_test1\Powershell_Directory\"
+
+<img width="1900" height="482" alt="Screenshot (3164)" src="https://github.com/user-attachments/assets/1909cc8f-1865-4c69-8899-46348489412c" />
+
+<img width="1866" height="470" alt="Screenshot (3165)" src="https://github.com/user-attachments/assets/77a18f05-874f-4ce2-bfe2-8c347ef899a8" />
+
+<img width="1920" height="994" alt="Screenshot (3166)" src="https://github.com/user-attachments/assets/84618841-935e-49bf-9847-ef85838fc049" />
 
 **1.5 Copy-Item : (copy,)** <br>
 - copies files and directories from source path to destination path.
-   - Example -> Copy-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+   - Example -> Copy-Item -Path ".\Powershell_Directory\test.txt" -Destination ".\powershell_test1\""
+   - Example -> Copy-Item -Path ".\Powershell_Directory\" -Destination ".\powershell_test1\"
+
+<img width="1920" height="996" alt="Screenshot (3162)" src="https://github.com/user-attachments/assets/778b377e-1528-4b16-b239-886813ed7fd3" />
+<img width="1920" height="998" alt="Screenshot (3163)" src="https://github.com/user-attachments/assets/90e20c97-fa55-498e-b5e3-3751608f0679" />
 
 **1.6 Move-Item : (move)** <br> 
 - moves files and directories from source path to destination path.
-   - Example -> Move-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+   - Example -> Move-Item -Path ".\Powershell_Directory\test.txt" -Destination ".\powershell_test1\"
+   - Example -> Move-Item -Path ".\Powershell_Directory" -Destination ".\powershell_test1\"
+
+<img width="1920" height="998" alt="Screenshot (3167)" src="https://github.com/user-attachments/assets/72715d2a-392f-4cd9-b52e-bab57830e9e3" />
+
+<img width="1920" height="1011" alt="Screenshot (3168)" src="https://github.com/user-attachments/assets/69160786-aa4d-4e65-941b-a6c4928ced1a" />
 
 **1.7 Rename-Item :** <br>
-   - Example -> Rename-Item ".\powershell_test\" powershell_test2
+   - Example -> Rename-Item ".\Powershell_Directory\" Powershell_test2
+   - Example -> Rename-Item ".\Powershell_test2\test.txt" test2.txt
+
+<img width="1910" height="618" alt="Screenshot (3160)" src="https://github.com/user-attachments/assets/e4062867-198b-4d6e-ac3a-5058c1afdb80" />
+<img width="1902" height="762" alt="Screenshot (3161)" src="https://github.com/user-attachments/assets/29d66de1-dca0-4b7f-8827-9fb2d607b99e" />
 
 **1.8 Get-Content : (type, cat)** <br>
 - to view contents of a file.
-   - Example : Get-Content ".\powershell\testtext.txt"
+   - Example : Get-Content ".\Powershell_Directory\test.txt"
 
 **1.9 Set-Content** <br>
-   - Example : Set-Content ".\testfile.txt" "welcome to the PowerShell MasteClass!"
+It overwrites the content to an existing files.
+   - Example : Set-Content ".\Powershell_Directory\test.txt" "welcome to the PowerShell MasteClass!"
+
+<img width="1889" height="151" alt="Screenshot (3154)" src="https://github.com/user-attachments/assets/2f774d1e-7023-4b85-b8e3-882342f1da24" />
+
+<img width="1879" height="350" alt="Screenshot (3156)" src="https://github.com/user-attachments/assets/a7fbb800-a345-48fd-bd43-8f83b23dc893" />
 
 **1.10 Add-content** <br>
 - It appends to the file
-   - Example -> Add-Content .\testfile.txt "Welcome again!"
+   - Example -> Add-Content ".\Powershell_Directory\test.txt "Welcome again!"
+
+<img width="1845" height="268" alt="Screenshot (3155)" src="https://github.com/user-attachments/assets/413f8518-d5f2-4d8b-a9e5-950947757778" />
 
 **1.11 Clear-Content** <br>
-   - Example -> Clear-Content .\testfile.txt
+   - Example -> Clear-Content ".\Powershell_Directory\test.txt"
+
+<img width="1853" height="385" alt="Screenshot (3157)" src="https://github.com/user-attachments/assets/4368b188-0866-47f7-854c-aa2b54d785d1" />
 
 **1.12 Write-Output : (echo)** <br>
-- prints on the terminal
+- prints output into the terminal
    - Example : Write-Output "Hello! Welcome to the Powershell Scripting"
+
+<img width="1850" height="466" alt="Screenshot (3158)" src="https://github.com/user-attachments/assets/780dacc7-d594-4eb5-a141-1d72ba54eb5a" />
 
 **1.13 Test-Path** <br>
 - It checks folder existence
-   - Example -> Test-Path ".\powershell_test" -> if found returns true, otherwise False
+   - Example -> Test-Path ".\Powershell_Directory\" -> if found returns True, otherwise False.
+
+<img width="1565" height="217" alt="Screenshot (3159)" src="https://github.com/user-attachments/assets/c5827d1b-81a0-42da-aeff-aaa372a88cca" />
 
 **1.14 Get-Item** <br>
 - Get-Item . -> gets the current directory. The dot ('.') represents the item at the current location (not its contents).
@@ -388,7 +422,7 @@ The second example demonstrates that we don't need to know how to script to bene
 <img width="1892" height="788" alt="Screenshot (3142)" src="https://github.com/user-attachments/assets/ae8dd40c-ec15-4b4d-b88d-acb70b9822d3" />
 
 **2.6 Get-NetTCPConnection(netstat)** <br>
-
+- To monitor active network connections, Get-NetTCPConnection displays current TCP connections, giving insights into both local and remote endpoints. This cmdlet is particularly handy during an incident response or malware analysis task, as it can uncover hidden backdoors or established connections towards an attacker-controlled server.
 <img width="1911" height="1000" alt="Screenshot (3143)" src="https://github.com/user-attachments/assets/158e6e60-dff3-42fd-a054-9fb6e6b26c31" />
 
 **2.7 Get-NetRoute (route)** <br>
@@ -407,9 +441,33 @@ The second example demonstrates that we don't need to know how to script to bene
 
 # 3. User & Groups
 
+**3.0 Get-LocalUser** <br>
+- lists all the local user accounts on the system. The default output displays, for each user, username, account status, and description.
+
+<img width="1908" height="427" alt="Screenshot (3170)" src="https://github.com/user-attachments/assets/da150b7b-6674-4359-8f56-95bf1349c2f4" />
+
+
 # 4. Permissions & Ownerships
 
 # 5. System & Process Management
+
+**5.1 Get-ComputerInfo** <br>
+- The Get-ComputerInfo cmdlet retrieves comprehensive system information, including operating system information, hardware specifications, BIOS details, and more. It provides a snapshot of the entire system configuration in a single command. Its traditional counterpart systeminfo retrieves only a small set of the same details.
+
+<img width="1916" height="1000" alt="Screenshot (3169)" src="https://github.com/user-attachments/assets/2b67e1e5-47a9-4794-afab-fc1aa174a8a0" />
+
+**5.2 Get-Process** <br>
+- Get-Process provides a detailed view of all currently running processes, including CPU and memory usage, making it a powerful tool for monitoring and troubleshooting.
+<img width="1920" height="1007" alt="Screenshot (3171)" src="https://github.com/user-attachments/assets/bb36c5ad-9a1e-4e90-8742-b769c84a9785" />
+
+**5.2 Get-Service** <br>
+- Get-Service allows the retrieval of information about the status of services on the machine, such as which services are running, stopped, or paused. It is used extensively in troubleshooting by system administrators, but also by forensics analysts hunting for anomalous services installed on the system.
+<img width="1920" height="1003" alt="Screenshot (3172)" src="https://github.com/user-attachments/assets/c147cb51-906d-4990-bce1-88856fd73def" />
+
+**5.3 Get-FileHash** <br>
+- Get-FileHash can be utilized as a useful cmdlet for generating file hashes, which is particularly valuable in incident response, threat hunting, and malware analysis, as it helps verify file integrity and detect potential tampering.
+- Example -> Get-FileHash -Path ".\new.txt"
+<img width="1920" height="701" alt="Screenshot (3173)" src="https://github.com/user-attachments/assets/d4b4e69a-d7e2-4ac5-98d8-d11495e1ae03" />
 
 # 6. Disk Space Usage
 
@@ -471,7 +529,7 @@ Get-Unique cmdlet can be used to get the unique objects from a sorted list of ob
 - Get-Date
 - Set-Date
 
-# Powershell Scripting
+# Advanced Concepts : Powershell Scripting
 
 
 # Others
