@@ -300,11 +300,111 @@ The second example demonstrates that we don't need to know how to script to bene
 
 # 1. File and Directory
 
-# 2. Networking
-**2.1 Get-NetIPConfiguration**
+**1.0 Get-ChildItem (dir,ls)** <br>
 -
-**2.2 Get-NetIPAddress**
+<img width="1920" height="996" alt="Screenshot (3147)" src="https://github.com/user-attachments/assets/b9423f09-edd7-45ab-8528-a697060bc431" />
+
+**1.1 Set-Location (cd)** <br>
+-
+<img width="1920" height="1003" alt="Screenshot (3148)" src="https://github.com/user-attachments/assets/6bf01c2d-10c2-4d72-ad06-02a83b1e6a53" />
+
+**1.2 Get-Location (pwd)** <br>
+-
+<img width="1793" height="268" alt="Screenshot (3149)" src="https://github.com/user-attachments/assets/1e8e87f7-cdb8-41a0-afe6-e36c31efdaa5" />
+
+**1.3 New-Item** <br>
+- creates a new directory or file on a specified path
+   - For directory -> New-Item -Path ".\PowerShell_Directory" ItemType "Directory"
+   - For file -> New-Item -Path ".\PowerShell_Directory\test.txt" ItemType "File"
+
+**1.4 Remove-Item : (rmdir, del, erase)** <br>
+- deletes a file and directory from a given path.
+   - Remove-Item -Path ".\newpowershell\powershell.txt"
+   - Remove-Item -Path ".\newpowershell\"
+
+**1.5 Copy-Item : (copy,)** <br>
+- copies files and directories from source path to destination path.
+   - Example -> Copy-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+
+**1.6 Move-Item : (move)** <br> 
+- moves files and directories from source path to destination path.
+   - Example -> Move-Item -Path ".\Powershell\testtext.txt" -Destination ".\PracticePowershell\"
+
+**1.7 Rename-Item :** <br>
+   - Example -> Rename-Item ".\powershell_test\" powershell_test2
+
+**1.8 Get-Content : (type, cat)** <br>
+- to view contents of a file.
+   - Example : Get-Content ".\powershell\testtext.txt"
+
+**1.9 Set-Content** <br>
+   - Example : Set-Content ".\testfile.txt" "welcome to the PowerShell MasteClass!"
+
+**1.10 Add-content** <br>
+- It appends to the file
+   - Example -> Add-Content .\testfile.txt "Welcome again!"
+
+**1.11 Clear-Content** <br>
+   - Example -> Clear-Content .\testfile.txt
+
+**1.12 Write-Output : (echo)** <br>
+- prints on the terminal
+   - Example : Write-Output "Hello! Welcome to the Powershell Scripting"
+
+**1.13 Test-Path** <br>
+- It checks folder existence
+   - Example -> Test-Path ".\powershell_test" -> if found returns true, otherwise False
+
+**1.14 Get-Item** <br>
+- Get-Item . -> gets the current directory. The dot ('.') represents the item at the current location (not its contents).
+- Get-Item * -> gets all the items in the current directory. The wildcard character (*) represents all the contents of the current item.
+- Get-Item C:
+- Get-Item C:\*
+
+<img width="1920" height="1000" alt="Screenshot (3150)" src="https://github.com/user-attachments/assets/f89126c5-598c-4662-8537-f519fc09fcc8" />
+
+<img width="1920" height="998" alt="Screenshot (3151)" src="https://github.com/user-attachments/assets/8c45fbba-5fa2-4719-b647-917677ab9b03" />
+
+
+# 2. Networking
+**2.1 Get-NetIPConfiguration (ipconfig)** <br>
+- provides detailed information about the network interfaces on the system, including IP addresses, DNS servers, and gateway configurations.
+<img width="1920" height="1009" alt="Screenshot (3138)" src="https://github.com/user-attachments/assets/eb208639-6ed3-4d36-88c7-68860058131a" />
+
+**2.2 Get-NetIPAddress** <br>
+- show details for all IP addresses configured on the system, including those that are not currently active.
+<img width="1920" height="998" alt="Screenshot (3139)" src="https://github.com/user-attachments/assets/d9ac3b68-0ec4-41ae-a671-2a15bf7586d9" />
+
+**2.3 Test-NetConnection (ping)**<br>
 - 
+<img width="1920" height="772" alt="Screenshot (3140)" src="https://github.com/user-attachments/assets/a13f0bd7-82ec-4173-a3fc-a38d36918bd3" />
+
+**2.4 Test-NetConnection -TraceRoute (tracert)** <br>
+-
+<img width="1920" height="798" alt="Screenshot (3141)" src="https://github.com/user-attachments/assets/bfadfa52-4fbd-4dae-a916-39ff134a11cd" />
+
+**2.5 Resolve-DnsName (nslookup)** <br>
+-
+<img width="1892" height="788" alt="Screenshot (3142)" src="https://github.com/user-attachments/assets/ae8dd40c-ec15-4b4d-b88d-acb70b9822d3" />
+
+**2.6 Get-NetTCPConnection(netstat)** <br>
+
+<img width="1911" height="1000" alt="Screenshot (3143)" src="https://github.com/user-attachments/assets/158e6e60-dff3-42fd-a054-9fb6e6b26c31" />
+
+**2.7 Get-NetRoute (route)** <br>
+-
+<img width="1920" height="996" alt="Screenshot (3146)" src="https://github.com/user-attachments/assets/a511fc84-56cb-4e8e-86c9-956fa72df368" />
+
+**2.8 Get-NetNeighbor (arp)** <br>
+-
+<img width="1920" height="998" alt="Screenshot (3145)" src="https://github.com/user-attachments/assets/7327d04d-02a8-4ece-8bc5-1af992b9af94" />
+
+**2.9 Get-NetAdapter (getmac)** <br>
+- 
+<img width="1903" height="372" alt="Screenshot (3144)" src="https://github.com/user-attachments/assets/61bd6545-49d5-4204-ab7a-a23c6821a603" />
+
+**2.10** <br>
+
 # 3. User & Groups
 
 # 4. Permissions & Ownerships
