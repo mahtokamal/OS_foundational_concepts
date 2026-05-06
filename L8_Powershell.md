@@ -358,8 +358,8 @@ The second example demonstrates that we don't need to know how to script to bene
 **1.14 Get-Item** <br>
 - Get-Item . -> gets the current directory. The dot ('.') represents the item at the current location (not its contents).
 - Get-Item * -> gets all the items in the current directory. The wildcard character (*) represents all the contents of the current item.
-- Get-Item C:
-- Get-Item C:\*
+- Get-Item C: -> gets the current directory of the C: drive. The object that is retrieved represents only the directory, not its contents.
+- Get-Item C:\* -> gets the items in the C: drive. The wildcard character (*) represents all the items in the container, not just the container.
 
 <img width="1920" height="1000" alt="Screenshot (3150)" src="https://github.com/user-attachments/assets/f89126c5-598c-4662-8537-f519fc09fcc8" />
 
