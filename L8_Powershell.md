@@ -499,6 +499,7 @@ It overwrites the content to an existing files.
 #
 
 # Basics command
+- Clear-Host (cls)
 
 # Powershell Advanced Cmdlets
 
@@ -556,5 +557,14 @@ Get-Unique cmdlet can be used to get the unique objects from a sorted list of ob
 
 
 # Others
+- Common verbs include:
+  - Get: Retrieves data
+  - Set: Modifies the properties of an object
+  - Add: Adds an item to a collection
+  - Stop: Stops a process or service
+  - Start: Starts a process or service
+  - Clear: Removes all the items from a collection
 
+# Additional resources
+- https://netwrix.com/en/resources/blog/powershell-commands-cheat-sheet/
 
