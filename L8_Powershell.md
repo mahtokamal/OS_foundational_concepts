@@ -447,6 +447,9 @@ It overwrites the content to an existing files.
 <img width="1908" height="427" alt="Screenshot (3170)" src="https://github.com/user-attachments/assets/da150b7b-6674-4359-8f56-95bf1349c2f4" />
 
 
+**3.1 Get-LocalGroup** <br>
+<img width="1920" height="409" alt="Screenshot (3187)" src="https://github.com/user-attachments/assets/e7211245-bb69-40c3-b894-dbb6eccf55c0" />
+
 # 4. Permissions & Ownerships
 
 # 5. System & Process Management
@@ -464,6 +467,9 @@ It overwrites the content to an existing files.
 **5.2 Get-Service** <br>
 - Get-Service allows the retrieval of information about the status of services on the machine, such as which services are running, stopped, or paused. It is used extensively in troubleshooting by system administrators, but also by forensics analysts hunting for anomalous services installed on the system.
 <img width="1920" height="1003" alt="Screenshot (3172)" src="https://github.com/user-attachments/assets/c147cb51-906d-4990-bce1-88856fd73def" />
+<img width="1708" height="936" alt="Screenshot (3180)" src="https://github.com/user-attachments/assets/6b51e2d7-d0a3-40aa-b318-a11d499a5e6f" />
+
+<img width="1435" height="242" alt="Screenshot (3181)" src="https://github.com/user-attachments/assets/6fab091e-051e-4be6-bce2-b2498b172d9c" />
 
 **5.3 Get-FileHash** <br>
 - Get-FileHash can be utilized as a useful cmdlet for generating file hashes, which is particularly valuable in incident response, threat hunting, and malware analysis, as it helps verify file integrity and detect potential tampering.
@@ -486,15 +492,25 @@ It overwrites the content to an existing files.
 <img width="1914" height="1005" alt="Screenshot (3177)" src="https://github.com/user-attachments/assets/f24312bc-0a96-494d-a5e1-fe2c1f6f81cd" />
 <img width="1920" height="1000" alt="Screenshot (3178)" src="https://github.com/user-attachments/assets/6441269b-5757-47c9-b129-d2b480d7d51d" />
 
-**5.6 Get-FileHash** <br>
+**5.6 Restart-Computer** <br>
+- Restart-Computer -Force -> Restarts the local or remote computer.
 
-**5.7 Get-FileHash** <br>
+**5.7 Stop-Computer** <br>
+- Stop-Computer -> Shuts down the computer
 
-**5.8 Get-FileHash** <br>
+**5.8 Get-EventLog** <br>
+- Get-EventLog -List
 
-**5.9 Get-FileHash** <br>
+<img width="1713" height="468" alt="Screenshot (3182)" src="https://github.com/user-attachments/assets/a2de067f-38de-45b8-89f5-be36c8779bc6" />
+<img width="1713" height="509" alt="Screenshot (3183)" src="https://github.com/user-attachments/assets/6576fdf6-be3b-4916-b019-8109946c604e" />
 
-**5.10 Get-FileHash** <br>
+**5.9 Get-ExecutionPolicy** <br>
+- Checks Scripts Execution Policy (Restricted, AllSigned, RemoteSigned, Unrestricted, Bypass, Undefined) and their Scopes for Execution Policy (Current User, Local Machine, Process)
+
+**5.10 Set-ExecutionPolicy** <br>
+- Changes PowerShell script execution policy.
+<img width="1914" height="424" alt="Screenshot (3185)" src="https://github.com/user-attachments/assets/f65af94c-4710-4581-9923-cb2043cd1355" />
+<img width="1920" height="508" alt="Screenshot (3186)" src="https://github.com/user-attachments/assets/2dba8568-0c2c-4b7c-977f-879916790c03" />
 
 **5.11 Get-FileHash** <br>
 
@@ -512,7 +528,7 @@ It overwrites the content to an existing files.
 #
 
 # Basics command
-- Clear-Host (cls)
+- Clear-Host (cls) -> 
 
 # Powershell Advanced Cmdlets
 
