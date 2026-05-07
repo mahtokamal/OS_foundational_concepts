@@ -455,6 +455,7 @@ It overwrites the content to an existing files.
 - The Get-ComputerInfo cmdlet retrieves comprehensive system information, including operating system information, hardware specifications, BIOS details, and more. It provides a snapshot of the entire system configuration in a single command. Its traditional counterpart systeminfo retrieves only a small set of the same details.
 
 <img width="1916" height="1000" alt="Screenshot (3169)" src="https://github.com/user-attachments/assets/2b67e1e5-47a9-4794-afab-fc1aa174a8a0" />
+<img width="1920" height="1003" alt="Screenshot (3179)" src="https://github.com/user-attachments/assets/7dc609a1-c266-4c42-a510-35e3f64aaedc" />
 
 **5.2 Get-Process** <br>
 - Get-Process provides a detailed view of all currently running processes, including CPU and memory usage, making it a powerful tool for monitoring and troubleshooting.
@@ -469,9 +470,21 @@ It overwrites the content to an existing files.
 - Example -> Get-FileHash -Path ".\new.txt"
 <img width="1920" height="701" alt="Screenshot (3173)" src="https://github.com/user-attachments/assets/d4b4e69a-d7e2-4ac5-98d8-d11495e1ae03" />
 
-**5.4 Get-FileHash** <br>
 
-**5.5 Get-FileHash** <br>
+**5.4 Start-Process** <br>
+- Start-Process Notepad
+
+<img width="1920" height="938" alt="Screenshot (3174)" src="https://github.com/user-attachments/assets/542f04db-4654-4e98-acdf-a7021272ec16" />
+
+
+
+**5.5 Stop-Process** <br>
+- Start-Process -Id (Process_Id)
+
+<img width="1920" height="1007" alt="Screenshot (3175)" src="https://github.com/user-attachments/assets/4e0b7da0-d2bd-4187-be47-c324d9dad7fd" />
+<img width="1914" height="996" alt="Screenshot (3176)" src="https://github.com/user-attachments/assets/b6ac5076-1112-404c-bc99-7a321dbb8ef2" />
+<img width="1914" height="1005" alt="Screenshot (3177)" src="https://github.com/user-attachments/assets/f24312bc-0a96-494d-a5e1-fe2c1f6f81cd" />
+<img width="1920" height="1000" alt="Screenshot (3178)" src="https://github.com/user-attachments/assets/6441269b-5757-47c9-b129-d2b480d7d51d" />
 
 **5.6 Get-FileHash** <br>
 
