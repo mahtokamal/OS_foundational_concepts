@@ -441,16 +441,33 @@ It overwrites the content to an existing files.
 
 # 3. User & Groups
 
-**3.0 Get-LocalUser** <br>
-- lists all the local user accounts on the system. The default output displays, for each user, username, account status, and description.
-
+**3.0 LocalUser** <br>
+- Get-LocalUSer -> lists all the local user accounts on the system. The default output displays, for each user, username, account status, and description.
 <img width="1908" height="427" alt="Screenshot (3170)" src="https://github.com/user-attachments/assets/da150b7b-6674-4359-8f56-95bf1349c2f4" />
+- Get-LocalUser -Name "Kamal". Get-LocalUser -Name "Administrators" -> Get one local user -> Get-LocalUser -Name <string>
+<img width="1722" height="896" alt="Screenshot (3189)" src="https://github.com/user-attachments/assets/392d686a-0362-48bb-802b-d0cf28e4281e" />
+- New-LocalUser -> Creates a local user account.
+- Set-LocalUser -> Modifies a local user account (e.g., description, password).
+- Rename-LocalUser -> Rename a local user
+- Remove-LocalUser -> Deletes a local user account.
 
-
-**3.1 Get-LocalGroup** <br>
+**3.1 LocalGroup** <br>
+- Get-LocalGroup -> Retrieves local Security groups.
 <img width="1920" height="409" alt="Screenshot (3187)" src="https://github.com/user-attachments/assets/e7211245-bb69-40c3-b894-dbb6eccf55c0" />
 
+- New-LocalGroup -> Creates a new local group.
+- Set-LocalGroup -> Changes local group properties (mainly Description).
+- Rename-LocalGroup -> Rename a group
+- Remove-LocalGroup -> Deletes a local group.
+
+**3.1 LocalGroupMember** <br>
+- Get-LocalGroupMember -> Show members of a group
+<img width="1715" height="904" alt="Screenshot (3188)" src="https://github.com/user-attachments/assets/49a046b5-1030-44fd-8cbc-5613293dde48" />
+- Add-LocalGroupMember -> Add user to group
+- Remove-LocalGroupMember -> Remove user from group
+
 # 4. Permissions & Ownerships
+
 
 # 5. System & Process Management
 
