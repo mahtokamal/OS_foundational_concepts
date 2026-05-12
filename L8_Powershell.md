@@ -468,6 +468,54 @@ It overwrites the content to an existing files.
 
 # 4. Permissions & Ownerships
 
+**4.0 Get-Acl** <br>
+
+**Set-Acl** <br>
+
+**3. Create Access Rules** <br>
+
+**Common Permissions** <br>
+
+| Permissions         | Meaning           |
+| -------------- | ----------------- |
+| Read           | Read files        |
+| Write          | Write files       |
+| Modify         | Read/write/delete |
+| FullControl    | Full permissions  |
+| ExecuteFile    | Execute           |
+| ReadAndExecute | Read + execute    |
+
+**Common COntrols** <br>
+| Control | Meaning |
+| ------- | ------- |
+| Allow   | Grant   |
+| Deny    | Block   |
+
+**4. Remove Permissions** <br>
+
+**5. Disable / Enable Inheritance** <br>
+
+**Meaning** <br>
+
+| Parameter | Description            |
+| --------- | ---------------------- |
+| `$true`   | Disable inheritance    |
+| `$false`  | Remove inherited rules |
+
+**6. Set Ownership** <br>
+
+**7. Take Ownership (Native Utility)** <br>
+
+**8. Grant Permissions Quickly (Native Utility** <br>
+icacls
+**Permission Codes**
+| Code | Meaning        |
+| ---- | -------------- |
+| F    | Full Control   |
+| M    | Modify         |
+| RX   | Read + Execute |
+| R    | Read           |
+| W    | Write          |
 
 # 5. System & Process Management
 
@@ -600,7 +648,6 @@ Get-Unique cmdlet can be used to get the unique objects from a sorted list of ob
 - Set-Date
 
 # Advanced Concepts : Powershell Scripting
-
 
 # Others
 - Common verbs include:
